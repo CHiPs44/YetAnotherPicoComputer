@@ -2,23 +2,23 @@
 
 From the release of the Raspbery Pi Pico in January 2021 till now (May 2023), there is a bubbling of projects around VGA output, surrounded by a more ancient wave of other retro computers using other micro-controllers and 8 or 16 bits CPUs, mainly because old 8 bits computers are either too old or too expensive compared to what Arduino, ESP32 & al. cost and are able to achieve.
 
-Here's now a list of projects that are in this mood:
+Here's now a list of projects that are related to this:
 
 - __VGA scanvideo__ from pico-extras by the Raspberry Pi Foundation
-  - <https://github.com/raspberrypi/pico-extras/tree/master/src/common/pico_scanvideo>
   - The base for all of this!
+  - <https://github.com/raspberrypi/pico-extras/tree/master/src/common/pico_scanvideo>
 
 - __VGA demo board__ by Pimoroni
   - Implementation of reference design from chapter 3 of <https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf>
   - <https://shop.pimoroni.com/products/pimoroni-pico-vga-demo-base>
 
 - __First thread about VGA__ on the Raspberry Pi forums
+  - That's what interested me in this stuff, after I bought a couple Picos in early 2021 and then the VGA demo board
   - <https://forums.raspberrypi.com/viewtopic.php?p=1829133>
 
 - __HAGL__ by tuupola
-  - Generic library for bitmap graphics
+  - Generic library for bitmap graphics, originally written with I²C or SPI LCD panels in mind
   - <https://github.com/tuupola/hagl/>
-  - Originally written with I²C or SPI LCD panels in mind
   - Uses Unicode fonts in FONTX format, cf. <http://elm-chan.org/docs/dosv/fontx_e.html>
 
 - __HAGL HAL for Pico VGA board__ by CHiPs44 (it’s me ;-))
@@ -36,8 +36,8 @@ Here's now a list of projects that are in this mood:
 - __LVGL__ by the LVGL team
   - Light a Versatile Graphic Library
   - <https://lvgl.io/>
-  - MIT license
-  - C99 (C++ compatible)
+  - License: MIT
+  - Language: C99 (C++ compatible)
 
 - __Pico-8__ and __TIC-80__ fantasy consoles
   - <https://www.lexaloffle.com/pico-8.php>
@@ -65,23 +65,25 @@ Here's now a list of projects that are in this mood:
   - <https://gitlab.com/DarkElvenAngel/pt52>
   - pt52-lua is on the way, cf. <https://gitlab.com/DarkElvenAngel/pt52-lua>
 
-- __PicoVGA__ by Miroslav Nemecek / MCUME by Jean-Marc Harvengt
+- __PicoVGA__ by Miroslav Nemecek / __MCUME__ by Jean-Marc Harvengt
   - <https://github.com/Panda381/PicoVGA>
-  - RGB332
-  - With sprites & layers
+    - RGB332
+    - With sprites & layers
   - <https://github.com/Jean-MarcHarvengt/MCUME>
-  - MCUME includes several emulators of 8 bits computers for several MCUs
-  - VGA for the Pico is based on PicoVGA
+    - MCUME includes several emulators of 8 bits computers for several MCUs
+    - VGA for the Pico is based on PicoVGA
 
 - __Agon light 2__ from the Byte Attic
+  - Modern Z80 implementation with a micro-controler for video and I/O
   - <https://github.com/TheByteAttic/AgonLight>
   - <https://www.thebyteattic.com/>
   - No Pico inside, but it’s representative of the goals of this project
   - Olimex sells it as Open Source Hardware, cf. <https://www.olimex.com/Products/Retro-Computers/AgonLight2/open-source-hardware>
+  - Runs BBC Basic
 
 - __PicoBB__ by Memotech-Bill & others
   - <https://github.com/Memotech-Bill/PicoBB>
-  - BBC Basic implementation
+  - BBC Basic implementation for the VGA board
 
 - __Picocomputer 6502__ by Rumbledethumps
   - <https://github.com/picocomputer>
@@ -104,7 +106,13 @@ Here's now a list of projects that are in this mood:
   - Motherboard is in micro ATX form factor and embeds several expansion connectors
 
 - __Picoputer__ by amen
+  - Emulation of Transputer nodes
   - <https://github.com/blackjetrock/picoputer>
   - <https://trochilidae.blogspot.com/2021/07/stack-based-with-os-in-hardware.html>
-  - Emulation of Transputer nodes
   - Interesting for high speed communication between nodes using PIO
+  - I can't say I understand all the concepts around this ;-)
+
+- __RC2014__ ecosystem
+  - Z80 based modular system
+  - <https://rc2014.co.uk/>
+  - Runs either homebrew, Microsoft BASIC, CP/M or MSX software
