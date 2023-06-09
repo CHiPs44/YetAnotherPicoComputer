@@ -33,10 +33,20 @@
   
 - Write and run (not so simple) graphical programs like:
   - Fractals: Mandelbrot, Julia, …
-  - Iconic games ports: Tetris, Space Invaders, Pac-Man, …
+  - Iconic games ports: Tetris, Space Invaders, Pac-Man, Boulder Dash, …
 
 - Use it as a serial terminal emulator for other projects
-  - ANSI / VT100 compatibility (colors, scrolling, ...)
+  - ANSI / VT100 compatibility (colors, scrolling, …)
   - Internal shell should use this as its console, making porting a full screen editor and command line editing tools more simple
   - Support of file transfers to the SD card (X/Y/ZMODEM?)
   - Could be implemented as a text layer above graphical screen
+
+- Should handle text as
+  - 7bits US-ASCII: realistic for retro-computing, but limiting, especially for european people and a no-go for many others
+  - 8bits: MS-DOS code page 437, 850, Windows 1252, ISO-8859-15, a good old nightmare strikes back!
+  - 16bits UTF-16 (BE or LE?): seems to be a good compromise (should we read and write text files as UTF-8?)
+  - 32bits UTF-32 (BE or LE?): appears be a waste of our little memory
+
+- Should support several keyboard layouts “out of the box”
+  - US, FR at least, compile time option
+  - see text support above for implications, for example “€”, “²” and other Unicode chars are available with FR layout, which need “dead keys” support, too
