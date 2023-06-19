@@ -128,3 +128,9 @@ Here's now a list of projects that are related to this:
   - Z80 based modular system
   - <https://rc2014.co.uk/>
   - Runs either homebrew, Microsoft BASIC, CP/M or MSX software
+
+- __pico-vdp__ by Patrick Alastair
+  - <https://github.com/alastairpatrick/pico-vdp>
+  - Video Display Processor RC2014 Board with video output, audio output, keyboard input, mouse input
+  - Seems to be stalled in the "sprite" branch since 2022
+  - C, GPL 3.0
