@@ -96,9 +96,10 @@ Here's now a list of projects that are related to this:
 
 - __Picocomputer 6502__ by Rumbledethumps
   - <https://github.com/picocomputer>
-  - 8 Mhz 65C02 as CPU + 2 supporting Picos for VGA and I/O
+  - 8 Mhz 65C02 as CPU + 2 supporting Picos for VGA, I/O and SD card
   - Interesting concept of the PIX to handle communication between the Picos via PIO
-  - Sadly now a not so open project like it was at the beginning
+  - Source code disappeared from GitHub for a few months and came back in a "showable" state
+  - BSD 3-clause license
   - Language: C (C++ compatible)
 
 - __PicoMiteVGA__ & __WebMite__ by Geoff & others
