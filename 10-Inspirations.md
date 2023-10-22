@@ -54,22 +54,12 @@ Here's now a list of projects that are related to this:
 ### __PicoVGA__ by __Miroslav Nemecek__
 
 - <https://github.com/Panda381/PicoVGA>
-- RGB332, not scanvideo based
+- RGB332, not scanvideo based, uses its own DAC and PIO
 - With sprites & layers
 - See also <https://github.com/Panda381/PicoLibSDK>
 
 ### __MCUME__ by __Jean-Marc Harvengt__
 
-- __RC2014__ ecosystem
-  - Z80 based modular system
-  - <https://rc2014.co.uk/>
-  - Runs either homebrew, Microsoft BASIC, CP/M or MSX software
-
-- __pico-vdp__ by Patrick Alastair
-  - <https://github.com/alastairpatrick/pico-vdp>
-  - Video Display Processor RC2014 Board with video output, audio output, keyboard input, mouse input
-  - Seems to be stalled in the "sprite" branch since 2022
-  - C, GPL 3.0
 - <https://github.com/Jean-MarcHarvengt/MCUME>
 - MCUME includes several emulators of 8 bits computers for several MCUs
 - VGA for the Pico is based on PicoVGA
@@ -165,3 +155,11 @@ Here's now a list of projects that are related to this:
 - <https://rc2014.co.uk/>
 - Runs either homebrew, Microsoft BASIC, CP/M or MSX software
 - Can use a Pico VGA terminal, cf. <https://rc2014.co.uk/modules/pi-pico-vga-terminal/>
+
+
+### __pico-vdp__ by Patrick Alastair
+
+- <https://github.com/alastairpatrick/pico-vdp>
+- Video Display Processor RC2014 Board with video and audio output, keyboard and mouse input
+- Seems to be stalled in the "sprite" branch since 2022
+- C, GPL 3.0
