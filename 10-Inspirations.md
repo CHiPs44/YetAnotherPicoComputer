@@ -1,3 +1,26 @@
+```text
+_   __   _   
+\ \ / /__| |_ 
+ \ V / -_)  _|
+  |_|\___|\__|
+   _            _   _            
+  /_\  _ _  ___| |_| |_  ___ _ _ 
+ / _ \| ' \/ _ \  _| ' \/ -_) '_|
+/_/ \_\_||_\___/\__|_||_\___|_|  
+ ___ _        
+| _ (_)__ ___ 
+|  _/ / _/ _ \
+|_| |_\__\___/ 
+  ___                     _           
+ / __|___ _ __  _ __ _  _| |_ ___ _ _ 
+| (__/ _ \ '  \| '_ \ || |  _/ -_) '_|
+ \___\___/_|_|_| .__/\_,_|\__\___|_|  
+               |_|                    
+
+```
+
+(from <http://www.network-science.de/ascii/>, "small" font)
+
 # YAPC - Inspirations
 
 From the release of the Raspbery Pi Pico in January 2021 till now (august 2023), there is a bubbling of projects around VGA output, surrounded by a more ancient wave of other retro computers using other micro-controllers and 8 or 16 bits CPUs, mainly because old 8 bits computers are either too old or too expensive compared to what Arduino, ESP32 & al. cost and are able to achieve.

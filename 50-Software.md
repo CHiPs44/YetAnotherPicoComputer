@@ -84,12 +84,12 @@ I played numerous hours with these ones on my 1040STF and my MegaSTE:
 
 ### Demos
 
-- **3D spinning cube**
+- **3D spinning cube**, <https://rosettacode.org/wiki/Draw_a_rotating_cube>
 - **Amiga Boing Ball Demo**, <https://amiga.lychesis.net/applications/AmigaBoingBall.html>
 
 ### Complex
 
-- **Audio MOD player** for Amiga style 4 channels stereo
+- **Audio MOD player** for Amiga style 4 channels stereo (cf. <https://modarchive.org/index.php?request=view_profile&query=90994>)
 
 ## Tools
 
@@ -107,17 +107,28 @@ I played numerous hours with these ones on my 1040STF and my MegaSTE:
 
 These are intended to be run on YAPC itself, making it a self contained machine.
 
-They need an editor of some sort.
+They all need an editor of some sort.
 
 ### Interpreters
 
-- **BASIC**, be it Tiny Basic, BBC Basic (see <https://github.com/Memotech-Bill/PicoBB>), MS Basic, or another intermediate level one (example?)
+- **BASIC**, be it:
+  - **Tiny Basic** <>
+  - **piccoloBasic** (<https://github.com/garyexplains/piccoloBASIC>)
+  - **BBC Basic** (<https://github.com/Memotech-Bill/PicoBB>)
+  - MS Basic
+  - or another one with no line numbers and structured programming (example?)
 - **Lua**, see <https://gitlab.com/DarkElvenAngel/pt52-lua>
+- **Lisp**?
 - **Forth**?
 - **Pascal**?
 - **C**?
+- **Java**? ;-)
 
 ### Compilers
 
-- Pascal, Turbo Pascal 3 or 5.5 like
-- C, see <https://github.com/lurk101/pshell>
+- **FreeBASIC**, <https://github.com/freebasic>
+- **Pascal**, Turbo Pascal 3 (or 5.5?) like, <https://en.wikipedia.org/wiki/Category:Pascal_(programming_language)_compilers>
+- **C**, see <https://github.com/lurk101/pshell>, based on
+  - **AMACC** <https://github.com/jserv/amacc>)
+  - **SCC**, <http://git.simple-cc.org/scc/file/README.html>? (via <https://forums.raspberrypi.com/viewtopic.php?p=2036424&hilit=lurk101+pshell+amacc#p2036500>)
+  - **TCC - Tiny C Compiler**, <https://repo.or.cz/w/tinycc.git/>?
