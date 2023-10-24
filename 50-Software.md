@@ -112,7 +112,7 @@ They all need an editor of some sort.
 ### Interpreters
 
 - **BASIC**, be it:
-  - **Tiny Basic** <>
+  - **Tiny Basic** <https://en.wikipedia.org/wiki/Tiny_BASIC>
   - **piccoloBasic** (<https://github.com/garyexplains/piccoloBASIC>)
   - **BBC Basic** (<https://github.com/Memotech-Bill/PicoBB>)
   - MS Basic
