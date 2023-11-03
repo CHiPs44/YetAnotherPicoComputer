@@ -62,6 +62,11 @@ These two ones were my most played ones on my CPC 664 (<https://en.wikipedia.org
 - **Fruity Frank** by Kuma Software, 1984, <https://en.wikipedia.org/wiki/Fruity_Frank>
 - **The Way of the Exploding Fist** by Beam Software, 1985, <https://en.wikipedia.org/wiki/The_Way_of_the_Exploding_Fist>
 
+Others games I recall the name:
+
+- **Bruce Lee**
+- **Wizball**
+
 ### Atari ST classics
 
 I played numerous hours with these ones on my 1040STF and my MegaSTE:
@@ -74,6 +79,11 @@ I played numerous hours with these ones on my 1040STF and my MegaSTE:
 ### PC classics
 
 - **Jazz Jackrabbit** by Epic Megagames, 1994, <https://en.wikipedia.org/wiki/Jazz_Jackrabbit_(1994_video_game)>
+
+### Modern classics
+
+- **Flappy bird** by Dong Nguyen, 2013, <https://en.wikipedia.org/wiki/Flappy_Bird>, horizontal scrolling needed
+- **2048** by Gabriele Cirulli, 2014, <https://github.com/gabrielecirulli/2048>, static background
 
 ## Applications
 
@@ -107,7 +117,7 @@ I played numerous hours with these ones on my 1040STF and my MegaSTE:
 
 These are intended to be run on YAPC itself, making it a self contained machine.
 
-They all need an editor of some sort.
+They all need an editor of some sort for source files and a similar way to edit command line.
 
 ### Interpreters
 
@@ -115,7 +125,8 @@ They all need an editor of some sort.
   - **Tiny Basic** <https://en.wikipedia.org/wiki/Tiny_BASIC>
   - **piccoloBasic** (<https://github.com/garyexplains/piccoloBASIC>)
   - **BBC Basic** (<https://github.com/Memotech-Bill/PicoBB>)
-  - MS Basic
+  - **MS Basic** (<https://en.wikipedia.org/wiki/Microsoft_BASIC>)
+  - **GFA BASIC** (<https://en.wikipedia.org/wiki/GFA_BASIC>)
   - or another one with no line numbers and structured programming (example?)
 - **Lua**, see <https://gitlab.com/DarkElvenAngel/pt52-lua>
 - **Lisp**?
