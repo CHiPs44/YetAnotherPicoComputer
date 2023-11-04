@@ -30,6 +30,7 @@ These were originally text based, too, but had many graphics implementations:
 - **Galaxian** by Namco, 1979, <https://en.wikipedia.org/wiki/Galaxian>
 - **Pac Man** by Namco, 1980, <https://en.wikipedia.org/wiki/Pac-Man>
 - **Galaga** by Namco, 1981, <https://en.wikipedia.org/wiki/Galaga>
+- **Dig Dug**
 
 ### Arcade classics with scrolling
 
@@ -37,13 +38,15 @@ These were originally text based, too, but had many graphics implementations:
 
 ### To be sorted
 
-- **Zaxxon**, C64?
-- **Gauntlet**, Arcade first?
-- **Warcraft**, PC (or one of its more primitive predecessors (Dune / Dune II?))
+- **Zaxxon**, C64 or arcade first?
+- **Gauntlet**, arcade first?
+- **Warcraft**, PC (or one of its more primitive predecessors like Dune or Dune II?)
 - **Knight Lore**, Amstrad CPC
-- **Bomberman**
-- 8bit Guy's **Planet X3** and/or **Attack of the PETSCII robots** (vaguely open sourced)
-- **2048**
+- **Alien 8**, Amstrad CPC
+- **Bomberman**, first platform?
+- 8bit Guy's games (not really open sourced, but it seems doable)
+  - **Planet X3**
+  - **Attack of the PETSCII robots**
 - **Solitaire**
 
 ### 8 bits machines classics
@@ -64,8 +67,9 @@ These two ones were my most played ones on my CPC 664 (<https://en.wikipedia.org
 
 Others games I recall the name:
 
+- **The way of the exploding fist**, the first and only I transfered from cassette to diskette with instructions from Hebdogiciel!
 - **Bruce Lee**
-- **Wizball**
+- **Wizball**, even if I recall it was way too hard for me ;-)
 
 ### Atari ST classics
 
@@ -73,12 +77,12 @@ I played numerous hours with these ones on my 1040STF and my MegaSTE:
 
 - **Dungeon Master** by FTL Games, 1987, <https://en.wikipedia.org/wiki/Dungeon_Master_(video_game)>
 - **Populous** by Bullfrog productions, 1989, <https://en.wikipedia.org/wiki/Populous_(video_game)>
-- **Hero Quest**
-- **Space Crusade**
+- **Hero Quest**, 1991, <https://en.wikipedia.org/wiki/HeroQuest_(video_game)>
+- **Space Crusade**, 1992, <https://en.wikipedia.org/wiki/Space_Crusade_(video_game)>
 
 ### PC classics
 
-- **Jazz Jackrabbit** by Epic Megagames, 1994, <https://en.wikipedia.org/wiki/Jazz_Jackrabbit_(1994_video_game)>
+- **Jazz Jackrabbit** by Epic Megagames, 1994, <https://en.wikipedia.org/wiki/Jazz_Jackrabbit_(1994_video_game)>, VGA based IIRC
 
 ### Modern classics
 
@@ -89,7 +93,7 @@ I played numerous hours with these ones on my 1040STF and my MegaSTE:
 
 ### Simple
 
-- **Game of life**
+- **Game of life** by John Conway, 1970, <https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life>
 - **Fractals**, Mandelbrot sets and others, <https://en.wikipedia.org/wiki/Mandelbrot_set>
 
 ### Demos
