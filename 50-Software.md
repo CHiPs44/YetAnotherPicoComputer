@@ -147,7 +147,7 @@ I played numerous hours with these ones on my 1040STF and my MegaSTE:
 
 ### Audio MOD player
 
-Goal is to play Amiga style 4 channels stereo MODs, see:
+Goal is to play Amiga 4 channels stereo MODs, see:
 
 - <https://github.com/moefh/pico-mod-player>
 - <https://github.com/prochazkaml/pico-MODPlay>
@@ -197,12 +197,13 @@ They all need an editor of some sort for source files and a similar way to edit 
 
 ### Compilers
 
-| Name                      | Notes                                                                                                           |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **FreeBASIC**             | <https://github.com/freebasic>                                                                                  |
-| **Pascal**                | Turbo Pascal 3 (or 5.5?) like, <https://en.wikipedia.org/wiki/Category:Pascal_(programming_language)_compilers> |
-| **C**                     | see <https://github.com/lurk101/pshell>, based on **AMACC** <https://github.com/jserv/amacc>¹                   |
-| **SCC**                   | <http://git.simple-cc.org/scc/file/README.html>                                                                 |
-| **TCC (Tiny C Compiler)** | <https://repo.or.cz/w/tinycc.git/>                                                                              |
+| Name                          | Notes                                                                                                           |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **FreeBASIC**                 | <https://github.com/freebasic>                                                                                  |
+| **Pascal**                    | Turbo Pascal 3 (or 5.5?) like, <https://en.wikipedia.org/wiki/Category:Pascal_(programming_language)_compilers> |
+| **C**                         | see <https://github.com/lurk101/pshell>, based on **AMACC²** <https://github.com/jserv/amacc>¹                   |
+| **SCC (simple c99 compiler)** | <http://git.simple-cc.org/scc/file/README.html>                                                                 |
+| **TCC (Tiny C Compiler)**     | <https://repo.or.cz/w/tinycc.git/>                                                                              |
 
 ¹ See <https://forums.raspberrypi.com/viewtopic.php?p=2036424&hilit=lurk101+pshell+amacc#p2036500>
+² Arguably Minimalist Arm C Compiler
