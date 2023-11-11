@@ -49,19 +49,23 @@ These were originally text based, too, but had many graphical implementations:
 
 | Game          | Notes                                                                |
 | ------------- | -------------------------------------------------------------------- |
-| **Zaxxon**    | C64 or arcade first?                                                 |
-| **Gauntlet**  | arcade first?                                                        |
-| **Warcraft**  | PC (or one of its more primitive predecessors like Dune or Dune II?) |
-| **Bomberman** | first machine?                                                       |
-| **Solitaire** | First one? Windows one?                                              |
+| **Zaxxon**    | Sega, 1982, <https://en.wikipedia.org/wiki/Zaxxon> |
+| **Gauntlet**  | Atari Games, 1985, <https://en.wikipedia.org/wiki/Gauntlet_(1985_video_game)> |
+| **RTS**       | Genre: <https://en.wikipedia.org/wiki/Real-time_strategy> |
+| **Dune**      | First modern RTS?: <https://en.wikipedia.org/wiki/Dune_(video_game)>  |
+| **Dune II**   | Real first modern RTS?: <https://en.wikipedia.org/wiki/Dune_II>            |
+| **Warcraft**  | Blizzard Entertainment, 1994, <https://en.wikipedia.org/wiki/Warcraft:_Orcs_%26_Humans> |
+| **Bomberman** | Hudson Soft, 1983, <https://en.wikipedia.org/wiki/Bomberman> |
+| **Solitaire** | Microsoft, 1990, <https://en.wikipedia.org/wiki/Microsoft_Solitaire> |
+| **Sokoban**   | <https://en.wikipedia.org/wiki/Sokoban>                              |
 
-### 8 bits machines classics
+### 8bit machines classics
 
-| Game                 | Year | Editor & Machine                 | URL                                                                |
-| -------------------- | ---- | -------------------------------- | ------------------------------------------------------------------ |
-| **Lode Runner**      | 1983 | Broderbund, Apple II             | <https://en.wikipedia.org/wiki/Lode_Runner>                        |
-| **Boulder Dash**     | 1984 | First Star Software, Atari 8-bit | <https://en.wikipedia.org/wiki/Boulder_Dash_(video_game)>          |
-| **Prince of Persia** | 1989 | Broderbund, Apple II             | <https://en.wikipedia.org/wiki/Prince_of_Persia_(1989_video_game)> |
+| Game                 | Year | Editor              | Machine     | URL                                                                |
+| -------------------- | ---- | ------------------- | ----------- | ------------------------------------------------------------------ |
+| **Lode Runner**      | 1983 | Broderbund          | Apple II    | <https://en.wikipedia.org/wiki/Lode_Runner>                        |
+| **Boulder Dash**     | 1984 | First Star Software | Atari 8-bit | <https://en.wikipedia.org/wiki/Boulder_Dash_(video_game)>          |
+| **Prince of Persia** | 1989 | Broderbund          | Apple II    | <https://en.wikipedia.org/wiki/Prince_of_Persia_(1989_video_game)> |
 
 NB: I thought **Boulder Dash** was originally released for the C64
 
@@ -82,7 +86,7 @@ These are not completely open sourced, Planet X3 Open Source Edition is GPL'd, b
 
 ### Amstrad CPC classics
 
-These ones were my most played ones on my 664 (<https://en.wikipedia.org/wiki/Amstrad_CPC#CPC_664>):
+These ones were my most played ones on my CPC 664 (<https://en.wikipedia.org/wiki/Amstrad_CPC#CPC_664>):
 
 | Game             | Year  | Author/Editor | URL                                          |
 | ---------------- | ----- | ------------- | -------------------------------------------- |
@@ -91,7 +95,7 @@ These ones were my most played ones on my 664 (<https://en.wikipedia.org/wiki/Am
 
 ¹ The first release was on the ZX Spectrum in 1984.
 
-Others games I recall the name on the CPC:
+Others games I recall playing on the CPC:
 
 | Game                               | Year | Author/Editor     | URL                                                           |
 | ---------------------------------- | ---- | ----------------- | ------------------------------------------------------------- |
@@ -107,7 +111,7 @@ Others games I recall the name on the CPC:
 
 ### Atari ST classics
 
-I played numerous hours with these ones on my 1040STF and my MegaSTE:
+I played numerous hours with these ones on my 1040STF, my STE and my MegaSTE:
 
 | Game               | Year | Author/Editor        | URL                                                         |
 | ------------------ | ---- | -------------------- | ----------------------------------------------------------- |
@@ -121,6 +125,7 @@ I played numerous hours with these ones on my 1040STF and my MegaSTE:
 | Game                | Year | Author/Editor  | URL                                                               |
 | ------------------- | ---- | -------------- | ----------------------------------------------------------------- |
 | **Jazz Jackrabbit** | 1994 | Epic Megagames | <https://en.wikipedia.org/wiki/Jazz_Jackrabbit_(1994_video_game)> |
+| **Duke Nukem**      | ?    | ?              | ?                                                                 |
 
 ### Modern classics
 
