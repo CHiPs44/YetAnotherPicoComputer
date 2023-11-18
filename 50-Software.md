@@ -44,30 +44,32 @@ These were originally text based, too, but had many graphical implementations:
 | Game         | Year | Author/Editor        | URL                                                        |
 | ------------ | ---- | -------------------- | ---------------------------------------------------------- |
 | **Defender** | 1981 | Williams Electronics | <https://en.wikipedia.org/wiki/Defender_(1981_video_game)> |
+| **Zaxxon**   | 1982 | Sega                 | <https://en.wikipedia.org/wiki/Zaxxon>                     |
+| **Gauntlet** | 1985 | Atari Games          | <https://en.wikipedia.org/wiki/Gauntlet_(1985_video_game)> |
 
 ### To be sorted
 
-| Game          | Notes                                                                |
-| ------------- | -------------------------------------------------------------------- |
-| **Zaxxon**    | Sega, 1982, <https://en.wikipedia.org/wiki/Zaxxon> |
-| **Gauntlet**  | Atari Games, 1985, <https://en.wikipedia.org/wiki/Gauntlet_(1985_video_game)> |
-| **RTS**       | Genre: <https://en.wikipedia.org/wiki/Real-time_strategy> |
-| **Dune**      | First modern RTS?: <https://en.wikipedia.org/wiki/Dune_(video_game)>  |
-| **Dune II**   | Real first modern RTS?: <https://en.wikipedia.org/wiki/Dune_II>            |
-| **Warcraft**  | Blizzard Entertainment, 1994, <https://en.wikipedia.org/wiki/Warcraft:_Orcs_%26_Humans> |
-| **Bomberman** | Hudson Soft, 1983, <https://en.wikipedia.org/wiki/Bomberman> |
-| **Solitaire** | Microsoft, 1990, <https://en.wikipedia.org/wiki/Microsoft_Solitaire> |
-| **Sokoban**   | <https://en.wikipedia.org/wiki/Sokoban>                              |
+| Game                  | Notes                                                                |
+| --------------------- | -------------------------------------------------------------------- |
+| **RTS**               | Genre: <https://en.wikipedia.org/wiki/Real-time_strategy> |
+| **Dune**              | First modern RTS?: <https://en.wikipedia.org/wiki/Dune_(video_game)>  |
+| **Dune II**           | Real first modern RTS?: <https://en.wikipedia.org/wiki/Dune_II>            |
+| **Warcraft**          | Blizzard Entertainment, 1994, <https://en.wikipedia.org/wiki/Warcraft:_Orcs_%26_Humans> |
+| **Bomberman**         | Hudson Soft, 1983, <https://en.wikipedia.org/wiki/Bomberman> |
+| **Solitaire**         | Microsoft, 1990, <https://en.wikipedia.org/wiki/Microsoft_Solitaire>                                    |
+| **Sokoban**           | <https://en.wikipedia.org/wiki/Sokoban>                                                                 |
+| **Ghosts 'n Goblins** | Capcom, 1985, <https://en.wikipedia.org/wiki/Ghosts_%27n_Goblins>                                       |
+| **Sorcery**           | Virgin Games, 1984, (no english WP page) <https://fr.wikipedia.org/wiki/Sorcery_(jeu_vid%C3%A9o,_1984)> |
 
 ### 8bit machines classics
 
 | Game                 | Year | Editor              | Machine     | URL                                                                |
 | -------------------- | ---- | ------------------- | ----------- | ------------------------------------------------------------------ |
 | **Lode Runner**      | 1983 | Broderbund          | Apple II    | <https://en.wikipedia.org/wiki/Lode_Runner>                        |
-| **Boulder Dash**     | 1984 | First Star Software | Atari 8-bit | <https://en.wikipedia.org/wiki/Boulder_Dash_(video_game)>          |
+| **Boulder Dash**¹    | 1984 | First Star Software | Atari 8-bit | <https://en.wikipedia.org/wiki/Boulder_Dash_(video_game)>          |
 | **Prince of Persia** | 1989 | Broderbund          | Apple II    | <https://en.wikipedia.org/wiki/Prince_of_Persia_(1989_video_game)> |
 
-NB: I thought **Boulder Dash** was originally released for the C64
+¹ I really thought **Boulder Dash** was originally released for the C64
 
 ### 8bit Guy's games
 
@@ -88,10 +90,11 @@ These are not completely open sourced, Planet X3 Open Source Edition is GPL'd, b
 
 These ones were my most played ones on my CPC 664 (<https://en.wikipedia.org/wiki/Amstrad_CPC#CPC_664>):
 
-| Game             | Year  | Author/Editor | URL                                          |
-| ---------------- | ----- | ------------- | -------------------------------------------- |
-| **Fruity Frank** | 1984  | Kuma Software | <https://en.wikipedia.org/wiki/Fruity_Frank> |
-| **Knight Lore**  | 1984¹ | Ultimate      | <https://en.wikipedia.org/wiki/Knight_Lore>  |
+| Game             | Year  | Author/Editor   | URL                                                              |
+| ---------------- | ----- | --------------- | ---------------------------------------------------------------- |
+| **Fruity Frank** | 1984  | Kuma Software   | <https://en.wikipedia.org/wiki/Fruity_Frank>                     |
+| **Knight Lore**  | 1984¹ | Ultimate        | <https://en.wikipedia.org/wiki/Knight_Lore>                      |
+| **Barbarian**    | 1987  | Palace Software | <https://en.wikipedia.org/wiki/Barbarian:_The_Ultimate_Warrior>  |
 
 ¹ The first release was on the ZX Spectrum in 1984.
 
@@ -100,12 +103,12 @@ Others games I recall playing on the CPC:
 | Game                               | Year | Author/Editor     | URL                                                           |
 | ---------------------------------- | ---- | ----------------- | ------------------------------------------------------------- |
 | **Alien 8**                        | 1985 | Ultimate          | <https://en.wikipedia.org/wiki/Alien_8>                       |
+| **Bruce Lee**                      | 1985 | U.S. Gold         | <https://en.wikipedia.org/wiki/Bruce_Lee_(video_game)>        |
 | **Highway Encounter**              | 1985 | Vortex Software   | <https://en.wikipedia.org/wiki/Highway_Encounter>             |
 | **The Way of the Exploding Fist**¹ | 1985 | Beam Software     | <https://en.wikipedia.org/wiki/The_Way_of_the_Exploding_Fist> |
-| **Bruce Lee**                      | 1985 | U.S. Gold         | <https://en.wikipedia.org/wiki/Bruce_Lee_(video_game)>        |
 | **Wizball**²                       | 1987 | Sensible Software | <https://en.wikipedia.org/wiki/Wizball>                       |
 
-¹ This is the first and only I transfered from cassette to diskette with instructions from Hebdogiciel!
+¹ This is the first and only I transfered from cassette to diskette with instructions from Hebdogiciel mag!
 
 ² Even if I recall it was way too hard for me ;-)
 
@@ -149,10 +152,12 @@ I played numerous hours with these ones on my 1040STF, my STE and my MegaSTE:
 | ------------------------- | ------------------------------------------------------------- |
 | **3D spinning cube**      | <https://rosettacode.org/wiki/Draw_a_rotating_cube>           |
 | **Amiga Boing Ball Demo** | <https://amiga.lychesis.net/applications/AmigaBoingBall.html> |
+| **X11 screensavers**      | TODO!                                                         |
+| **Bad Apple**             | TODO!                                                         |
 
 ### Audio MOD player
 
-Goal is to play Amiga 4 channels stereo MODs, see:
+Goal is to play Amiga 4 channels stereo MODs at least, see:
 
 - <https://github.com/moefh/pico-mod-player>
 - <https://github.com/prochazkaml/pico-MODPlay>
