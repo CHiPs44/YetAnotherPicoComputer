@@ -199,7 +199,7 @@ They all need an editor of some sort for source files and a similar way to edit 
   - **GFA BASIC** (<https://en.wikipedia.org/wiki/GFA_BASIC>)
   - or another one with no line numbers and structured programming (example?)
 - **Lua**, see <https://gitlab.com/DarkElvenAngel/pt52-lua>
-- **Lisp**?
+- **Lisp**, see <http://www.ulisp.com/> and <https://github.com/technoblogy/ulisp-arm>?
 - **Forth**?
 - **Pascal**?
 - **C**?
