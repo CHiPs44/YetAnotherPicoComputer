@@ -199,11 +199,12 @@ They all need an editor of some sort for source files and a similar way to edit 
   - **GFA BASIC** (<https://en.wikipedia.org/wiki/GFA_BASIC>)
   - or another one with no line numbers and structured programming (example?)
 - **Lua**, see <https://gitlab.com/DarkElvenAngel/pt52-lua>
-- **Lisp**, see <http://www.ulisp.com/> and <https://github.com/technoblogy/ulisp-arm>?
-- **Forth**?
+- **Javascript**, see Kaluma: <https://github.com/kaluma-project/kaluma>, which is JerryScript <https://github.com/jerryscript-project/jerryscript> for the Pico
 - **Pascal**?
 - **C**?
 - **Java**? ;-)
+- **Lisp**, see <http://www.ulisp.com/> and <https://github.com/technoblogy/ulisp-arm> (Arduino .ino, not C or C++)?
+- **Forth**?
 
 ### Compilers
 
