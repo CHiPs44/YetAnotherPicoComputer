@@ -197,11 +197,12 @@ They all need an editor of some sort for source files and a similar way to edit 
   - **BBC BASIC** (<https://github.com/Memotech-Bill/PicoBB>)
   - **Microsoft BASIC** (<https://en.wikipedia.org/wiki/Microsoft_BASIC>)
   - **GFA BASIC** (<https://en.wikipedia.org/wiki/GFA_BASIC>)
+  - **MMBasic** (<https://mmbasic.com/>) is not open source (<https://geoffg.net/OpenSource.html>)
   - or another one with no line numbers and structured programming (example?)
 - **Lua**, see <https://gitlab.com/DarkElvenAngel/pt52-lua>
 - **Javascript**, see Kaluma: <https://github.com/kaluma-project/kaluma>, which is JerryScript <https://github.com/jerryscript-project/jerryscript> for the Pico
 - **Pascal**?
-- **C**?
+- **C**, see <https://github.com/knivd/C.impl-extended-C-interpreter-for-microcontrollers>?
 - **Java**? ;-)
 - **Lisp**, see <http://www.ulisp.com/> and <https://github.com/technoblogy/ulisp-arm> (Arduino .ino, not C or C++)?
 - **Forth**?
