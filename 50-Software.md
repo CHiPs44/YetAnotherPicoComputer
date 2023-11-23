@@ -168,11 +168,27 @@ I made some myself on my Atari and my PC, see <https://modarchive.org/index.php?
 
 ### Text editor
 
-Be it vi, nano or joe (Wordstar) like
+- be it vi, nano or joe / Turbo Pascal (Wordstar) like
+- full screen
+- multiple files at once?
+- limit of 64KB?
 
 ### Shell
 
 Like sh / dash / ash / bash / ..., POSIX like?
+
+Commands:
+
+- `help <command>`
+- `ls <path>`
+- `cat <file>`
+- `cd <path>`
+- `mkdir <dir>`
+- `more <file>`
+- `cp <src> <dst>`
+- `mv <src> <dst>`
+- `rmdir <dir>`
+- ...
 
 ### Multimedia tools
 
@@ -180,8 +196,8 @@ Like sh / dash / ash / bash / ..., POSIX like?
 | --------------------------- | -------------------------------- |
 | **SoundTracker**            | MOD editor                       |
 | **Bitmap editor**           | DEGAS Elite / Deluxe Paint style |
-| **Sprite / Tileset editor** |                                  |
-| **Tilemap editor**          |                                  |
+| **Sprite / Tileset editor** | Look at Pico-8?                  |
+| **Tilemap editor**          | Idem?                            |
 
 ## Development
 
