@@ -4,7 +4,7 @@ Here's a list of programs that **should** or could be (re-)written to work with 
 
 PC Gamer's article "The 50 most important PC games of all time" <https://www.pcgamer.com/most-important-pc-games/> seems to be a good source but is seemmingly very biased towards IBM PC and compatibles.
 
-There won't be many examples of 8-bit console games as I didn't own or use anyone.
+There won't be many examples of 8-bit console games as I didn't own or use any.
 
 ## Games
 
