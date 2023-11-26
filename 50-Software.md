@@ -49,13 +49,13 @@ These were originally text based, too, but had many graphical implementations:
 
 ### To be sorted
 
-| Game                  | Notes                                                                |
-| --------------------- | -------------------------------------------------------------------- |
-| **RTS**               | Genre: <https://en.wikipedia.org/wiki/Real-time_strategy> |
-| **Dune**              | First modern RTS?: <https://en.wikipedia.org/wiki/Dune_(video_game)>  |
-| **Dune II**           | Real first modern RTS?: <https://en.wikipedia.org/wiki/Dune_II>            |
-| **Warcraft**          | Blizzard Entertainment, 1994, <https://en.wikipedia.org/wiki/Warcraft:_Orcs_%26_Humans> |
-| **Bomberman**         | Hudson Soft, 1983, <https://en.wikipedia.org/wiki/Bomberman> |
+| Game                  | Notes                                                                                                   |
+| --------------------- | ------------------------------------------------------------------------------------------------------- |
+| **RTS**               | Genre: <https://en.wikipedia.org/wiki/Real-time_strategy>                                               |
+| **Dune**              | First modern RTS?: <https://en.wikipedia.org/wiki/Dune_(video_game)>                                    |
+| **Dune II**           | Real first modern RTS?: <https://en.wikipedia.org/wiki/Dune_II>                                         |
+| **Warcraft**          | Blizzard Entertainment, 1994, <https://en.wikipedia.org/wiki/Warcraft:_Orcs_%26_Humans>                 |
+| **Bomberman**         | Hudson Soft, 1983, <https://en.wikipedia.org/wiki/Bomberman>                                            |
 | **Solitaire**         | Microsoft, 1990, <https://en.wikipedia.org/wiki/Microsoft_Solitaire>                                    |
 | **Sokoban**           | <https://en.wikipedia.org/wiki/Sokoban>                                                                 |
 | **Ghosts 'n Goblins** | Capcom, 1985, <https://en.wikipedia.org/wiki/Ghosts_%27n_Goblins>                                       |
@@ -90,11 +90,11 @@ These are not completely open sourced, Planet X3 Open Source Edition is GPL'd, b
 
 These ones were my most played ones on my CPC 664 (<https://en.wikipedia.org/wiki/Amstrad_CPC#CPC_664>):
 
-| Game             | Year  | Author/Editor   | URL                                                              |
-| ---------------- | ----- | --------------- | ---------------------------------------------------------------- |
-| **Fruity Frank** | 1984  | Kuma Software   | <https://en.wikipedia.org/wiki/Fruity_Frank>                     |
-| **Knight Lore**  | 1984¹ | Ultimate        | <https://en.wikipedia.org/wiki/Knight_Lore>                      |
-| **Barbarian**    | 1987  | Palace Software | <https://en.wikipedia.org/wiki/Barbarian:_The_Ultimate_Warrior>  |
+| Game             | Year  | Author/Editor   | URL                                                             |
+| ---------------- | ----- | --------------- | --------------------------------------------------------------- |
+| **Fruity Frank** | 1984  | Kuma Software   | <https://en.wikipedia.org/wiki/Fruity_Frank>                    |
+| **Knight Lore**  | 1984¹ | Ultimate        | <https://en.wikipedia.org/wiki/Knight_Lore>                     |
+| **Barbarian**    | 1987  | Palace Software | <https://en.wikipedia.org/wiki/Barbarian:_The_Ultimate_Warrior> |
 
 ¹ The first release was on the ZX Spectrum in 1984.
 
@@ -148,12 +148,15 @@ I played numerous hours with these ones on my 1040STF, my STE and my MegaSTE:
 
 ### Demos
 
-| Name                      | URL                                                           |
-| ------------------------- | ------------------------------------------------------------- |
-| **3D spinning cube**      | <https://rosettacode.org/wiki/Draw_a_rotating_cube>           |
-| **Amiga Boing Ball Demo** | <https://amiga.lychesis.net/applications/AmigaBoingBall.html> |
-| **X11 screensavers**      | TODO!                                                         |
-| **Bad Apple**             | TODO!                                                         |
+| Name                        | URL                                                           |
+| --------------------------- | ------------------------------------------------------------- |
+| **3D spinning cube**        | <https://rosettacode.org/wiki/Draw_a_rotating_cube>           |
+| **Amiga Boing Ball Demo**   | <https://amiga.lychesis.net/applications/AmigaBoingBall.html> |
+| **XScreenSaver**            | <https://en.wikipedia.org/wiki/XScreenSaver>                  |
+| **Bad Apple!!**             | <https://en.wikipedia.org/wiki/Bad_Apple!!>                   |
+| **Nyan cat**                | <https://en.wikipedia.org/wiki/Nyan_Cat>                      |
+| **Old School demo effects** | <https://en.wikipedia.org/wiki/Demo_effect>                   |
+| **Pico effects**            | <https://github.com/tuupola/pico_effects>                     |
 
 ### Audio MOD player
 
@@ -207,31 +210,68 @@ They all need an editor of some sort for source files and a similar way to edit 
 
 ### Interpreters
 
-- **BASIC**, be it:
-  - **Tiny BASIC** <https://en.wikipedia.org/wiki/Tiny_BASIC>
-  - **piccoloBASIC** (<https://github.com/garyexplains/piccoloBASIC>)
-  - **BBC BASIC** (<https://github.com/Memotech-Bill/PicoBB>)
-  - **Microsoft BASIC** (<https://en.wikipedia.org/wiki/Microsoft_BASIC>)
-  - **GFA BASIC** (<https://en.wikipedia.org/wiki/GFA_BASIC>)
-  - **MMBasic** (<https://mmbasic.com/>) is not open source (<https://geoffg.net/OpenSource.html>)
-  - or another one with no line numbers and structured programming (example?)
-- **Lua**, see <https://gitlab.com/DarkElvenAngel/pt52-lua>
-- **Javascript**, see Kaluma: <https://github.com/kaluma-project/kaluma>, which is JerryScript <https://github.com/jerryscript-project/jerryscript> for the Pico
-- **Pascal**?
-- **C**, see <https://github.com/knivd/C.impl-extended-C-interpreter-for-microcontrollers>?
-- **Java**? ;-)
-- **Lisp**, see <http://www.ulisp.com/> and <https://github.com/technoblogy/ulisp-arm> (Arduino .ino, not C or C++)?
-- **Forth**?
+#### BASIC
+
+- **Tiny BASIC** <https://en.wikipedia.org/wiki/Tiny_BASIC>
+- **piccoloBASIC** (<https://github.com/garyexplains/piccoloBASIC>)
+- **BBC BASIC** (<https://github.com/Memotech-Bill/PicoBB>)
+- **Microsoft BASIC** (<https://en.wikipedia.org/wiki/Microsoft_BASIC>)
+- **GFA BASIC** (<https://en.wikipedia.org/wiki/GFA_BASIC>)
+- **MMBasic** (<https://mmbasic.com/>) (not open source, see <https://geoffg.net/OpenSource.html>)
+- or another one with no line numbers and structured programming (example?)
+
+#### Lua
+
+- **PT52-Lua** <https://gitlab.com/DarkElvenAngel/pt52-lua>
+
+#### Javascript
+
+- **Kaluma** <https://github.com/kaluma-project/kaluma>, which is
+- **JerryScript** <https://github.com/jerryscript-project/jerryscript> for the Pico
+
+#### Pascal\*\*
+
+- **UCSD Pascal / p-System** <https://en.wikipedia.org/wiki/UCSD_Pascal>
+- **PascalScript** <https://github.com/CHiPs44/pascalscript> (not even alpha!)
+
+#### C
+
+- see <https://github.com/knivd/C.impl-extended-C-interpreter-for-microcontrollers>
+
+### Java
+
+- **[TODO?]**
+
+#### Lisp\*\*
+
+- <http://www.ulisp.com/> and <https://github.com/technoblogy/ulisp-arm> (Arduino .ino, not C or C++)
+
+#### Forth
+
+- **[TODO?]**
 
 ### Compilers
 
-| Name                          | Notes                                                                                                           |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **FreeBASIC**                 | <https://github.com/freebasic>                                                                                  |
-| **Pascal**                    | Turbo Pascal 3 (or 5.5?) like, <https://en.wikipedia.org/wiki/Category:Pascal_(programming_language)_compilers> |
-| **C**                         | see <https://github.com/lurk101/pshell>, based on **AMACC²** <https://github.com/jserv/amacc>¹                   |
-| **SCC (simple c99 compiler)** | <http://git.simple-cc.org/scc/file/README.html>                                                                 |
-| **TCC (Tiny C Compiler)**     | <https://repo.or.cz/w/tinycc.git/>                                                                              |
+#### [TODO!] Amsterdam Compiler Kit
+
+- <https://en.wikipedia.org/wiki/Amsterdam_Compiler_Kit>
+  - C, Pascal, Modula-2, Occam, and BASIC
+  - MINIX related
+
+#### BASIC
+
+- **FreeBASIC**, <https://github.com/freebasic>
+
+#### Pascal
+
+- **Turbo Pascal 3 (or 5.5?) like**, <https://en.wikipedia.org/wiki/Category:Pascal_(programming_language)_compilers>
+
+#### C
+
+- **C** <https://github.com/lurk101/pshell>, based on **AMACC²** <https://github.com/jserv/amacc>¹
+- **SCC (simple c99 compiler)** <http://git.simple-cc.org/scc/file/README.html>
+- **TCC (Tiny C Compiler)** , <https://repo.or.cz/w/tinycc.git/>
 
 ¹ See <https://forums.raspberrypi.com/viewtopic.php?p=2036424&hilit=lurk101+pshell+amacc#p2036500>
-² Arguably Minimalist Arm C Compiler
+
+² AMACC stands for Arguably Minimalist Arm C Compiler
