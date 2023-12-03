@@ -60,6 +60,7 @@ These were originally text based, too, but had many graphical implementations:
 | **Sokoban**           | <https://en.wikipedia.org/wiki/Sokoban>                                                                 |
 | **Ghosts 'n Goblins** | Capcom, 1985, <https://en.wikipedia.org/wiki/Ghosts_%27n_Goblins>                                       |
 | **Sorcery**           | Virgin Games, 1984, (no english WP page) <https://fr.wikipedia.org/wiki/Sorcery_(jeu_vid%C3%A9o,_1984)> |
+| **Another World**     | Éric Chahi / Delphine Software, 1991, <https://en.wikipedia.org/wiki/Another_World_(video_game)>        |
 
 ### 8bit machines classics
 
@@ -153,10 +154,13 @@ I played numerous hours with these ones on my 1040STF, my STE and my MegaSTE:
 | **3D spinning cube**        | <https://rosettacode.org/wiki/Draw_a_rotating_cube>           |
 | **Amiga Boing Ball Demo**   | <https://amiga.lychesis.net/applications/AmigaBoingBall.html> |
 | **XScreenSaver**            | <https://en.wikipedia.org/wiki/XScreenSaver>                  |
+| **Matrix screensaver**      | <https://en.wikipedia.org/wiki/Matrix_digital_rain>¹          |
 | **Bad Apple!!**             | <https://en.wikipedia.org/wiki/Bad_Apple!!>                   |
 | **Nyan cat**                | <https://en.wikipedia.org/wiki/Nyan_Cat>                      |
 | **Old School demo effects** | <https://en.wikipedia.org/wiki/Demo_effect>                   |
 | **Pico effects**            | <https://github.com/tuupola/pico_effects>                     |
+
+¹ XScreenSaver includes MatrixGL
 
 ### Audio MOD player
 
@@ -173,25 +177,58 @@ I made some myself on my Atari and my PC, see <https://modarchive.org/index.php?
 
 - be it vi, nano or joe / Turbo Pascal (Wordstar) like
 - full screen
-- multiple files at once?
-- limit of 64KB?
+- multiple files (buffers) at once?
+- limit files to 64KB?
 
 ### Shell
 
-Like sh / dash / ash / bash / ..., POSIX like?
+Like `sh` / `dash` / `ash` / `bash` / ...
 
-Commands:
+- Would be simpler to implement if the console implemented ANSI / vt52 / vt100 compatibility
+- POSIX like? (even BusyBox <https://busybox.net/> seems to be too big)
+  - files masks / jokers?
+  - `|` pipes?
+  - `<`, `>` and `>>` redirections?
+  - scripts?
+  - history? (with file save)
+  - variables?
+  - environment variables?
+  - line editor capabilities ("à la readline#)?
+  - `<tab>` completion?
 
-- `help <command>`
-- `ls <path>`
-- `cat <file>`
-- `cd <path>`
-- `mkdir <dir>`
-- `more <file>`
-- `cp <src> <dst>`
-- `mv <src> <dst>`
-- `rmdir <dir>`
-- ...
+Integrated commands:
+
+| Command                                    | Description                                                                                       |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| `help` and `help <command>`                | General help and specific help for one command                                                    |
+| `ls [-l][-1] <path>` with `dir [/w]` alias | List files, with DOS alias                                                                        |
+| `cat <file>` with `type`alias              | Display file's content, with DOS alias                                                            |
+| `cd <path>`                                | Change directory                                                                                  |
+| `mkdir <dir>`                              | Make directory                                                                                    |
+| `more <file>` (or `less <file>`?)          | Display file's content paginated, with backwards ability with `less`                              |
+| `cp <src> <dst>`                           | Copy file                                                                                         |
+| `mv <src> <dst>` with `ren` alias          | Move / rename file, with DOS alias                                                                |
+| `rmdir <dir>`                              | Remove empty directory                                                                            |
+| `rm <file>`                                | Remove file                                                                                       |
+| `clear` with `cls` alias                   | Clears the screen                                                                                 |
+| `status`                                   | System information: RAM, system clock, mounted file systems, version and compilation options, ... |
+| `date` and `time`                          | Display or set date and time for the RP2040's RTC (and an optional battery backed up module)      |
+| ...                                        |                                                                                                   |
+
+Other commands from `pshell` <https://github.com/lurk101/pshell> (see below, too):
+
+- `cc` - compile C source file
+- `format` - format the filesystem
+- `mount` - mount filesystem
+- `quit` - shutdown system
+- `reboot` - Restart system
+- `status` - filesystem status
+- `unmount` - unmount filesystem
+- `vi` - editor
+- `xget` - get file (xmodem)
+- `xput` - put file (xmodem)
+
+Another way to implement a shell would be to extend the functionality of the REPL of an interpreted language like Lua, see below.
 
 ### Multimedia tools
 
@@ -199,12 +236,12 @@ Commands:
 | --------------------------- | -------------------------------- |
 | **SoundTracker**            | MOD editor                       |
 | **Bitmap editor**           | DEGAS Elite / Deluxe Paint style |
-| **Sprite / Tileset editor** | Look at Pico-8?                  |
+| **Sprite / Tileset editor** | Look at Pico-8 editors?          |
 | **Tilemap editor**          | Idem?                            |
 
 ## Development
 
-These are intended to be run on YAPC itself, making it the self contained machine intended.
+These are intended to be run on YAPC itself, making it the intended self contained machine.
 
 They all need an editor of some sort for source files and a similar way to edit command line.
 
@@ -222,17 +259,33 @@ They all need an editor of some sort for source files and a similar way to edit 
 
 #### Lua
 
+- References: <https://www.lua.org/> / <https://en.wikipedia.org/wiki/Lua_(programming_language)>
 - **PT52-Lua** <https://gitlab.com/DarkElvenAngel/pt52-lua>
+
+Notes:
+
+- Lua has variable arguments as `function myfunction(...)`, which should make a command interpreter easy within the REPL if we go this way:
+
+```lua
+dir
+dir "/w", "*.txt"
+```
+
+Another way would be to prefix commands with `!` or `|`:
+
+```text
+!ls -l *.txt
+```
 
 #### Javascript
 
 - **Kaluma** <https://github.com/kaluma-project/kaluma>, which is
 - **JerryScript** <https://github.com/jerryscript-project/jerryscript> for the Pico
 
-#### Pascal\*\*
+#### Pascal
 
-- **UCSD Pascal / p-System** <https://en.wikipedia.org/wiki/UCSD_Pascal>
-- **PascalScript** <https://github.com/CHiPs44/pascalscript> (not even alpha!)
+- **UCSD Pascal / p-System** <https://en.wikipedia.org/wiki/UCSD_Pascal>: OLD, uses a VM
+- **PascalScript** <https://github.com/CHiPs44/pascalscript>: not even alpha!
 
 #### C
 
@@ -274,4 +327,4 @@ They all need an editor of some sort for source files and a similar way to edit 
 
 ¹ See <https://forums.raspberrypi.com/viewtopic.php?p=2036424&hilit=lurk101+pshell+amacc#p2036500>
 
-² AMACC stands for Arguably Minimalist Arm C Compiler
+² AMACC stands for "Arguably Minimalist Arm C Compiler"
