@@ -149,16 +149,16 @@ I played numerous hours with these ones on my 1040STF, my STE and my MegaSTE:
 
 ### Demos
 
-| Name                        | URL                                                           |
-| --------------------------- | ------------------------------------------------------------- |
-| **3D spinning cube**        | <https://rosettacode.org/wiki/Draw_a_rotating_cube>           |
-| **Amiga Boing Ball Demo**   | <https://amiga.lychesis.net/applications/AmigaBoingBall.html> |
-| **XScreenSaver**            | <https://en.wikipedia.org/wiki/XScreenSaver>                  |
-| **Matrix screensaver**      | <https://en.wikipedia.org/wiki/Matrix_digital_rain>¹          |
-| **Bad Apple!!**             | <https://en.wikipedia.org/wiki/Bad_Apple!!>                   |
-| **Nyan cat**                | <https://en.wikipedia.org/wiki/Nyan_Cat>                      |
-| **Old School demo effects** | <https://en.wikipedia.org/wiki/Demo_effect>                   |
-| **Pico effects**            | <https://github.com/tuupola/pico_effects>                     |
+| Name                        | Year | Author  | URL                                                           |
+| --------------------------- | ---- | ------- | ------------------------------------------------------------- |
+| **3D spinning cube**        |      |         | <https://rosettacode.org/wiki/Draw_a_rotating_cube>           |
+| **Amiga Boing Ball Demo**   |      |         | <https://amiga.lychesis.net/applications/AmigaBoingBall.html> |
+| **XScreenSaver**            |      |         | <https://en.wikipedia.org/wiki/XScreenSaver>                  |
+| **Matrix screensaver**      |      |         | <https://en.wikipedia.org/wiki/Matrix_digital_rain>¹          |
+| **Bad Apple!!**             |      |         | <https://en.wikipedia.org/wiki/Bad_Apple!!>                   |
+| **Nyan cat**                |      |         | <https://en.wikipedia.org/wiki/Nyan_Cat>                      |
+| **Old School demo effects** |      |         | <https://en.wikipedia.org/wiki/Demo_effect>                   |
+| **Pico effects**            | 2021 | Tuupola | <https://github.com/tuupola/pico_effects>                     |
 
 ¹ XScreenSaver includes MatrixGL
 
@@ -246,6 +246,16 @@ These are intended to be run on YAPC itself, making it the intended self contain
 They all need an editor of some sort for source files and a similar way to edit command line.
 
 ### Interpreters
+
+#### Python
+
+Micropython <https://micropython.org/download/RPI_PICO/> is the default language for Pico programming.
+
+It already has a REPL that could be extended to use a physical console instead of UART and extensions to handle VGA, sound, keyboard and other stuff.
+
+Main license is MIT, with additional ones for some directories & files, see <https://github.com/micropython/micropython/blob/master/LICENSE>.
+
+Adafruit maintains Micropython's fork CircuitPython.
 
 #### BASIC
 
