@@ -1,3 +1,5 @@
+# YAPC - Inspirations
+
 ```text
 _   __   _   
 \ \ / /__| |_ 
@@ -21,9 +23,7 @@ _   __   _
 
 (from <http://www.network-science.de/ascii/>, "small" font)
 
-# YAPC - Inspirations
-
-From the release of the Raspbery Pi Pico in January 2021 till now (august 2023), there is a bubbling of projects around VGA output, surrounded by a more ancient wave of other retro computers using other micro-controllers and 8 or 16 bits CPUs, mainly because old 8 bits computers are either too old or too expensive compared to what Arduino, ESP32 & al. cost and are able to achieve.
+From the release of the Raspbery Pi Pico in January 2021 till now (december 2023), there are many projects around VGA and DVI/HDMI screen output, surrounded by a more ancient wave of other retro computers using other micro-controllers and/or 8 or 16 bits CPUs, mainly because old 8 bits computers are either too old or too expensive compared to what Arduino, ESP32 & al. cost and are able to achieve.
 
 Here's now a list of projects that are related to this:
 
@@ -31,7 +31,7 @@ Here's now a list of projects that are related to this:
 
 ### __VGA scanvideo__ from `pico-extras` by the __Raspberry Pi Foundation__
 
-- The base for all of this!
+- For me, this is the base for all of this!
 - <https://github.com/raspberrypi/pico-extras/tree/master/src/common/pico_scanvideo>
 
 ### __VGA demo board__ by __Pimoroni__
@@ -106,6 +106,8 @@ Here's now a list of projects that are related to this:
 - 8 Mhz 65C02 as CPU + 2 supporting Picos for VGA and I/O
 - Interesting concept of the PIX to handle communication between the Picos via PIO
 - Back to an publicly open source project after a blackout period of time
+- Great features on "GPU" side: 3 layers (bitmap, tilemap, text) with scrolling and "affine" sprites
+- WIP
 
 ### __PicoMiteVGA__ & __WebMite__ by __Geoff & others__
 
@@ -135,15 +137,17 @@ Here's now a list of projects that are related to this:
 
 ### __FabGL__ by __Fabrizio Di Vittorio__
 
-- C++ graphics library for ESP32 with VGA output supporting PS/2 keyboard and mouse
+- C++ graphics library for ESP32 with 64 colors VGA output supporting PS/2 keyboard and mouse
 - <http://www.fabglib.org/>
 
 ### __LVGL__ by __the LVGL team__
 
-- Light a Versatile Graphic Library
+- Light and Versatile Graphic Library
 - <https://lvgl.io/>
 - License: MIT
 - Language: C99 (C++ compatible)
+- Very complete / complex
+- Ported to Pico / RP2040 with LCD SPI/I²C screens in mind
 
 ### __Pico-8__ and __TIC-80__ fantasy consoles
 

@@ -74,12 +74,14 @@ These were originally text based, too, but had many graphical implementations:
 
 ### 8bit Guy's games
 
-These are not completely open sourced, Planet X3 Open Source Edition is GPL'd, but without assets, and is really tied to the MS-DOS platform.
+These are not completely open sourced, Planet X3 Open Source Edition is GPL'd, but without assets, and are really tied to the MS-DOS and x86 platform.
 
 | Game                             | URL                                                                                  |
 | -------------------------------- | ------------------------------------------------------------------------------------ |
 | **Planet X3**                    | <https://github.com/planet-x3/px3_ose> +                                             |
 | **Attack of the PETSCII robots** | <https://github.com/search?q=Attack%20of%20the%20PETSCII%20robots&type=repositories> |
+
+December 2023: **Planet X16** is released, see <https://www.the8bitguy.com/35663/planet-x16-is-here/>!
 
 ### 16 bits machines classics
 
@@ -109,7 +111,7 @@ Others games I recall playing on the CPC:
 | **The Way of the Exploding Fist**¹ | 1985 | Beam Software     | <https://en.wikipedia.org/wiki/The_Way_of_the_Exploding_Fist> |
 | **Wizball**²                       | 1987 | Sensible Software | <https://en.wikipedia.org/wiki/Wizball>                       |
 
-¹ This is the first and only I transfered from cassette to diskette with instructions from Hebdogiciel mag!
+¹ This is the first and only one I transfered from cassette to diskette with instructions from Hebdogiciel mag!
 
 ² Even if I recall it was way too hard for me ;-)
 
@@ -124,7 +126,7 @@ I played numerous hours with these ones on my 1040STF, my STE and my MegaSTE:
 | **Hero Quest**     | 1991 | Gremlin Interactive  | <https://en.wikipedia.org/wiki/HeroQuest_(video_game)>      |
 | **Space Crusade**  | 1992 | Gremlin Interactive  | <https://en.wikipedia.org/wiki/Space_Crusade_(video_game)>  |
 
-### PC classics
+### PC/DOS classics
 
 | Game                | Year | Author/Editor  | URL                                                               |
 | ------------------- | ---- | -------------- | ----------------------------------------------------------------- |
