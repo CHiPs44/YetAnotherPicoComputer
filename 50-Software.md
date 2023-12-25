@@ -23,29 +23,54 @@ These were originally text based:
 
 These were originally text based, too, but had many graphical implementations:
 
-| Game       | Year | Author/Editor   | URL                                                      |
-| ---------- | ---- | --------------- | -------------------------------------------------------- |
-| **Snake**  | 1976 | (Blockade)      | <https://en.wikipedia.org/wiki/Snake_(video_game_genre)> |
-| **Tetris** | 1985 | Alexey Pajitnov | <https://en.wikipedia.org/wiki/Tetris>                   |
+| Game             | Year | Author/Editor   | URL                                                             |
+| ---------------- | ---- | --------------- | --------------------------------------------------------------- |
+| **Snake**        | 1976 | (Blockade)      | <https://en.wikipedia.org/wiki/Snake_(video_game_genre)>        |
+| **Lunar Lander** | 1979 | (Genre)         | <https://en.wikipedia.org/wiki/Lunar_Lander_(video_game_genre)> |
+| **Tetris**       | 1985 | Alexey Pajitnov | <https://en.wikipedia.org/wiki/Tetris>                          |
 
-### Arcade classics with fixed screen
+### Arcade classics
 
-| Game                | Year | Author/Editor | URL                                             |
-| ------------------- | ---- | ------------- | ----------------------------------------------- |
-| **Space invaders**  | 1978 | Taito         | <https://en.wikipedia.org/wiki/Space_Invaders>  |
-| **Galaxian**        | 1979 | Namco         | <https://en.wikipedia.org/wiki/Galaxian>        |
-| **Missile Command** | 1980 | Atari         | <https://en.wikipedia.org/wiki/Missile_Command> |
-| **Pac Man**         | 1980 | Namco         | <https://en.wikipedia.org/wiki/Pac-Man>         |
-| **Galaga**          | 1981 | Namco         | <https://en.wikipedia.org/wiki/Galaga>          |
-| **Dig Dug**         | 1982 | Namco         | <https://en.wikipedia.org/wiki/Dig_Dug>         |
+See <https://en.wikipedia.org/wiki/Golden_age_of_arcade_video_games> since most of theses are cited.
 
-### Arcade classics with scrolling
+#### Fixed screen
 
-| Game         | Year | Author/Editor        | URL                                                        |
-| ------------ | ---- | -------------------- | ---------------------------------------------------------- |
-| **Defender** | 1981 | Williams Electronics | <https://en.wikipedia.org/wiki/Defender_(1981_video_game)> |
-| **Zaxxon**   | 1982 | Sega                 | <https://en.wikipedia.org/wiki/Zaxxon>                     |
-| **Gauntlet** | 1985 | Atari Games          | <https://en.wikipedia.org/wiki/Gauntlet_(1985_video_game)> |
+| Game                | Year | Author/Editor     | URL                                                       |
+| ------------------- | ---- | ----------------- | --------------------------------------------------------- |
+| **Pong**            | 1972 | Atari             | <https://en.wikipedia.org/wiki/Pong>                      |
+| **Breakout**        | 1976 | Atari             | <https://en.wikipedia.org/wiki/Breakout_(video_game)>     |
+| **Space invaders**  | 1978 | Taito             | <https://en.wikipedia.org/wiki/Space_Invaders>            |
+| **Galaxian**        | 1979 | Namco             | <https://en.wikipedia.org/wiki/Galaxian>                  |
+| **Missile Command** | 1980 | Atari             | <https://en.wikipedia.org/wiki/Missile_Command>           |
+| **Pac Man**         | 1980 | Namco             | <https://en.wikipedia.org/wiki/Pac-Man>                   |
+| **Berzerk**         | 1980 | Stern Electronics | <https://en.wikipedia.org/wiki/Berzerk_(video_game)>      |
+| **Donkey Kong**     | 1981 | Nintendo          | <https://en.wikipedia.org/wiki/Donkey_Kong_(arcade_game)> |
+| **Centipede**       | 1981 | Atari             | <https://en.wikipedia.org/wiki/Centipede_(video_game)>    |
+| **Frogger**         | 1981 | Konami            | <https://en.wikipedia.org/wiki/Frogger>                   |
+| **Qix**             | 1981 | Taito America     | <https://en.wikipedia.org/wiki/Qix>                       |
+| **Galaga**          | 1981 | Namco             | <https://en.wikipedia.org/wiki/Galaga>                    |
+| **Dig Dug**         | 1982 | Namco             | <https://en.wikipedia.org/wiki/Dig_Dug>                   |
+| **Q\*bert**         | 1982 | Gottlieb          | <https://en.wikipedia.org/wiki/Q*bert>                    |
+
+#### Vector graphics
+
+| Game           | Year | Author/Editor | URL                                                          |
+| -------------- | ---- | ------------- | ------------------------------------------------------------ |
+| **Asteroids**  | 1979 | Atari         | <https://en.wikipedia.org/wiki/Asteroids_(video_game)>       |
+| **Battlezone** | 1980 | Atari         | <https://en.wikipedia.org/wiki/Battlezone_(1980_video_game)> |
+| **Tempest**    | 1981 | Atari         | <https://en.wikipedia.org/wiki/Tempest_(video_game)>         |
+| **Star Wars**  | 1983 | Atari         | <https://en.wikipedia.org/wiki/Star_Wars_(1983_video_game)>  |
+
+#### Scrolling
+
+| Game            | Year | Author/Editor        | URL                                                        |
+| --------------- | ---- | -------------------- | ---------------------------------------------------------- |
+| **Defender**    | 1981 | Williams Electronics | <https://en.wikipedia.org/wiki/Defender_(1981_video_game)> |
+| **Scramble**    | 1981 | Konami               | <https://en.wikipedia.org/wiki/Scramble_(video_game)>      |
+| **Moon Patrol** | 1982 | Irem                 | <https://en.wikipedia.org/wiki/Moon_Patrol>                |
+| **Zaxxon**      | 1982 | Sega                 | <https://en.wikipedia.org/wiki/Zaxxon>                     |
+| **Gauntlet**    | 1985 | Atari Games          | <https://en.wikipedia.org/wiki/Gauntlet_(1985_video_game)> |
+| **Out Run**     | 1986 | Sega                 | <https://en.wikipedia.org/wiki/Out_Run>                    |
 
 ### To be sorted
 
@@ -74,7 +99,7 @@ These were originally text based, too, but had many graphical implementations:
 
 ### 8bit Guy's games
 
-These are not completely open sourced, Planet X3 Open Source Edition is GPL'd, but without assets, and are really tied to the MS-DOS and x86 platform.
+These are not completely open sourced, Planet X3 Open Source Edition is GPL'd, but without assets, and theses sources are really tied to the MS-DOS and x86 platform.
 
 | Game                             | URL                                                                                  |
 | -------------------------------- | ------------------------------------------------------------------------------------ |
@@ -82,12 +107,6 @@ These are not completely open sourced, Planet X3 Open Source Edition is GPL'd, b
 | **Attack of the PETSCII robots** | <https://github.com/search?q=Attack%20of%20the%20PETSCII%20robots&type=repositories> |
 
 December 2023: **Planet X16** is released, see <https://www.the8bitguy.com/35663/planet-x16-is-here/>!
-
-### 16 bits machines classics
-
-| Game         | Year | Author/Editor     | URL                                                   |
-| ------------ | ---- | ----------------- | ----------------------------------------------------- |
-| **Lemmings** | 1991 | DMA Design, Amiga | <https://en.wikipedia.org/wiki/Lemmings_(video_game)> |
 
 ### Amstrad CPC classics
 
@@ -114,6 +133,12 @@ Others games I recall playing on the CPC:
 ¹ This is the first and only one I transfered from cassette to diskette with instructions from Hebdogiciel mag!
 
 ² Even if I recall it was way too hard for me ;-)
+
+### 16 bits machines classics
+
+| Game         | Year | Author/Editor     | URL                                                   |
+| ------------ | ---- | ----------------- | ----------------------------------------------------- |
+| **Lemmings** | 1991 | DMA Design, Amiga | <https://en.wikipedia.org/wiki/Lemmings_(video_game)> |
 
 ### Atari ST classics
 
