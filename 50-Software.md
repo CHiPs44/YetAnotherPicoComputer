@@ -27,7 +27,9 @@ These were originally text based, too, but had many graphical implementations:
 | ---------------- | ---- | --------------- | --------------------------------------------------------------- |
 | **Snake**        | 1976 | (Blockade)      | <https://en.wikipedia.org/wiki/Snake_(video_game_genre)>        |
 | **Lunar Lander** | 1979 | (Genre)         | <https://en.wikipedia.org/wiki/Lunar_Lander_(video_game_genre)> |
-| **Tetris**       | 1985 | Alexey Pajitnov | <https://en.wikipedia.org/wiki/Tetris>                          |
+| **Tetris¹**      | 1985 | Alexey Pajitnov | <https://en.wikipedia.org/wiki/Tetris>                          |
+
+¹ I played a Turbo Pascal compiled version on PC compatibles in 1988 or 1989.
 
 ### Arcade classics
 
@@ -35,22 +37,22 @@ See <https://en.wikipedia.org/wiki/Golden_age_of_arcade_video_games> since most 
 
 #### Fixed screen
 
-| Game                | Year | Author/Editor     | URL                                                       |
-| ------------------- | ---- | ----------------- | --------------------------------------------------------- |
-| **Pong**            | 1972 | Atari             | <https://en.wikipedia.org/wiki/Pong>                      |
-| **Breakout**        | 1976 | Atari             | <https://en.wikipedia.org/wiki/Breakout_(video_game)>     |
-| **Space invaders**  | 1978 | Taito             | <https://en.wikipedia.org/wiki/Space_Invaders>            |
-| **Galaxian**        | 1979 | Namco             | <https://en.wikipedia.org/wiki/Galaxian>                  |
-| **Missile Command** | 1980 | Atari             | <https://en.wikipedia.org/wiki/Missile_Command>           |
-| **Pac Man**         | 1980 | Namco             | <https://en.wikipedia.org/wiki/Pac-Man>                   |
-| **Berzerk**         | 1980 | Stern Electronics | <https://en.wikipedia.org/wiki/Berzerk_(video_game)>      |
-| **Donkey Kong**     | 1981 | Nintendo          | <https://en.wikipedia.org/wiki/Donkey_Kong_(arcade_game)> |
-| **Centipede**       | 1981 | Atari             | <https://en.wikipedia.org/wiki/Centipede_(video_game)>    |
-| **Frogger**         | 1981 | Konami            | <https://en.wikipedia.org/wiki/Frogger>                   |
-| **Qix**             | 1981 | Taito America     | <https://en.wikipedia.org/wiki/Qix>                       |
-| **Galaga**          | 1981 | Namco             | <https://en.wikipedia.org/wiki/Galaga>                    |
-| **Dig Dug**         | 1982 | Namco             | <https://en.wikipedia.org/wiki/Dig_Dug>                   |
-| **Q\*bert**         | 1982 | Gottlieb          | <https://en.wikipedia.org/wiki/Q*bert>                    |
+| Game                | Year | Author/Editor     | URL                                                       | Display |
+| ------------------- | ---- | ----------------- | --------------------------------------------------------- | ------- |
+| **Pong**            | 1972 | Atari             | <https://en.wikipedia.org/wiki/Pong>                      | N/A?    |
+| **Breakout**        | 1976 | Atari             | <https://en.wikipedia.org/wiki/Breakout_(video_game)>     | N/A?    |
+| **Space invaders**  | 1978 | Taito             | <https://en.wikipedia.org/wiki/Space_Invaders>            | 224×256 |
+| **Galaxian**        | 1979 | Namco             | <https://en.wikipedia.org/wiki/Galaxian>                  | 224×256 |
+| **Missile Command** | 1980 | Atari             | <https://en.wikipedia.org/wiki/Missile_Command>           | 256x231 |
+| **Pac Man**         | 1980 | Namco             | <https://en.wikipedia.org/wiki/Pac-Man>                   | 288x224 |
+| **Berzerk**         | 1980 | Stern Electronics | <https://en.wikipedia.org/wiki/Berzerk_(video_game)>      | 256x224 |
+| **Donkey Kong**     | 1981 | Nintendo          | <https://en.wikipedia.org/wiki/Donkey_Kong_(arcade_game)> | 256x224 |
+| **Centipede**       | 1981 | Atari             | <https://en.wikipedia.org/wiki/Centipede_(video_game)>    | 256x240 |
+| **Frogger**         | 1981 | Konami            | <https://en.wikipedia.org/wiki/Frogger>                   | 224x256 |
+| **Qix**             | 1981 | Taito America     | <https://en.wikipedia.org/wiki/Qix>                       | 256x256 |
+| **Galaga**          | 1981 | Namco             | <https://en.wikipedia.org/wiki/Galaga>                    | 288x224 |
+| **Dig Dug**         | 1982 | Namco             | <https://en.wikipedia.org/wiki/Dig_Dug>                   | 224x288 |
+| **Q\*bert**         | 1982 | Gottlieb          | <https://en.wikipedia.org/wiki/Q*bert>                    | 256x240 |
 
 #### Vector graphics
 
@@ -63,14 +65,14 @@ See <https://en.wikipedia.org/wiki/Golden_age_of_arcade_video_games> since most 
 
 #### Scrolling
 
-| Game            | Year | Author/Editor        | URL                                                        |
-| --------------- | ---- | -------------------- | ---------------------------------------------------------- |
-| **Defender**    | 1981 | Williams Electronics | <https://en.wikipedia.org/wiki/Defender_(1981_video_game)> |
-| **Scramble**    | 1981 | Konami               | <https://en.wikipedia.org/wiki/Scramble_(video_game)>      |
-| **Moon Patrol** | 1982 | Irem                 | <https://en.wikipedia.org/wiki/Moon_Patrol>                |
-| **Zaxxon**      | 1982 | Sega                 | <https://en.wikipedia.org/wiki/Zaxxon>                     |
-| **Gauntlet**    | 1985 | Atari Games          | <https://en.wikipedia.org/wiki/Gauntlet_(1985_video_game)> |
-| **Out Run**     | 1986 | Sega                 | <https://en.wikipedia.org/wiki/Out_Run>                    |
+| Game            | Year | Author/Editor        | URL                                                        | Display      |
+| --------------- | ---- | -------------------- | ---------------------------------------------------------- | ------------ |
+| **Defender**    | 1981 | Williams Electronics | <https://en.wikipedia.org/wiki/Defender_(1981_video_game)> | 292x240 (16) |
+| **Scramble**    | 1981 | Konami               | <https://en.wikipedia.org/wiki/Scramble_(video_game)>      | 224x256      |
+| **Moon Patrol** | 1982 | Irem                 | <https://en.wikipedia.org/wiki/Moon_Patrol>                | 240x252      |
+| **Zaxxon**      | 1982 | Sega                 | <https://en.wikipedia.org/wiki/Zaxxon>                     | 256x224      |
+| **Gauntlet**    | 1985 | Atari Games          | <https://en.wikipedia.org/wiki/Gauntlet_(1985_video_game)> | 336x240      |
+| **Out Run**     | 1986 | Sega                 | <https://en.wikipedia.org/wiki/Out_Run>                    | 320×224      |
 
 ### To be sorted
 
@@ -130,9 +132,8 @@ Others games I recall playing on the CPC:
 | **The Way of the Exploding Fist**¹ | 1985 | Beam Software     | <https://en.wikipedia.org/wiki/The_Way_of_the_Exploding_Fist> |
 | **Wizball**²                       | 1987 | Sensible Software | <https://en.wikipedia.org/wiki/Wizball>                       |
 
-¹ This is the first and only one I transfered from cassette to diskette with instructions from Hebdogiciel mag!
-
-² Even if I recall it was way too hard for me ;-)
+- ¹ This is the first and only one I transfered from cassette to diskette with instructions from Hebdogiciel mag!
+- ² Even if I recall it was way too hard for me ;-)
 
 ### 16 bits machines classics
 
