@@ -88,6 +88,18 @@ See <https://en.wikipedia.org/wiki/Golden_age_of_arcade_video_games> since most 
 | **Ghosts 'n Goblins** | Capcom, 1985, <https://en.wikipedia.org/wiki/Ghosts_%27n_Goblins>                                       |
 | **Sorcery**           | Virgin Games, 1984, (no english WP page) <https://fr.wikipedia.org/wiki/Sorcery_(jeu_vid%C3%A9o,_1984)> |
 | **Another World**     | Éric Chahi / Delphine Software, 1991, <https://en.wikipedia.org/wiki/Another_World_(video_game)>        |
+| **Bubble Bobble**     | Taito, 1986, <https://en.wikipedia.org/wiki/Bubble_Bobble>                                              |
+
+### RPGs
+
+All these series debuted on the Apple II and were ported to most platforms over the years.
+
+| Game                | Year      | Editor   | Machine           | URL                                               |
+| ------------------- | --------- | -------- | ----------------- | ------------------------------------------------- |
+| **Ultima**          | 1981-1999 | Several  | Apple II & others | <https://en.wikipedia.org/wiki/Ultima_(series)>   |
+| **Wizardry**        | 1981-2023 | Sir-Tech | Apple II & others | <https://en.wikipedia.org/wiki/Wizardry>          |
+| **The Bard's Tale** | 1985-2022 | Several  | Apple II & others | <https://en.wikipedia.org/wiki/The_Bard%27s_Tale> |
+| **Might and Magic** | 1986-2014 | Several  | Apple II & others | <https://en.wikipedia.org/wiki/Might_and_Magic>   |
 
 ### 8bit machines classics
 

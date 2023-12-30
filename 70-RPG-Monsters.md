@@ -7,6 +7,7 @@
 - Bear
 - Boar
 - Dog
+- Eagle
 - Wolf
 
 ### "Hot" Outdoors / Jungle
