@@ -159,6 +159,12 @@ Here's now a list of projects that are related to this:
 - Prototype as of August 2023
 - Apple //e, ][+ & Oric Atmos emulator: <https://github.com/vsladkov/reload-emulator>
 
+### __PicoVision__ by __Pimoroni__
+
+- Dual RP2040 (Pico W + RP2040 on board), DVI (HDMI), 2x8MB PSRAM (!)
+- Shop: <https://shop.pimoroni.com/products/picovision?variant=41048911904851>
+- Code: <https://github.com/pimoroni/picovision>, MIT license
+
 ### __pico-vdp__ by Patrick Alastair
 
 - <https://github.com/alastairpatrick/pico-vdp>
