@@ -157,6 +157,7 @@ Here's now a list of projects that are related to this:
 - <https://github.com/OLIMEX/Neo6502>
 - Olimex sells it as Open Source Hardware, cf. <https://www.olimex.com/Products/Retro-Computers/Neo6502/open-source-hardware>  
 - Prototype as of August 2023
+- Apple //e, ][+ & Oric Atmos emulator: <https://github.com/vsladkov/reload-emulator>
 
 ### __pico-vdp__ by Patrick Alastair
 
