@@ -161,8 +161,11 @@ I played numerous hours with these ones on my 1040STF, my STE and my MegaSTE:
 | ------------------ | ---- | -------------------- | ----------------------------------------------------------- |
 | **Dungeon Master** | 1987 | FTL Games            | <https://en.wikipedia.org/wiki/Dungeon_Master_(video_game)> |
 | **Populous**       | 1989 | Bullfrog productions | <https://en.wikipedia.org/wiki/Populous_(video_game)>       |
+| **Rick Dangerous** | 1989 | Firebird Software    | <https://en.wikipedia.org/wiki/Rick_Dangerous>¹             |
 | **Hero Quest**     | 1991 | Gremlin Interactive  | <https://en.wikipedia.org/wiki/HeroQuest_(video_game)>      |
 | **Space Crusade**  | 1992 | Gremlin Interactive  | <https://en.wikipedia.org/wiki/Space_Crusade_(video_game)>  |
+
+- ¹ First version on the Amiga?
 
 ### PC/DOS classics
 
@@ -196,11 +199,12 @@ I played numerous hours with these ones on my 1040STF, my STE and my MegaSTE:
 | **XScreenSaver**            |      |         | <https://en.wikipedia.org/wiki/XScreenSaver>                  |
 | **Matrix screensaver**      |      |         | <https://en.wikipedia.org/wiki/Matrix_digital_rain>¹          |
 | **Bad Apple!!**             |      |         | <https://en.wikipedia.org/wiki/Bad_Apple!!>                   |
-| **Nyan cat**                |      |         | <https://en.wikipedia.org/wiki/Nyan_Cat>                      |
+| **Nyan cat**                |      |         | <https://en.wikipedia.org/wiki/Nyan_Cat>²                     |
 | **Old School demo effects** |      |         | <https://en.wikipedia.org/wiki/Demo_effect>                   |
 | **Pico effects**            | 2021 | Tuupola | <https://github.com/tuupola/pico_effects>                     |
 
 ¹ XScreenSaver includes MatrixGL
+² cf. <https://github.com/visrealm/pico-56/tree/main/episodes/ep01-vga/ep01-vga-05-nyancat>
 
 ### Audio MOD player
 

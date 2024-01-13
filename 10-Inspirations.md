@@ -133,6 +133,26 @@ Here's now a list of projects that are related to this:
 - Interesting for high speed communication between nodes using PIO
 - I can't say I understand all the concepts around this ;-)
 
+### __
+
+- "The HBC-56 (65C02/TMS9918A/AY-3-8910 retro computer) fully emulated on a Raspberry Pi Pico"
+- cf. <https://github.com/visrealm/pico-56/>
+- 12 bits VGA with homemade PIO (not scanvideo based)
+
+### __Neo6502__ by __OLIMEX__
+
+- 65C02 with RP2040 managing RAM and clock, HDMI output, USB keyboard
+- <https://github.com/OLIMEX/Neo6502>
+- Olimex sells it as Open Source Hardware, cf. <https://www.olimex.com/Products/Retro-Computers/Neo6502/open-source-hardware>  
+- Prototype as of August 2023
+
+### __pico-vdp__ by Patrick Alastair
+
+- <https://github.com/alastairpatrick/pico-vdp>
+- Raspberry Pi Pico based Video Display Processor RC2014 Board with video and audio output, keyboard and mouse input
+- Seems to be stalled in the "sprite" branch since 2022
+- C, GPL 3.0
+
 ## Non pico stuff
 
 ### __FabGL__ by __Fabrizio Di Vittorio__
@@ -169,24 +189,9 @@ Here's now a list of projects that are related to this:
 - Olimex sells it as Open Source Hardware, cf. <https://www.olimex.com/Products/Retro-Computers/AgonLight2/open-source-hardware>
 - Runs BBC Basic
 
-### __Neo6502__ by __OLIMEX__
-
-- 65C02 with RP2040 managing RAM and clock, HDMI output, USB keyboard
-- <https://github.com/OLIMEX/Neo6502>
-- Olimex sells it as Open Source Hardware, cf. <https://www.olimex.com/Products/Retro-Computers/Neo6502/open-source-hardware>  
-- Prototype as of August 2023
-
 ### __RC2014__ ecosystem
 
 - Z80 based modular system
 - <https://rc2014.co.uk/>
 - Runs either homebrew, Microsoft BASIC, CP/M or MSX software
 - Can use a Pico VGA terminal, cf. <https://rc2014.co.uk/modules/pi-pico-vga-terminal/>
-
-
-### __pico-vdp__ by Patrick Alastair
-
-- <https://github.com/alastairpatrick/pico-vdp>
-- Video Display Processor RC2014 Board with video and audio output, keyboard and mouse input
-- Seems to be stalled in the "sprite" branch since 2022
-- C, GPL 3.0
