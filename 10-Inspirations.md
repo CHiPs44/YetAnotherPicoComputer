@@ -107,7 +107,15 @@ Here's now a list of projects that are related to this:
 - Interesting concept of the PIX to handle communication between the Picos via PIO
 - Back to an publicly open source project after a blackout period of time
 - Great features on "GPU" side: 3 layers (bitmap, tilemap, text) with scrolling and "affine" sprites
-- WIP
+- 8 channels PSG with waveforms and ADSR parameters (january 2024)
+
+### __RP2040-PICO-PC__ by __Olimex__
+
+- <https://www.olimex.com/Products/MicroPython/RP2040-PICO-PC/open-source-hardware>
+- "Motherboard" is only 12€ (without Pico or Pico W)!
+- "RP2040-PICO-PC allows RP2040-PICO to become a computer with SD card, HDMI display, Audio, USB keyboard, Li-Po charger and battery support, UEXT connector, and I2C connector."
+- DVI/HDMI instead of VGA
+- GPL v3 license
 
 ### __PicoMiteVGA__ & __WebMite__ by __Geoff & others__
 
@@ -133,11 +141,15 @@ Here's now a list of projects that are related to this:
 - Interesting for high speed communication between nodes using PIO
 - I can't say I understand all the concepts around this ;-)
 
-### __
+### __Pico-56__ by __Troy Schrapel__
 
 - "The HBC-56 (65C02/TMS9918A/AY-3-8910 retro computer) fully emulated on a Raspberry Pi Pico"
-- cf. <https://github.com/visrealm/pico-56/>
 - 12 bits VGA with homemade PIO (not scanvideo based)
+- PS/2 keyboard, 2 NES ports,
+- 65C02 CPU, 65C22 VIA, TMS9918A VDP, Dual AY-3-8910 PSGs, Dual NES controller inputs, PS/2 keyboard input, 96KB Banked RAM/ROM
+- cf. <https://github.com/visrealm/pico-56/>
+- MIT license
+- can be repurposed to be whatever computer, see "episodes" for examples
 
 ### __Neo6502__ by __OLIMEX__
 
