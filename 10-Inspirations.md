@@ -164,6 +164,7 @@ Here's now a list of projects that are related to this:
 - Dual RP2040 (Pico W + RP2040 on board), DVI (HDMI), 2x8MB PSRAM (!)
 - Shop: <https://shop.pimoroni.com/products/picovision?variant=41048911904851>
 - Code: <https://github.com/pimoroni/picovision>, MIT license
+- Pico-W soldered, no real way to
 
 ### __pico-vdp__ by Patrick Alastair
 

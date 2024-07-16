@@ -42,10 +42,22 @@
   - Could be implemented as a text layer above graphical screen
 
 - Should handle text as
-  - 7bits US-ASCII: realistic for retro-computing, but limiting, especially for european people and a no-go for many others
-  - 8bits: MS-DOS code page 437, 850, Windows 1252, ISO-8859-15, a good old nightmare strikes back!
-  - 16bits UTF-16 (BE or LE?): seems to be a good compromise (should we read and write text files as UTF-8?)
-  - 32bits UTF-32 (BE or LE?): appears be a waste of our little memory
+  - 7bits US-ASCII:
+    - realistic for retro-computing, but limiting, especially for european people and a no-go for many others
+  - 8bits:
+    - Unicode C0 (ASCII) & C1 (Latin 1)
+      - should fit most western european people, especially french like me!
+      - No “€” or “¢” as they didn't exist in the eighties
+      - <https://en.wikipedia.org/wiki/Basic_Latin_(Unicode_block)#Chart>
+      - <https://en.wikipedia.org/wiki/Latin-1_Supplement#Compact_table>
+    - MS-DOS code page 437, 850, Windows 1252, ISO-8859-15
+      - a good old nightmare strikes back!
+      - <https://en.wikipedia.org/wiki/Code_page_437> for US Latin
+      - <https://en.wikipedia.org/wiki/Code_page_850> for Western Europe Latin 1
+      - <https://en.wikipedia.org/wiki/Windows-1252> for Americas, Western Europe, Oceania, and much of Africa
+      - <https://en.wikipedia.org/wiki/ISO/IEC_8859-15> for Latin Alphabet No. 9
+  - 16bits UTF-16 (BE or LE?): could be a good compromise (should we read and write text files as UTF-8?)
+  - 32bits UTF-32 (BE or LE?): appears be a complete waste of our little memory
 
 - Should support several keyboard layouts “out of the box”
   - US, FR at least, compile time option
