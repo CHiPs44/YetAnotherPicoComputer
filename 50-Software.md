@@ -109,18 +109,18 @@ All these series debuted on the Apple II and were ported to most platforms over 
 | **Boulder Dash**¹    | 1984 | First Star Software | Atari 8-bit | <https://en.wikipedia.org/wiki/Boulder_Dash_(video_game)>          |
 | **Prince of Persia** | 1989 | Broderbund          | Apple II    | <https://en.wikipedia.org/wiki/Prince_of_Persia_(1989_video_game)> |
 
-¹ I really thought **Boulder Dash** was originally released for the C64
+¹ I really thought **Boulder Dash** was originally released for the C64!
 
 ### 8bit Guy's games
 
-These are not completely open sourced, Planet X3 Open Source Edition is GPL'd, but without assets, and theses sources are really tied to the MS-DOS and x86 platform.
+NB: these are not completely open sourced, Planet X3 Open Source Edition is GPL'd, but without assets, and theses sources are really tied to the MS-DOS and x86 platform.
 
 | Game                             | URL                                                                                  |
 | -------------------------------- | ------------------------------------------------------------------------------------ |
 | **Planet X3**                    | <https://github.com/planet-x3/px3_ose> +                                             |
 | **Attack of the PETSCII robots** | <https://github.com/search?q=Attack%20of%20the%20PETSCII%20robots&type=repositories> |
 
-December 2023: **Planet X16** is released, see <https://www.the8bitguy.com/35663/planet-x16-is-here/>!
+December 2023: **Planet X16** was released, see <https://www.the8bitguy.com/35663/planet-x16-is-here/>!
 
 ### Amstrad CPC classics
 
