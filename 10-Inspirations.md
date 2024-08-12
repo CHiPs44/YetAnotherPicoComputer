@@ -38,10 +38,11 @@ Here's now a list of projects that are related to this:
 
 - Implementation of reference design from chapter 3 of <https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf>
 - <https://shop.pimoroni.com/products/pimoroni-pico-vga-demo-base>
+- RGAB5515 output: 5 bits for red, green and blue, 1 bit for alpha / transparency
 
 ### __First thread about VGA__ on the __Raspberry Pi forums__
 
-- That's what interested me in this stuff, after I bought a couple Picos in early 2021 and then the VGA demo board
+- That's what interested me in this stuff, I bought a couple Picos in early 2021 and then the VGA demo board
 - <https://forums.raspberrypi.com/viewtopic.php?p=1829133>
 
 ### __HAGL__ by __tuupola__
@@ -105,8 +106,8 @@ Here's now a list of projects that are related to this:
 - <https://github.com/picocomputer>
 - 8 Mhz 65C02 as CPU + 2 supporting Picos for VGA and I/O
 - Interesting concept of the PIX to handle communication between the Picos via PIO
-- Back to an publicly open source project after a blackout period of time
-- Great features on "GPU" side: 3 layers (bitmap, tilemap, text) with scrolling and "affine" sprites
+- Back to an publicly open source project after a blackout period
+- Scanvideo features on "GPU" side: 3 layers (bitmap, tilemap, text) with scrolling and "affine" sprites
 - 8 channels PSG with waveforms and ADSR parameters (january 2024)
 
 ### __RP2040-PICO-PC__ by __Olimex__
@@ -122,7 +123,7 @@ Here's now a list of projects that are related to this:
 - <https://geoffg.net/picomitevga.html> / <https://geoffg.net/webmite.html>
 - <https://github.com/UKTailwind/PicoMite> / <https://github.com/UKTailwind/PicoMiteWeb>
 - MMBasic seems to be great but its license is too restrictive, being open source only, not free as GPL nor permissive like MIT or BSD, see <https://geoffg.net/OpenSource.html> for an explanation
-- Handles GPIO, I²C, SPI from BBC Basic
+- Handles GPIO, I²C, SPI from MMBasic
 - WebMite has interesting ideas about networking functions (NTP, ...)
 
 ### __Neotron Pico__ by __Jonathan Pallant (the JPster)__
@@ -164,7 +165,7 @@ Here's now a list of projects that are related to this:
 - Dual RP2040 (Pico W + RP2040 on board), DVI (HDMI), 2x8MB PSRAM (!)
 - Shop: <https://shop.pimoroni.com/products/picovision?variant=41048911904851>
 - Code: <https://github.com/pimoroni/picovision>, MIT license
-- Pico-W soldered, no real way to
+- Pico-W soldered, no way to replace it
 
 ### __pico-vdp__ by Patrick Alastair
 
@@ -193,10 +194,9 @@ Here's now a list of projects that are related to this:
 
 - <https://www.lexaloffle.com/pico-8.php>
 - Not open source, but great, see games like Celeste <https://www.lexaloffle.com/bbs/?tid=2145> for example!
-- Both use Lua as default language
 - <https://github.com/nesbox/TIC-80>
-- Open source
-- Uses Lua, too
+- Open source (MIT license)
+- Both use Lua as default language
 - Both include sprite / map / sound / code editors
 - The virtual resources are limited (low resolution, 16 colors, 4 channel sound, ...), but demand much more resources on the host, see <https://github.com/yocto-8/yocto-8> for an example of a Pico-8 player for RP2040 and the difficulties encountered
 
