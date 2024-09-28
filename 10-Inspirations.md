@@ -154,7 +154,21 @@ Here's now a list of projects that are related to this:
 - Seems to be stalled in the "sprite" branch since 2022
 - C, GPL 3.0
 
-## Non pico stuff
+### __DECstation 2040__ by __Scott__
+
+- "RP2040 based DECstation 3000 emulator that can run DECWindows (Ultrix + X Window)"
+- MIPS CPU emulation and 32 MB of PSRAM! (thanks to [Dmitry's LinuxCard](http://dmitry.gr/?r=05.Projects&proj=33.%20LinuxCard))
+- Monochrome VGA at 1024 x 864, PIO driven (not scanvideo based), with seperate 16x16 cursor plane overlay
+- cf. <https://github.com/rscott2049/DECstation2040>
+
+### __Pico Mac__ by __Matt Evans__
+
+- Runs the [umac Mac 128K emulator](https://github.com/evansm7/umac) on a RP2040 Pico (up to Mac 208K)
+- Outputs VGA 640x480@60Hz, 512x342 monochrome, using three resistors and PIO (not scanvideo based)
+- USB HID keyboard and mouse, SD card option, ... 
+- cf. <https://github.com/evansm7/pico-mac>
+
+## Non Pico stuff
 
 ### __FabGL__ by __Fabrizio Di Vittorio__
 
@@ -169,6 +183,22 @@ Here's now a list of projects that are related to this:
 - Language: C99 (C++ compatible)
 - Very complete / complex
 - Ported to Pico / RP2040 with LCD SPI/I²C screens in mind
+
+### __raylib__ by __Ramon Santamaria__
+
+- "raylib is a simple and easy-to-use library to enjoy videogames programming."
+- cf. <https://www.raylib.com/>
+- License: unmodified zlib/libpng
+- Language: C99 (using PascalCase/camelCase notation)
+- Not aware of Pico officially and at first sight
+
+### __Adafruit GFX Library__ by __Adafruit__
+
+- "This is the core graphics library for all our displays, providing a common set of graphics primitives (points, lines, circles, etc.)."
+- cf. <https://github.com/adafruit/Adafruit-GFX-Library>
+- License: BSD (2 clauses?)
+- Language: C / C++
+- Arduino IDE oriented?
 
 ### __Pico-8__ and __TIC-80__ fantasy consoles
 
