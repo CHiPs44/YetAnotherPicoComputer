@@ -1,3 +1,6 @@
+<!-- SPDX-Copyright-Text: © 2023 CHiPs44 <chips44@gmail.com> -->
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Setup
 
 There are not enough GPIO pins nor RAM on a single Pico to handle all the stuff we want, so a dual or even triple Pico setup seems to be a possible way to go.

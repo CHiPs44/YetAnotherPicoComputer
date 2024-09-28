@@ -1,3 +1,6 @@
+<!-- SPDX-Copyright-Text: © 2023 CHiPs44 <chips44@gmail.com> -->
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # YAPC: Software
 
 Here's a list of programs that **should** or could be (re-)written to work with YAPC (or any nostalgic platform), including some I'm very fond of.

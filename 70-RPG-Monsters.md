@@ -1,3 +1,6 @@
+<!-- SPDX-Copyright-Text: © 2023 CHiPs44 <chips44@gmail.com> -->
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Monsters
 
 ## Animals

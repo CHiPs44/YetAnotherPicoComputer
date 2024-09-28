@@ -1,3 +1,6 @@
+<!-- SPDX-Copyright-Text: © 2023 CHiPs44 <chips44@gmail.com> -->
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # YAPC - Goals
 
 __NB: As of august 2024, with the release of the RP2350, we now have 512 KB of internal RAM and 8 MB of PSRAM is easy to add.__
