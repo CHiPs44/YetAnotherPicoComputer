@@ -7,23 +7,9 @@ See [Inspirations](10-Inspirations.md) for first impressions on RP2350 / Pico 2.
 
 ## Keeping VGA output and VGA demo board
 
-With the scanvideo library and some overclocking, possibilities are infinite, and multiplane (up to 3 for bitmap, sprites & text for example) is great, too.
+With the scanvideo library and some overclocking, possibilities are infinite, and multiplane (up to 3 for bitmap, sprites (even affine ones) & text for example) is great, too.
 
-**Picocomputer 6502** by **Rumbledethumps** is a good example of what you an achieve with multiplanes, but uses 2 Picos + 1 65C02.
-
-On the VGA demo board, most of GPIO pins are used for VGA (17 of 25/26 for Pico 1 or 2), leaving just enough for sound (PWM **or** DAC) and SD card (4-bits or 1-bit with cutted PCB traces for serial):
-
-| GPIO  | Function         |
-| ----- | ---------------- |
-| 0-4   | RED              |
-| 6-10  | GREEN            |
-| 11-15 | BLUE             |
-| 16    | VSyNC            |
-| 17    | HSYNC            |
-| 18-22 | SD CARD / SERIAL |
-| 25    | ONBOARD LED      |
-| 26    | FREE?            |
-| 27-28 | PWM / DAC        |
+**Picocomputer 6502** (by Rumbledethumps) is a good example of what you an achieve with multiplanes, but uses 2 Picos + 1 65C02 to achieve its goal.
 
 **Neotron Pico** reduces palette to 12 bits to regain 3 GPIO, but it means building a new board...
 
@@ -74,4 +60,15 @@ We should keep some space for fonts, sprites or tiles assets and system variable
 
 ## HSTX and DVI/HDMI to the rescue?
 
-PicoDVI is a hack (see <https://github.com/pimoroni/picovision/issues/91> for example)
+PicoDVI is a a wonderful hack but it has some flaws (see <https://github.com/pimoroni/picovision/issues/91> for example).
+
+Even if there still are loads of **free** and perfectly good LCD VGA monitors, it seems many people now consider VGA as "vintage" tech, looking towards for HDMI connections (not even DVI), mainly because they only have modern ones.
+
+RP2350 has this HSTX with TMDS hardware encoder interface, using only 8 dedicated GPIO pins, and seemingly makes DVI/HDMI output a breeze.
+
+## Pico 2
+
+
+
+## Pimoroni Pico Plus 2
+

@@ -1,7 +1,7 @@
 <!-- SPDX-Copyright-Text: © 2023 CHiPs44 <chips44@gmail.com> -->
 <!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 
-# RPG
+# RPG: Base Rules
 
 _"One RPG To Rule Them All And In Darkness Bind Them"_ `;-)`
 
@@ -13,56 +13,99 @@ Another goal is to not reinvent the wheel and use classical rules from D&D / d20
 
 ## Characters
 
-### Attributes / characteristics
+### Characteristics
 
 Values are rolled with 3d6 (3-18) and give a modifier (bonus or malus):
+
+<center>
 
 | 03-04 | 05-06 | 07-08 | 09-12 | 13-14 | 15-16 | 17-18 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |  -3   |  -2   |  -1   |   0   |  +1   |  +2   |  +3   |
 
-Base characteristics:
+</center>
 
-- Strength
-- Intelligence
-- Wisdom
-- Dexterity
-- Constitution
-- Charisma
+#### Base characteristics:
 
-Others:
+<center>
 
-- HP: Hit points
-- LVL: Level
-- XP: Experience points
-- AC: Armor Class
-- DMG: Damage with current weapon
+| Characteristic | Notes |
+| -------------- | ----- |
+| Strength       | -     |
+| Intelligence   | -     |
+| Wisdom         | -     |
+| Dexterity      | -     |
+| Constitution   | -     |
+| Charisma       | -     |
+
+</center>
+
+Other attributes:
+
+<center>
+
+| Symbol | Explanation                |
+| :----: | -------------------------- |
+|   HP   | Hit points                 |
+|   LV   | Level                      |
+|   XP   | Experience points          |
+|   AC   | Armour / Armor Class       |
+|   DG   | Damage with current weapon |
+
+</center>
+
+There is no attack characteristic, one rolls one d20 and hits if result is greater or equal to AC of opponent.
+
+- Strength modifier for melee weapons
+- Dexterity modifier for ranged weapons
+
+These modifiers can be changed by:
+
+- Potions
+- Spells
+- Rings and necklaces
+- Special abilities from magic weapons: +1 against undead monsters, for example
 
 ### Races
 
-| Name     | Bonus           |
-| -------- | --------------- |
-| Human    | None            |
-| Dwarf    | +2 Constitution |
-| Elf      | +2 Dexterity    |
-| Halfling | + Dexterity     |
+<center>
+
+| Name     | Bonus           | Other rules                                         |
+| -------- | --------------- | --------------------------------------------------- |
+| Human    | None            | -                                                   |
+| Dwarf    | +2 Constitution |                                                     |
+| Elf      | +2 Charisma     |                                                     |
+| Halfling | +2 Dexterity    | No two handed weapons as they are twice their size! |
+
+</center>
 
 Other candidates are Half Elf, Half Orc.
 
 ### Classes
 
-| Class   | Prerequisite       | Hit die |
-| ------- | ------------------ | :-----: |
-| Fighter | Strength >= 13     |   d10   |
-| Cleric  | Wisdom >= 13       |   d8    |
-| Thief   | Dexterity >= 13    |   d8    |
-| Wizard  | Intelligence >= 13 |   d6    |
+<center>
 
-Level 1 max HPs are 1 hit die added with constitution modifier.
+| Class   | Prerequisite       | Hit die |
+| ------- | ------------------ | ------: |
+| Fighter | Strength >= 13     |     d10 |
+| Cleric  | Wisdom >= 13       |      d8 |
+| Thief   | Dexterity >= 13    |      d8 |
+| Wizard  | Intelligence >= 13 |      d6 |
+
+</center>
+
+Level 1 maximum hit points (HP) are 1 hit die added with constitution modifier.
 
 At each level, another life die and the constitution modifier are added to max HP.
 
+Characters of level 6 (?) and above can use two one handed weapons and have 2 attacks in a round (or make twice the damages?):
+
+- Thieves with 2 daggers
+- Fighters with 2 swords, axes or hammers
+
 ### Fighter
+
+<center>
 
 | Domain         | Usable?                                  |
 | -------------- | ---------------------------------------- |
@@ -71,7 +114,11 @@ At each level, another life die and the constitution modifier are added to max H
 | Ranged Weapons | Bow, Crossbow, Spear, ...                |
 | Armour         | Leather, chain mail, plates, shield      |
 
+</center>
+
 ### Cleric
+
+<center>
 
 | Domain | Usable?                           |
 | ------ | --------------------------------- |
@@ -80,16 +127,24 @@ At each level, another life die and the constitution modifier are added to max H
 | Ranged | ?                                 |
 | Armour | Up to chain mail                  |
 
+</center>
+
 ### Thief
+
+<center>
 
 | Domain | Usable?                   |
 | ------ | ------------------------- |
 | Magic  | None                      |
-| Melee  | Dagger                    |
+| Melee  | Dagger, Short sword       |
 | Ranged | Bow, Crossbow, Spear, ... |
 | Armour | Up to leather, shield     |
 
+</center>
+
 ### Wizard
+
+<center>
 
 | Domain | Usable?                  |
 | ------ | ------------------------ |
@@ -98,7 +153,11 @@ At each level, another life die and the constitution modifier are added to max H
 | Ranged | None                     |
 | Armour | Clothes only             |
 
+</center>
+
 ## Screen layout mockup
+
+### Header
 
 ```text
          1         2         3         4         5         6         7         8
@@ -111,3 +170,6 @@ At each level, another life die and the constitution modifier are added to max H
 └──────────────────┘└──────────────────┘└──────────────────┘└──────────────────┘06
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 ```
+
+### Sheet
+

@@ -22,7 +22,11 @@ _   __   _
 
 (from <http://www.network-science.de/ascii/>, "small" font)
 
-This is a set of documents I maintain about the possible making of a [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) based self-contained computer.
+As I heard recently in an Youtube video recorded at one of VCFxx conferences:
+
+"**Retro is a feeling, Vintage is a date**"
+
+This is a set of documents I maintain about the possible making of a [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) based self-contained computer reminiscing 80's and 90's home computers.
 
 There are also some ideas about a heroic fantasy RPG that could be implemented on this.
 
