@@ -16,6 +16,7 @@ NB:
 
 | Name            | Damage | Price |
 | --------------- | -----: | ----: |
+| Fists           |    1d4 |     0 |
 | Dagger          |    1d4 |    50 |
 | Staff           |    1d4 |    50 |
 | Spear           |    1d6 |   100 |
