@@ -1,4 +1,4 @@
-<!-- SPDX-Copyright-Text: © 2023 CHiPs44 <chips44@gmail.com> -->
+<!-- SPDX-Copyright-Text: © 2024 CHiPs44 <chips44@gmail.com> -->
 <!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 
 # Setup with RP2350
