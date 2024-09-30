@@ -15,17 +15,19 @@ Another goal is to not reinvent the wheel and use classical rules from D&D / d20
 
 ### Characteristics
 
-Values are rolled with 3d6 (3-18) and give a modifier (bonus or malus):
+Values are rolled with 3d6 (3-18) and give a modifier (bonus or malus).
+
+Table goes from 1 to 20 to account for racial or temporary changes.
 
 <center>
 
-| 03-04 | 05-06 | 07-08 | 09-12 | 13-14 | 15-16 | 17-18 |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|  -3   |  -2   |  -1   |   0   |  +1   |  +2   |  +3   |
+| 01-02 | 03-04 | 05-06 | 07-08 | 09-12 | 13-14 | 15-16 | 17-18 | 19-20 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|  -4   |  -3   |  -2   |  -1   |   0   |  +1   |  +2   |  +3   |  +4   |
 
 </center>
 
-#### Base characteristics:
+#### Base characteristics
 
 <center>
 
@@ -56,52 +58,64 @@ Other attributes:
 
 There is no attack characteristic, one rolls one d20 and hits if result is greater or equal to AC of opponent.
 
+One changes this d20 roll by adding:
+
 - Strength modifier for melee weapons
 - Dexterity modifier for ranged weapons
 
-These modifiers can be changed by:
+This modifier can be changed:
 
-- Potions
-- Spells
-- Rings and necklaces
-- Special abilities from magic weapons: +1 against undead monsters, for example
+- Permanently by:
+  - Rings and necklaces
+  - Special abilities from magic weapons: Sword +1 against undead monsters, for example
+- Temporarily by:
+  - Potions
+  - Spells
 
 ### Races
 
 <center>
 
-| Name     | Bonus           | Other rules                                         |
-| -------- | --------------- | --------------------------------------------------- |
-| Human    | None            | -                                                   |
-| Dwarf    | +2 Constitution |                                                     |
-| Elf      | +2 Charisma     |                                                     |
-| Halfling | +2 Dexterity    | No two handed weapons as they are twice their size! |
+| Name      | Bonus #1        | Bonus #2        | Other rules           |
+| --------- | --------------- | --------------- | --------------------- |
+| Human     | -               | -               | -                     |
+| Dwarf     | +2 Constitution | -               | -                     |
+| Elf       | +2 Dexterity    | -               | -                     |
+| Half-Elf? | +1 Dexterity    | +1 Charisma     | -                     |
+| Half-Orc? | +1 Strength     | +1 Constitution | -                     |
+| Halfling  | +1 Dexterity    | +1 Constitution | No two handed weapons |
 
 </center>
 
-Other candidates are Half Elf, Half Orc.
+Bonuses are added to charateristic value, hence changing modifier from table.
 
 ### Classes
 
 <center>
 
-| Class   | Prerequisite       | Hit die |
-| ------- | ------------------ | ------: |
-| Fighter | Strength >= 13     |     d10 |
-| Cleric  | Wisdom >= 13       |      d8 |
-| Thief   | Dexterity >= 13    |      d8 |
-| Wizard  | Intelligence >= 13 |      d6 |
+| Class   | Main characteristic (>=13) | Hit die |
+| ------- | -------------------------- | ------: |
+| Fighter | Strength                   |     d10 |
+| Cleric  | Wisdom                     |      d8 |
+| Thief   | Dexterity                  |      d8 |
+| Wizard  | Intelligence               |      d6 |
 
 </center>
 
+### HP: Hit Points
+
 Level 1 maximum hit points (HP) are 1 hit die added with constitution modifier.
 
-At each level, another life die and the constitution modifier are added to max HP.
+At each level, another hit die and the constitution modifier are added to max HP.
 
-Characters of level 6 (?) and above can use two one handed weapons and have 2 attacks in a round (or make twice the damages?):
+### One melee weapon in each hand
+
+Characters of level 5 (or more?) and above can use two one handed weapons and have 2 attacks in a round (or make twice the damage?):
 
 - Thieves with 2 daggers
 - Fighters with 2 swords, axes or hammers
+
+Having 2 weapons forbids use of a shield.
 
 ### Fighter
 
