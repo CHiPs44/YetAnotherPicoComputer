@@ -9,7 +9,7 @@
 
 - Bear
 - Boar
-- Dog
+- Hound (dog)
 - Eagle
 - Wolf
 
@@ -36,11 +36,14 @@
 
 ## Humanoids
 
+- Assassin
 - Bandit
+- Dark elf (drow)
 - Giant
 - Gnoll
 - Gnome
 - Goblin
+- Grey dwarf (duergar)
 - Hobgoblin
 - Kobold
 - Lizard-man
@@ -64,14 +67,20 @@
 - Banshee
 - Daemon
 - Dragon
-- Elemental: Air, Earth, Fire and Water
+- Elemental: Air, Earth, Fire, Water
+- Gargoyle
 - Gelatinous cube
+- Ghost
+- Ghoul
 - Golem
 - Griffin
 - Lich
 - Lycanthrope
 - Manticore
 - Medusa
+- Owlbear
 - Pixie
 - Stryge
-- Worg
+- Vampire
+- Werewolf
+- Worg / Warg
