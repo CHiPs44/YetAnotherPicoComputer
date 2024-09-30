@@ -25,7 +25,11 @@ With 512K, one quarter is 128K, enough for:
 - 1 x 320x240 in 256 colors (1 x 76,800)
 - 1 x 512x384 in 16 colors (1 x 98,304)
 - 1 x 640x400 in 16 colors (1 x 128,000)
+- 1 x 640x480 in 4 colors (1 x 76,800)
+- 1 x 1024x768 in 2 colors (1 x 98,304)
 - ...
+
+NB: Display mode and physical screen resolution can be decorrelated, e.g. displaying an 320x200 image in a 320x240 screen with top and bottom borders can be done.
 
 ### Pimoroni Pico Plus 2
 
@@ -35,8 +39,8 @@ Pimoroni Pico Plus 2 has some advantages:
 
 - uses an RP2350B (80 pins) which adds 16 GPIOs
 - uses some of these GPIO for 8MB of QSPI PSRAM and 16MB of QSPI flash
-- and an 8-pins SP/CE connector: VSYS, 3V3, 5 GPIO (32-36 SPI/I²C/UART/PWM), GND
-- adds an 4-pins QW/ST connector: GPIO 4-5 (I²C #0), 3V3, GND, which are used by VGA, so not too intersting
+- adds an 8 pins SP/CE connector: VSYS, 3V3, 5 GPIO (32-36 SPI/I²C/UART/PWM), GND
+- adds an 4 pins QW/ST connector: GPIO 4-5 (I²C #0), 3V3, GND, which are used by VGA, so not too interesting...
 
 At first sight, these 8 MB of PSRAM may not be fast enough to store the "live" framebuffer(s) for scanvideo, but can be used to store programs, resources and transient data.
 
@@ -68,7 +72,8 @@ RP2350 has this HSTX with TMDS hardware encoder interface, using only 8 dedicate
 
 ## Pico 2
 
-
+TODO!
 
 ## Pimoroni Pico Plus 2
 
+TODO!
