@@ -263,6 +263,12 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
 - License: MIT
 - NB: MichaelBell & Gadgetoid made pull request, so it should be good stuff!
 
+### **Raspberry Pi Pico: loading code into RAM and running it** by **Kevin Boone**
+
+- Not a library, but an interesting article in 2 parts
+  - <https://kevinboone.me/pico_run_ram.html>
+  - <https://kevinboone.me/pico_run_ram2.html>
+
 ## Non Pico stuff
 
 ### **FabGL** by **Fabrizio Di Vittorio**
