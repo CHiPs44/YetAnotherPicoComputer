@@ -190,8 +190,8 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
 
 - cf. <https://github.com/Wren6991/PicoDVI>
 - License: BSD 3-Clause
-- 
-- Blatantly not VGA, but should
+- Blatantly not VGA, but used as the reference for every DVI/HDMI & RP2040 stuff
+- Luke is now also famous as the creator of the Hazard3 RISC core embedded in RP2350!
 
 ### **RP2040-PICO-PC** by **Olimex**
 
