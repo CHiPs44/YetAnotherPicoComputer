@@ -1,12 +1,15 @@
 <!-- SPDX-Copyright-Text: © 2023 CHiPs44 <chips44@gmail.com> -->
 <!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 
-# YAPC - Goals
+# YAPC - Goals<!-- omit in toc -->
 
-__NB: As of august 2024, with the release of the RP2350, we now have 512 KB of internal RAM and 8 MB of PSRAM is easy to add.__
+- [Feeling](#feeling)
+- [Peripherals](#peripherals)
+
+## Feeling
 
 - Be a “__Boot to XXX__” computer leading to a REPL (Read-Eval-Print-Loop), like:
-  - old 8 bits computers
+  - old 8 bits computers: Amstrad CPC 464/664/6128
   - DOS PCs (or MSX-DOS machines)
   - or console only GNU/Linux machines
 
@@ -15,6 +18,8 @@ __NB: As of august 2024, with the release of the RP2350, we now have 512 KB of i
   - 32 bits ARM M0+ overclocked at 250+ Mhz should give us much more power than these
   - 256 KB of RAM is the real limit (and PS-RAM in sadly not an option with the RP2040)
   - __NEW__ 512 KB of internal RAM, 8 MB of PSRAM
+
+## Peripherals
 
 - Use a mix of “quite obsolete” and “modern” hardware
   - VGA must be used as the output (DVI / HDMI could be an option, especially with the HSTX capabilities of RP2350 that allow this without PIO magic)

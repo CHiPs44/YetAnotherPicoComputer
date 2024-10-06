@@ -5,6 +5,8 @@
 
 From the release of the Raspbery Pi Pico in January 2021 till now (december 2023), there are many projects around VGA and DVI/HDMI screen output, surrounded by a more ancient wave of other retro computers using other micro-controllers and/or 8 or 16 bits CPUs, mainly because old 8 bits computers are either too old or too expensive compared to what Arduino, ESP32 & al. cost and are able to achieve.
 
+**NB: As of august 2024, with the release of the RP2350, we now have 512 KB of internal RAM and 8 MB of PSRAM is easy to add.**
+
 Here's now a list of projects that are related to this:
 
 - [My road to VGA on a modern micro-controller](#my-road-to-vga-on-a-modern-micro-controller)
@@ -21,6 +23,7 @@ Here's now a list of projects that are related to this:
   - [**PicoSystem** from **Pimoroni**](#picosystem-from-pimoroni)
   - [**PicoBB** by **Memotech-Bill \& others**](#picobb-by-memotech-bill--others)
   - [**Picocomputer 6502** by **Rumbledethumps**](#picocomputer-6502-by-rumbledethumps)
+  - [**PicoDVI** by **Luke Wren**](#picodvi-by-luke-wren)
   - [**RP2040-PICO-PC** by **Olimex**](#rp2040-pico-pc-by-olimex)
   - [**PicoMiteVGA** \& **WebMite** by **Geoff \& others**](#picomitevga--webmite-by-geoff--others)
   - [**Neotron Pico** by **Jonathan Pallant (the JPster)**](#neotron-pico-by-jonathan-pallant-the-jpster)
@@ -31,7 +34,9 @@ Here's now a list of projects that are related to this:
   - [**pico-vdp** by Patrick Alastair](#pico-vdp-by-patrick-alastair)
   - [**DECstation 2040** by **Scott**](#decstation-2040-by-scott)
   - [**Pico Mac** by **Matt Evans**](#pico-mac-by-matt-evans)
+  - [**Hopper** by **sillycowvalley/biggertiger**](#hopper-by-sillycowvalleybiggertiger)
   - [**Pretty Poly** by **lowfatcode**](#pretty-poly-by-lowfatcode)
+  - [**Raspberry Pi Pico: loading code into RAM and running it** by **Kevin Boone**](#raspberry-pi-pico-loading-code-into-ram-and-running-it-by-kevin-boone)
 - [Non Pico stuff](#non-pico-stuff)
   - [**FabGL** by **Fabrizio Di Vittorio**](#fabgl-by-fabrizio-di-vittorio)
   - [**LVGL** by **the LVGL team**](#lvgl-by-the-lvgl-team)
@@ -51,18 +56,18 @@ In between, my brother bought a [Sinclair ZX-81](https://en.wikipedia.org/wiki/Z
 
 In 1985, for my [Baccalauréat in electrical engineering](https://en.wikipedia.org/wiki/Baccalaur%C3%A9at), I got the short lived [Amstrad CPC 664](https://en.wikipedia.org/wiki/Amstrad_CPC) with the monochrome GT-65 monitor.
 
-In 1987, I got my [DUT](https://en.wikipedia.org/wiki/University_technical_institute_(France)#Description) in electrical engineering and industrial computing.
+In 1987, I got my [DUT](<https://en.wikipedia.org/wiki/University_technical_institute_(France)#Description>) in electrical engineering and industrial computing.
 
 Due to administrative concerns, I had to work for one year before returning to university and earned enough to afford my first Atari ST, an [Atari 1040 STF](https://en.wikipedia.org/wiki/Atari_ST) and shortly after a [PC-XT compatible](https://en.wikipedia.org/wiki/IBM_Personal_Computer_XT).
 
-I got my [master's degree](https://en.wikipedia.org/wiki/Master%27s_degree_(France)) in "Micro Computing and Micro Electronics" in 1990, when micro controllers and FPGAs were a dream or too expensive to do at home.
+I got my [master's degree](<https://en.wikipedia.org/wiki/Master%27s_degree_(France)>) in "Micro Computing and Micro Electronics" in 1990, when micro controllers and FPGAs were a dream or too expensive to do at home.
 
 If I summarize after that since this intro begins to be a little too long:
 
-- I never worked in the electronics world
+- I never worked in the electronics world, but in IT
 - I discovered Free and Libre Open Source Software (and GNU/Linux) around 1994 and most of my geek instincts were satisfied, even if only at home...
-- I still work as a developer, with databases and "serious" web stuff mostly, using Visual Basic, ASP/VBScript, ASP.NET/C#, and then PHP, Symfony & al.
-- I learned about and tried Arduino Uno around 2010, but didn't got very interested as they were rather limited even if the programming with a simple USB cable seduced me.
+- I still work as a developer, with databases and "serious" web stuff mostly, using Visual Basic, ASP/VBScript, ASP.NET/C#, and now PHP, Symfony & al
+- I learned about and tried Arduino Uno around 2010, but didn't got very interested as they were rather limited even if the programming with a simple USB cable seduced me
 - I got interested in Raspberry Pis 2, 3 & 4, too, and got an Xbox 360 to play Fable II...
 
 In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stumbled on this forum thread and is still hooked up:
@@ -100,13 +105,14 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
 | 18-22 | SD CARD & SERIAL |
 |    25 | ONBOARD LED      |
 |    26 | ONLY 1 FREE?     |
-| 27-28 | PWM / DAC        |
+| 27-28 | PWM **OR** DAC   |
 
 </center>
 
 ### **HAGL** by **tuupola**
 
-- Generic library for bitmap graphics, originally written with I²C or SPI LCD panels in mind
+> Generic library for bitmap graphics, originally written with I²C or SPI LCD panels in mind.
+
 - cf. <https://github.com/tuupola/hagl/>
 - Uses **Unicode** fonts (in fact, UTF-16 ones) in FONTX format, cf. <http://elm-chan.org/docs/dosv/fontx_e.html>
 - Can be extended to new types of screens via an **Hardware Abstraction Layer (HAL)**, cf. below
@@ -177,7 +183,19 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
   - text
 - 8 channels PSG with waveforms and ADSR parameters (january 2024)
 
+### **PicoDVI** by **Luke Wren**
+
+> Bitbanged DVI on the RP2040 Microcontroller<br/>
+> Now less bitbanged with RP2350.
+
+- cf. <https://github.com/Wren6991/PicoDVI>
+- License: BSD 3-Clause
+- 
+- Blatantly not VGA, but should
+
 ### **RP2040-PICO-PC** by **Olimex**
+
+> RP2040-PICO-PC allows RP2040-PICO to become a computer with SD card, HDMI display, Audio, USB keyboard, Li-Po charger and battery support, UEXT connector, and I2C connector.
 
 - cf. <https://www.olimex.com/Products/MicroPython/RP2040-PICO-PC/open-source-hardware>
 - "Motherboard" is only 12€ (without Pico or Pico W)!
@@ -187,23 +205,31 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
 
 ### **PicoMiteVGA** & **WebMite** by **Geoff & others**
 
+> The **PicoMiteVGA** is a Raspberry Pi Pico with VGA output, PS2 keyboard input, SD card storage and running the free **MMBasic** interpreter.<br/>
+> The **WebMite** is a Raspberry Pi Pico W running the free MMBasic interpreter. This is similar to the PicoMite running on the standard Raspberry Pi Pico but this version includes full support for the WiFi capability of the Pico W.
+
 - cf. <https://geoffg.net/picomitevga.html> / <https://geoffg.net/webmite.html>
 - cf. <https://github.com/UKTailwind/PicoMite> / <https://github.com/UKTailwind/PicoMiteWeb>
-- MMBasic seems to be great but its license is too restrictive, being open source only, not free as GPL nor permissive like MIT or BSD, see <https://geoffg.net/OpenSource.html> for an explanation
+- **MMBasic** seems to be great but its license is restrictive, being open source only, not free as GPL nor permissive like MIT or BSD, see <https://geoffg.net/OpenSource.html> for an explanation
 - Handles GPIO, I²C, SPI from MMBasic
 - WebMite has interesting ideas about networking functions (NTP, ...)
 
 ### **Neotron Pico** by **Jonathan Pallant (the JPster)**
 
-- cf. <https://github.com/Neotron-Compute/Neotron-Pico>
+> **Neotron** - the Rust based home computer platform is a family of 1980's style home computers, powered by ARM Cortex-M processors, with a ROM written in Rust, and a fully open-source design.<br/>
+> **Neotron Pico** - a microATX form-factor computer powered by the Raspberry Pi Pico (or rather its RP2040 Microcontroller)
+
+- cf. <https://github.com/Neotron-Compute> & <https://github.com/Neotron-Compute/Neotron-Pico>
 - VGA is a 12 bits (RGB444) implementation of scanvideo to limit the amount of GPIO pins used
 - Code is written in Rust (and intended as a showcase of embedded Rust)
-- I/O controller is not a Pico, but there is an interesting notion of BIOS and an API to communicate via SPI (or serial ?)
+- There is an I/O controller and it is not a Pico, but there is an interesting notion of BIOS and an API to communicate via SPI (or serial ?)
 - Motherboard is in micro ATX form factor and embeds several expansion connectors usable with SPI (or I²C?)
+- Jonathan was one of the selected persons that got involved by RPi (under NDA) in the RP2350's development (cf. <https://thejpster.org.uk/blog/blog-2024-08-08/>)
 
 ### **Picoputer** by **amen**
 
-- Emulation of Transputer nodes
+> Emulation of Transputer nodes
+
 - cf. <https://github.com/blackjetrock/picoputer>
 - cf. <https://trochilidae.blogspot.com/2021/07/stack-based-with-os-in-hardware.html>
 - Interesting for high speed communication between nodes using PIO
@@ -211,17 +237,18 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
 
 ### **Pico-56** by **Troy Schrapel**
 
-- "The HBC-56 (65C02/TMS9918A/AY-3-8910 retro computer) fully emulated on a Raspberry Pi Pico"
+> The HBC-56 (65C02/TMS9918A/AY-3-8910 retro computer) fully emulated on a Raspberry Pi Pico
+
 - 12 bits VGA with homemade PIO (not scanvideo based)
 - PS/2 keyboard, 2 NES ports,
 - 65C02 CPU, 65C22 VIA, TMS9918A VDP, Dual AY-3-8910 PSGs, Dual NES controller inputs, PS/2 keyboard input, 96KB Banked RAM/ROM
-- cf. <https://github.com/visrealm/pico-56/>
-- MIT license
+- cf. <https://github.com/visrealm/pico-56/>, MIT license
 - can be repurposed to be whatever computer, see "episodes" for examples
 
 ### **Neo6502** by **OLIMEX**
 
-- 65C02 with RP2040 managing RAM and clock, HDMI output, USB keyboard
+> 65C02 with RP2040 managing RAM and clock, HDMI output, USB keyboard
+
 - cf. <https://github.com/OLIMEX/Neo6502>
 - Olimex sells it as Open Source Hardware, cf. <https://www.olimex.com/Products/Retro-Computers/Neo6502/open-source-hardware>
 - Prototype as of August 2023
@@ -229,35 +256,51 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
 
 ### **PicoVision** by **Pimoroni**
 
-- Dual RP2040 (Pico W + RP2040 on board), DVI (HDMI), 2x8MB PSRAM (!)
+> Dual RP2040 (Pico W + RP2040 on board), DVI (HDMI), 2x8MB PSRAM (!)
+
 - Shop: <https://shop.pimoroni.com/products/picovision?variant=41048911904851>
 - Code: <https://github.com/pimoroni/picovision>, MIT license
 - Pico-W soldered, no way to replace it
+- Based on Luke Wren's PicoDVI
 
 ### **pico-vdp** by Patrick Alastair
 
+> Raspberry Pi Pico based Video Display Processor RC2014 Board with video and audio output, keyboard and mouse input
+
 - cf. <https://github.com/alastairpatrick/pico-vdp>
-- Raspberry Pi Pico based Video Display Processor RC2014 Board with video and audio output, keyboard and mouse input
 - Seems to be stalled in the "sprite" branch since 2022
 - C, GPL 3.0
 
 ### **DECstation 2040** by **Scott**
 
-- "RP2040 based DECstation 3000 emulator that can run DECWindows (Ultrix + X Window)"
+> RP2040 based DECstation 3000 emulator that can run DECWindows (Ultrix + X Window)
+
 - MIPS CPU emulation and 32 MB of PSRAM! (thanks to [Dmitry's LinuxCard](http://dmitry.gr/?r=05.Projects&proj=33.%20LinuxCard))
 - Monochrome VGA at 1024 x 864, PIO driven (not scanvideo based), with seperate 16x16 cursor plane overlay
 - cf. <https://github.com/rscott2049/DECstation2040>
 
 ### **Pico Mac** by **Matt Evans**
 
-- Runs the [umac Mac 128K emulator](https://github.com/evansm7/umac) on a RP2040 Pico (up to Mac 208K)
+> Runs the [umac Mac 128K emulator](https://github.com/evansm7/umac) on a RP2040 Pico (up to Mac 208K)
+
 - Outputs VGA 640x480@60Hz, 512x342 monochrome, using three resistors and PIO (not scanvideo based)
 - USB HID keyboard and mouse, SD card option, ...
 - cf. <https://github.com/evansm7/pico-mac>
 
+### **Hopper** by **sillycowvalley/biggertiger**
+
+> Hopper is a modern ";" and "{ .. }" language (like C but with a managed heap like C# and Java) designed to target small devices like the Raspberry Pi Pico (and other RP2040 devices or 8 bit CPUs like the 6502).
+
+- As of october, 2024, RP2350 version in on the way
+- Github: <https://github.com/sillycowvalley/Hopper>
+- Youtube: <https://www.youtube.com/channel/UCWk35s3FhXCf1_VZgOVtFsg>
+- License: MIT
+- Even if build uses CMake, seems very oriented towards Windows as a development environment
+
 ### **Pretty Poly** by **lowfatcode**
 
-- "Pretty Poly - A super-sampling complex polygon renderer for low resource platforms. 🦜"
+> Pretty Poly - A super-sampling complex polygon renderer for low resource platforms. 🦜
+
 - cf. <https://github.com/lowfatcode/pretty-poly>
 - Language: C17 (header only library)
 - License: MIT
@@ -265,9 +308,10 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
 
 ### **Raspberry Pi Pico: loading code into RAM and running it** by **Kevin Boone**
 
-- Not a library, but an interesting article in 2 parts
-  - <https://kevinboone.me/pico_run_ram.html>
-  - <https://kevinboone.me/pico_run_ram2.html>
+Not a library, but an interesting article in 2 parts:
+
+- <https://kevinboone.me/pico_run_ram.html>
+- <https://kevinboone.me/pico_run_ram2.html>
 
 ## Non Pico stuff
 

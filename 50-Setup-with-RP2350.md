@@ -13,7 +13,7 @@ With the scanvideo library and some overclocking, possibilities are infinite, an
 
 **Neotron Pico** reduces palette to 12 bits to regain 3 GPIO, but it means building a new board...
 
-### Pico 2
+### VGA & Pico 2
 
 **Pico 2** has the same pinout, so the lack of available pins is the same, but offers twice the RAM (512 + 4 + 4 instead of 256 + 4 + 4), which is "somewhat interesting" if using a (double) framebuffer for screen rendering.
 
@@ -29,9 +29,12 @@ With 512K, one quarter is 128K, enough for:
 - 1 x 1024x768 in 2 colors (1 x 98,304)
 - ...
 
-NB: Display mode and physical screen resolution can be decorrelated, e.g. displaying an 320x200 image in a 320x240 screen with top and bottom borders can be done.
+NB:
 
-### Pimoroni Pico Plus 2
+- Display mode and physical screen resolution can be decorrelated, e.g. displaying an 320x200 image in a 320x240 screen with top and bottom borders can be done
+- Migration to SDK 2.0.0 and recompilation was all I needed to run my demo!
+
+### VGA & Pimoroni Pico Plus 2
 
 **Pico 2** is great but **Pimoroni Pico Plus 2** is greater!
 

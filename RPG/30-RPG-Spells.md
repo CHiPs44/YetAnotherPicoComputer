@@ -3,31 +3,37 @@
 
 # RPG: Spells
 
-## Offensive spells: wizards
+Q: Should we implement Mana (magic energy points)?
 
-| Spell         | Level | Damage | Target  | Description |
-| :------------ | ----: | -----: | :-----: | :---------- |
-| Magic Missile |     1 |    1d4 |  Enemy  |             |
-| Fireball      |     2 |    1d6 |  Enemy  |             |
-| Cone of frost |     3 |        | Enemies |             |
-| Cone of fire  |     3 |        | Enemies |             |
-|               |       |        |         |             |
-|               |       |        |         |             |
-|               |       |        |         |             |
-|               |       |        |         |             |
-|               |       |        |         |             |
+## Wizards spells
 
-## Healing spells: clerics
+NB: INT MOD => Intelligence modifier
 
-| Spell           | Level | Damage | Target | Description                        |
-| :-------------- | ----: | -----: | :----: | :--------------------------------- |
-| Bless           |     1 |      - | Allies | +1 to all d20: attacks, saves, ... |
-| Healing (light) |     1 |      - |  Ally  |                                    |
-|                 |       |        |        |                                    |
-|                 |       |        |        |                                    |
-|                 |       |        |        |                                    |
-|                 |       |        |        |                                    |
-|                 |       |        |        |                                    |
-|                 |       |        |        |                                    |
-|                 |       |        |        |                                    |
-|                 |       |        |        |                                    |
+| Spell         | Level |        Damage | Target  | Description        |
+| :------------ | ----: | ------------: | :-----: | :----------------- |
+| Magic Missile |     1 | 1d6 + INT MOD |  Enemy  |                    |
+| Fireball      |     2 | 1d8 + INT MOD |  Enemy  |                    |
+| Cone of frost |     3 |               | Enemies | in front of player |
+| Cone of fire  |     3 |               | Enemies | in front of player |
+|               |       |               |         |                    |
+|               |       |               |         |                    |
+|               |       |               |         |                    |
+|               |       |               |         |                    |
+|               |       |               |         |                    |
+
+## Clerics spells
+
+NB: WIS MOD => Wisdom modifier
+
+| Spell            | Level |   Duration    | Target  | Description                              |
+| :--------------- | :---: | :-----------: | :-----: | :--------------------------------------- |
+| Bless            |   1   | 1d6 + WIS MOD | Allies  | +1 to all d20 rolls: attacks, saves, ... |
+| Healing (light)  |   1   | 1d4 + WIS MOD |  Ally   |                                          |
+| Divine lightning |   5   | 3d6 + WIS MOD | Enemies |                                          |
+|                  |       |               |         |                                          |
+|                  |       |               |         |                                          |
+|                  |       |               |         |                                          |
+|                  |       |               |         |                                          |
+|                  |       |               |         |                                          |
+|                  |       |               |         |                                          |
+|                  |       |               |         |                                          |
