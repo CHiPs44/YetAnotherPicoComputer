@@ -107,18 +107,27 @@ These modifiers can be changed:
 
 <center>
 
-| Name      | Bonus #1        | Bonus #2        | Other rules           |
-| --------- | --------------- | --------------- | --------------------- |
-| Human     | -               | -               | -                     |
-| Dwarf     | +2 Constitution | -               | -                     |
-| Elf       | +2 Dexterity    | -               | -                     |
-| Half-Elf? | +1 Dexterity    | +1 Charisma     | -                     |
-| Half-Orc? | +1 Strength     | +1 Constitution | -                     |
-| Halfling  | +1 Dexterity    | +1 Constitution | No two handed weapons |
+| Race      | Bonus #1        | Bonus #2        | Malus           | Other rules           |
+| --------- | --------------- | --------------- | --------------- | --------------------- |
+| Human     | -               | -               | -               | -                     |
+| Dwarf     | +2 CON | -               | -               | -                     |
+| Elf       | +2 DEX | -               | -               | -                     |
+| Half-Elf? | +1 DEX | +1 Charisma     | -               | -                     |
+| Half-Orc  | +1 STR | +1 CON | -2 INT          | -                     |
+| Halfling  | +1 DEX | +1 CON | -               | No two handed weapons |
+
+| Race      | STR | INT | WIS | DEX | CON | CHA | Other rules           |
+| --------- | --- | --- | --- | --- | --- | --- | --------------------- | 
+| Human     | +2* | +2* | +2* | +2* | +2* | +2* | * user choice |
+| Dwarf     | +2 CON | -    | -     | -                     |
+| Elf       | +2 DEX | -               | -               | -                     |
+| Half-Elf? | +1 DEX | +1 Charisma     | -               | -                     |
+| Half-Orc  | +1 STR | +1 CON | -2 INT          | -                     |
+| Halfling  | +1 DEX | +1 CON | -               | No two handed weapons |
 
 </center>
 
-Bonuses are added to charateristic value, hence changing modifier from table.
+Bonuses and maluses are added or substracted to charateristic values, hence changing modifier from table.
 
 ### Classes
 
@@ -211,7 +220,7 @@ Having 2 weapons forbids use of a shield.
 │Human Fighter    M││Elf Wizard       F││Dwarf Fighter    M││Halfling Thief   M│02
 │LV: 1_  XP: 0_____││LV: 1_  XP: 0_____││LV: 1_   XP: 0____││LV:1_    XP: 0____│03
 │HP: 12_ AC: 3_    ││HP: 12_ AC: 1_    ││HP: 10_  AC: 3_   ││HP: 10_  AC: 3_   │04
-│DM: 1d8+1_        ││DM: 1d4+0_        ││DM: 1d4+0_        ││DM: 1d8+2_        │05
+│DM: 1d8+1__       ││DM: 1d4+0__       ││DM: 1d4+0__       ││DM: 1d8+2__       │05
 └──────────────────┘└──────────────────┘└──────────────────┘└──────────────────┘06
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 ```
@@ -231,5 +240,4 @@ Having 2 weapons forbids use of a shield.
 │ CON: 15 +1 │ Melee: Sword_____________________________________ │ DG: 1d8_ +1 │ 
 │ CHA: _8 -1 │ Range: __________________________________________ │     _______ │
 ────────────────────────────────────────────────────────────────────────────────
-
 ```
