@@ -17,16 +17,17 @@ Here's now a list of projects that are related to this:
   - [**HAGL HAL for Pico VGA board** by **CHiPs44** (it’s me ;-))](#hagl-hal-for-pico-vga-board-by-chips44-its-me--)
 - [Pico stuff](#pico-stuff)
   - [**pshell** by **lurk101**](#pshell-by-lurk101)
-  - [**pt52** and **pt52-lua** by **DarkElevenAngel**](#pt52-and-pt52-lua-by-darkelevenangel)
-  - [**PicoVGA** by **Miroslav Nemecek**](#picovga-by-miroslav-nemecek)
+  - [**pt52-lua** by **DarkElevenAngel**](#pt52-lua-by-darkelevenangel)
+  - [**Neotron Pico** by **Jonathan Pallant (the JPster)**](#neotron-pico-by-jonathan-pallant-the-jpster)
+  - [**CLUATRON** by **Jalecko**](#cluatron-by-jalecko)
+  - [**PicoVGA** by **Miroslav Nemecek aka Panda381**](#picovga-by-miroslav-nemecek-aka-panda381)
   - [**MCUME** by **Jean-Marc Harvengt**](#mcume-by-jean-marc-harvengt)
-  - [**PicoSystem** from **Pimoroni**](#picosystem-from-pimoroni)
   - [**PicoBB** by **Memotech-Bill \& others**](#picobb-by-memotech-bill--others)
   - [**Picocomputer 6502** by **Rumbledethumps**](#picocomputer-6502-by-rumbledethumps)
+  - [**PicoSystem** from **Pimoroni**](#picosystem-from-pimoroni)
   - [**PicoDVI** by **Luke Wren**](#picodvi-by-luke-wren)
   - [**RP2040-PICO-PC** by **Olimex**](#rp2040-pico-pc-by-olimex)
   - [**PicoMiteVGA** \& **WebMite** by **Geoff \& others**](#picomitevga--webmite-by-geoff--others)
-  - [**Neotron Pico** by **Jonathan Pallant (the JPster)**](#neotron-pico-by-jonathan-pallant-the-jpster)
   - [**Picoputer** by **amen**](#picoputer-by-amen)
   - [**Pico-56** by **Troy Schrapel**](#pico-56-by-troy-schrapel)
   - [**Neo6502** by **OLIMEX**](#neo6502-by-olimex)
@@ -130,40 +131,62 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
 
 ### **pshell** by **lurk101**
 
-- Serial accessible shell with:
-  - base commands: `ls`, `cd`, `mkdir`, `cat`, ...
-  - `vi` editor (from an old busybox version)
-  - `cc`, C compiler generating ARM M0+ and now M33 code
+> Serial accessible shell with C compiler & editor
+
+- base commands: `ls`, `cd`, `mkdir`, `cat`, ...
+- `vi` editor (from an old busybox version)
+- `cc`, C compiler generating ARM M0+ and now M33 code
 - cf. <https://github.com/lurk101/pshell>
 - Uses internal flash by default with LittleFS, SD card support for VGA board
+- Could be reworked to implement the terminal as an embedded VGA console
 
-### **pt52** and **pt52-lua** by **DarkElevenAngel**
+### **pt52-lua** by **DarkElevenAngel**
 
-- VT-52 compatible terminal with vi editor that uses the VGA demo board
+> Lua embedded on PT52 (a re-imagining of the VT52 by Digital)
+
+- VT-52 compatible console with shell and editor
 - Uses VGA demo board and scanvideo library
-- cf. <https://gitlab.com/DarkElvenAngel/pt52>
-- With an embedded Lua integration
-- **pt52-lua** is on the way, cf. <https://gitlab.com/DarkElvenAngel/pt52-lua>
+- framebuffer, sprites & overlay
+- cf. <https://gitlab.com/DarkElvenAngel/pt52-lua>
 
-### **PicoVGA** by **Miroslav Nemecek**
+### **Neotron Pico** by **Jonathan Pallant (the JPster)**
+
+> **Neotron** - the Rust based home computer platform is a family of 1980's style home computers, powered by ARM Cortex-M processors, with a ROM written in Rust, and a fully open-source design.<br/> > **Neotron Pico** - a microATX form-factor computer powered by the Raspberry Pi Pico (or rather its RP2040 Microcontroller)
+
+- cf. <https://github.com/Neotron-Compute> & <https://github.com/Neotron-Compute/Neotron-Pico>
+- VGA is a 12 bits (RGB444) implementation of scanvideo to limit the amount of GPIO pins used
+- Code is written in Rust (and intended as a showcase of embedded Rust)
+- There is an I/O controller and it is not a Pico, but there is an interesting notion of BIOS and an API to communicate via SPI (or serial ?)
+- Motherboard is in micro ATX form factor and embeds several expansion connectors usable with SPI (or I²C?)
+- Jonathan was one of the selected persons that got involved by RPi (under NDA) in the RP2350's development (cf. <https://thejpster.org.uk/blog/blog-2024-08-08/>)
+
+### **CLUATRON** by **Jalecko**
+
+> Standalone computer with shell (F1), Lua & editor (F2)
+
+- cf. <https://github.com/jaleck0/CLUATRON>
+- scanvideo based
+- fixed 320x240, 16 colors palette, 4x6 ASCII (32-126) font
+- USB keyboard & mouse
+- no SD card nor sound yet
+- references Gigatron for the name & Pico 8 for other inspirations
+
+### **PicoVGA** by **Miroslav Nemecek aka Panda381**
+
+> VGA/TV display on Raspberry Pico
 
 - cf. <https://github.com/Panda381/PicoVGA>
-- RGB332, not scanvideo based, uses its own DAC and PIO
+- RGB332, not scanvideo based, uses its own DAC and PIO routines
 - With sprites & layers
 - See also <https://github.com/Panda381/PicoLibSDK>
 
 ### **MCUME** by **Jean-Marc Harvengt**
 
+> M.CU.M.E = Multi CompUter Machine Emulator
+
 - cf. <https://github.com/Jean-MarcHarvengt/MCUME>
 - MCUME includes several emulators of 8 bits computers for several MCUs
 - VGA for the Pico is based on Panda381's PicoVGA
-
-### **PicoSystem** from **Pimoroni**
-
-- Game console on a tiny 240x240 LCD, with a C (C++?) SDK
-- cf. <https://shop.pimoroni.com/products/picosystem>
-- cf. <https://github.com/pimoroni/picosystem>
-- Can run yocto-8 and some Pico-8 games
 
 ### **PicoBB** by **Memotech-Bill & others**
 
@@ -182,6 +205,14 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
   - sprites and "affine" sprites
   - text
 - 8 channels PSG with waveforms and ADSR parameters (january 2024)
+
+### **PicoSystem** from **Pimoroni**
+
+> Game console on a tiny 1.54" 240x240 pixels LCD, with a C++ SDK or Micropython
+
+- cf. <https://shop.pimoroni.com/products/picosystem>
+- cf. <https://github.com/pimoroni/picosystem>
+- Can run yocto-8 and some Pico-8 games
 
 ### **PicoDVI** by **Luke Wren**
 
@@ -214,18 +245,6 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
 - Handles GPIO, I²C, SPI from MMBasic
 - WebMite has interesting ideas about networking functions (NTP, ...)
 
-### **Neotron Pico** by **Jonathan Pallant (the JPster)**
-
-> **Neotron** - the Rust based home computer platform is a family of 1980's style home computers, powered by ARM Cortex-M processors, with a ROM written in Rust, and a fully open-source design.<br/>
-> **Neotron Pico** - a microATX form-factor computer powered by the Raspberry Pi Pico (or rather its RP2040 Microcontroller)
-
-- cf. <https://github.com/Neotron-Compute> & <https://github.com/Neotron-Compute/Neotron-Pico>
-- VGA is a 12 bits (RGB444) implementation of scanvideo to limit the amount of GPIO pins used
-- Code is written in Rust (and intended as a showcase of embedded Rust)
-- There is an I/O controller and it is not a Pico, but there is an interesting notion of BIOS and an API to communicate via SPI (or serial ?)
-- Motherboard is in micro ATX form factor and embeds several expansion connectors usable with SPI (or I²C?)
-- Jonathan was one of the selected persons that got involved by RPi (under NDA) in the RP2350's development (cf. <https://thejpster.org.uk/blog/blog-2024-08-08/>)
-
 ### **Picoputer** by **amen**
 
 > Emulation of Transputer nodes
@@ -240,7 +259,6 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
 > The HBC-56 (65C02/TMS9918A/AY-3-8910 retro computer) fully emulated on a Raspberry Pi Pico
 
 - 12 bits VGA with homemade PIO (not scanvideo based)
-- PS/2 keyboard, 2 NES ports,
 - 65C02 CPU, 65C22 VIA, TMS9918A VDP, Dual AY-3-8910 PSGs, Dual NES controller inputs, PS/2 keyboard input, 96KB Banked RAM/ROM
 - cf. <https://github.com/visrealm/pico-56/>, MIT license
 - can be repurposed to be whatever computer, see "episodes" for examples
