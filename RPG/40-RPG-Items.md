@@ -8,43 +8,6 @@ NB:
 - Each character can wear 2 rings and a necklace
 - All prices are in gold pieces (GP)
 
-## Weapons
-
-### Melee weapons
-
-<center>
-
-| Name            | Damage | Price |
-| --------------- | -----: | ----: |
-| Fists           |    1d4 |     0 |
-| Dagger          |    1d4 |    50 |
-| Staff           |    1d4 |    50 |
-| Spear           |    1d6 |   100 |
-| Sword           |    1d6 |   100 |
-| Axe             |    1d6 |   100 |
-| Hammer          |    1d6 |   100 |
-| Long sword      |    1d8 |   250 |
-| Battle Axe      |    1d8 |   250 |
-| Battle Hammer   |    1d8 |   250 |
-| 2 Handed Sword  |   1d10 |   500 |
-| 2 Handed Axe    |   1d10 |   500 |
-| 2 Handed Hammer |   1d10 |   500 |
-
-</center>
-
-### Ranged weapons
-
-<center>
-
-| Name               | Damage | Range | Price |
-| ------------------ | -----: | ----: | ----: |
-| Sling / Stone      |    1d4 |  20 m |       |
-| Bow / Arrow        |    1d6 |  30 m |       |
-| Bow (long) / Arrow |    1d8 |  40 m |       |
-| Crossbow / Bolt    |   1d10 |  50 m |       |
-
-</center>
-
 ## Armour / Armor
 
 <center>
