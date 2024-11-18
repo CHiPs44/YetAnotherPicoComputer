@@ -4,7 +4,7 @@
 
 <center>
 
-| Name            |  Effect '() |    Damage    | Price | Notes                                           |
+| Name            |  Effect  |    Damage    | Price | Notes                                           |
 | --------------- | :------: | :----------: | ----: | ----------------------------------------------- |
 | Unarmed         |  Impact  | 1 + STR mod. |     0 | use of Fist, elbow, foot, knee, head, tail, ... |
 | Dagger          | Piercing |     1d4      |    50 |                                                 |
