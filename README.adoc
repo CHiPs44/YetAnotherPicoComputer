@@ -1,0 +1,33 @@
+== Yet Another Pico Computer using Raspberry Pi Pico(s?)
+
+[source,text]
+----
+__     __  _                          _   _                 _____ _              _____                            _          ___  
+\ \   / / | |       /\               | | | |               |  __ (_)            / ____|                          | |        |__ \ 
+ \ \_/ /__| |_     /  \   _ __   ___ | |_| |__   ___ _ __  | |__) |  ___ ___   | |     ___  _ __ ___  _ __  _   _| |_ ___ _ __ ) |
+  \   / _ \ __|   / /\ \ | '_ \ / _ \| __| '_ \ / _ \ '__| |  ___/ |/ __/ _ \  | |    / _ \| '_ ` _ \| '_ \| | | | __/ _ \ '__/ / 
+   | |  __/ |_   / ____ \| | | | (_) | |_| | | |  __/ |    | |   | | (_| (_) | | |___| (_) | | | | | | |_) | |_| | ||  __/ | |_|  
+   |_|\___|\__| /_/    \_\_| |_|\___/ \__|_| |_|\___|_|    |_|   |_|\___\___/   \_____\___/|_| |_| |_| .__/ \__,_|\__\___|_| (_)  
+                                                                                                     | |                          
+                                                                                                     |_|                          
+----
+
+(from http://www.network-science.de/ascii/, ``big'' font)
+
+As I heard recently in an Youtube video recorded at one of VCFxx 2024 conferences:
+
+_____________________________________________
+``**Retro is a feeling, Vintage is a date**''
+_____________________________________________
+
+This is a set of documents I maintain about the possible making of a https://www.raspberrypi.com/products/raspberry-pi-pico/[Raspberry Pi Pico] based self-contained computer reminiscing 80’s and 90’s home computers.
+
+There are also some ideas about a heroic fantasy RPG that could be implemented on this.
+
+All files unless stated otherwise are under a CC-BY-SA-4.0 license, see LICENSE, and have this header:
+
+[source,text]
+----
+<!-- SPDX-Copyright-Text: © 2023 CHiPs44 <chips44@gmail.com> -->
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+----

@@ -1,0 +1,423 @@
+== YAPC - Inspirations
+
+From the release of the Raspbery Pi Pico in January 2021 till now (december 2023), there are many projects around VGA and DVI/HDMI screen output, surrounded by a more ancient wave of other retro computers using other micro-controllers and/or 8 or 16 bits CPUs, mainly because old 8 bits computers are either too old or too expensive compared to what Arduino, ESP32 & al. cost and are able to achieve.
+
+*NB: As of august 2024, with the release of the RP2350, we now have 512 KB of internal RAM and 8 MB of PSRAM is easy to add.*
+
+Here’s now a list of projects that are related to this:
+
+* link:#my-road-to-vga-on-a-modern-micro-controller[My road to VGA on a modern micro-controller]
+** link:#first-thread-about-vga-on-the-raspberry-pi-forums[*First thread about VGA* on the *Raspberry Pi forums*]
+** link:#vga-scanvideo-from-pico-extras-by-the-raspberry-pi-foundation[*VGA scanvideo* from `pico-extras` by the *Raspberry Pi Foundation*]
+** link:#vga-demo-board-by-pimoroni[*VGA demo board* by *Pimoroni*]
+** link:#hagl-by-tuupola[*HAGL* by *tuupola*]
+** link:#hagl-hal-for-pico-vga-board-by-chips44-its-me--[*HAGL HAL for Pico VGA board* by *CHiPs44* (it’s me ;-))]
+* link:#pico-stuff[Pico stuff]
+** link:#pshell-by-lurk101[*pshell* by *lurk101*]
+** link:#pt52-lua-by-darkelevenangel[*pt52-lua* by *DarkElevenAngel*]
+** link:#neotron-pico-by-jonathan-pallant-the-jpster[*Neotron Pico* by *Jonathan Pallant (the JPster)*]
+** link:#cluatron-by-jalecko[*CLUATRON* by *Jalecko*]
+** link:#picovga-by-miroslav-nemecek-aka-panda381[*PicoVGA* by *Miroslav Nemecek aka Panda381*]
+** link:#mcume-by-jean-marc-harvengt[*MCUME* by *Jean-Marc Harvengt*]
+** link:#picobb-by-memotech-bill--others[*PicoBB* by *Memotech-Bill & others*]
+** link:#picocomputer-6502-by-rumbledethumps[*Picocomputer 6502* by *Rumbledethumps*]
+** link:#picosystem-from-pimoroni[*PicoSystem* from *Pimoroni*]
+** link:#picodvi-by-luke-wren[*PicoDVI* by *Luke Wren*]
+** link:#rp2040-pico-pc-by-olimex[*RP2040-PICO-PC* by *Olimex*]
+** link:#picomitevga--webmite-by-geoff--others[*PicoMiteVGA* & *WebMite* by *Geoff & others*]
+** link:#picoputer-by-amen[*Picoputer* by *amen*]
+** link:#pico-56-by-troy-schrapel[*Pico-56* by *Troy Schrapel*]
+** link:#neo6502-by-olimex[*Neo6502* by *OLIMEX*]
+** link:#picovision-by-pimoroni[*PicoVision* by *Pimoroni*]
+** link:#pico-vdp-by-patrick-alastair[*pico-vdp* by Patrick Alastair]
+** link:#decstation-2040-by-scott[*DECstation 2040* by *Scott*]
+** link:#pico-mac-by-matt-evans[*Pico Mac* by *Matt Evans*]
+** link:#hopper-by-sillycowvalleybiggertiger[*Hopper* by *sillycowvalley/biggertiger*]
+** link:#pretty-poly-by-lowfatcode[*Pretty Poly* by *lowfatcode*]
+** link:#raspberry-pi-pico-loading-code-into-ram-and-running-it-by-kevin-boone[*Raspberry Pi Pico: loading code into RAM and running it* by *Kevin Boone*]
+* link:#non-pico-stuff[Non Pico stuff]
+** link:#fabgl-by-fabrizio-di-vittorio[*FabGL* by *Fabrizio Di Vittorio*]
+** link:#lvgl-by-the-lvgl-team[*LVGL* by *the LVGL team*]
+** link:#raylib-by-ramon-santamaria[*raylib* by *Ramon Santamaria*]
+** link:#adafruit-gfx-library-by-adafruit[*Adafruit GFX Library* by *Adafruit*]
+** link:#pico-8-and-tic-80-fantasy-consoles[*Pico-8* and *TIC-80* fantasy consoles]
+** link:#agon-light-2-from-the-byte-attic[*Agon light 2* from *the Byte Attic*]
+** link:#rc2014-ecosystem[*RC2014* ecosystem]
+
+=== My road to VGA on a modern micro-controller
+
+I think I have to give some background informations about me.
+
+My first ``computer'' was a https://en.wikipedia.org/wiki/TI-57[Texas Instruments TI-57] around 1980, and then a https://en.wikipedia.org/wiki/Sharp_PC-1500[Tandy TRS-80 PC-2 / Sharp PC-1500] circa. 1983.
+
+In between, my brother bought a https://en.wikipedia.org/wiki/ZX81[Sinclair ZX-81] in kit form and built it.
+
+In 1985, for my https://en.wikipedia.org/wiki/Baccalaur%C3%A9at[Baccalauréat in electrical engineering], I got the short lived https://en.wikipedia.org/wiki/Amstrad_CPC[Amstrad CPC 664] with the monochrome GT-65 monitor.
+
+In 1987, I got my https://en.wikipedia.org/wiki/University_technical_institute_(France)#Description[DUT] in electrical engineering and industrial computing.
+
+Due to administrative concerns, I had to work for one year before returning to university and earned enough to afford my first Atari ST, an https://en.wikipedia.org/wiki/Atari_ST[Atari 1040 STF] and shortly after a https://en.wikipedia.org/wiki/IBM_Personal_Computer_XT[PC-XT compatible].
+
+I got my https://en.wikipedia.org/wiki/Master%27s_degree_(France)[master’s degree] in ``Micro Computing and Micro Electronics'' in 1990, when micro controllers and FPGAs were a dream or too expensive to do at home.
+
+If I summarize after that since this intro begins to be a little too long:
+
+* I never worked in the electronics world, but in IT
+* I discovered Free and Libre Open Source Software (and GNU/Linux) around 1994 and most of my geek instincts were satisfied, even if only at home…
+* I still work as a developer, with databases and ``serious'' web stuff mostly, using Visual Basic, ASP/VBScript, ASP.NET/C#, and now PHP, Symfony & al
+* I learned about and tried Arduino Uno around 2010, but didn’t got very interested as they were rather limited even if the programming with a simple USB cable seduced me
+* I got interested in Raspberry Pis 2, 3 & 4, too, and got an Xbox 360 to play Fable II…
+
+In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stumbled on this forum thread and is still hooked up:
+
+==== *First thread about VGA* on the *Raspberry Pi forums*
+
+* That’s what interested me in this stuff, I bought a couple Picos in early 2021 and then the VGA demo board
+* cf. https://forums.raspberrypi.com/viewtopic.php?p=1829133
+* I had to (re)learn C and its low level (WTF, no objects nor associative arrays?)
+* It’s so easy to reprogram it through USB!
+
+==== *VGA scanvideo* from `pico-extras` by the *Raspberry Pi Foundation*
+
+* For me, this is the base for all of this!
+* cf. https://github.com/raspberrypi/pico-extras/tree/master/src/common/pico_scanvideo
+* It seems kudos go mainly to https://github.com/kilograham[Kilograham]!
+
+==== *VGA demo board* by *Pimoroni*
+
+* The real enlightment: no soldering needed!
+* Implementation of reference design from chapter 3 of https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf
+* cf. https://shop.pimoroni.com/products/pimoroni-pico-vga-demo-base
+* RGAB5515 output: 5 bits for red, green and blue, 1 bit for alpha / transparency
+* Most of GPIO pins are used for VGA (17 of 25/26 for Pico 1 or 2), leaving just enough for *sound* (PWM *or* DAC) and *SD card* (4-bits or 1-bit with cutted PCB traces for *serial*):
+
+[cols=">,",options="header",]
+|=======================
+|GPIO# |Function
+|0-4 |VGA: RED 0-4
+|6-10 |VGA: GREEN 0-4
+|11-15 |VGA: BLUE 0-4
+|16 |VGA: VSYNC
+|17 |VGA: HSYNC
+|18-22 |SD CARD & SERIAL
+|25 |ONBOARD LED
+|26 |ONLY 1 FREE?
+|27-28 |PWM *OR* DAC
+|=======================
+
+==== *HAGL* by *tuupola*
+
+___________________________________________________________________________________________
+Generic library for bitmap graphics, originally written with I²C or SPI LCD panels in mind.
+___________________________________________________________________________________________
+
+* cf. https://github.com/tuupola/hagl/
+* Uses *Unicode* fonts (in fact, UTF-16 ones) in FONTX format, cf. http://elm-chan.org/docs/dosv/fontx_e.html
+* Can be extended to new types of screens via an *Hardware Abstraction Layer (HAL)*, cf. below
+
+==== *HAGL HAL for Pico VGA board* by *CHiPs44* (it’s me ;-))
+
+* cf. https://github.com/CHiPs44/hagl_pico_vgaboard
+* Framebuffer based, no multiplane yet
+* Implements many VGA modes from http://tinyvga.com/vga-timing and several other sources
+* Still buggy in terms of stability when using some modes and/or framebuffer manipulation techniques
+* Has a rather complete demo, see https://github.com/CHiPs44/hagl_pico_vgaboard_example
+* Supports compiling with SDL and executing on host with https://github.com/raspberrypi/pico-host-sdl
+
+=== Pico stuff
+
+==== *pshell* by *lurk101*
+
+________________________________________________
+Serial accessible shell with C compiler & editor
+________________________________________________
+
+* base commands: `ls`, `cd`, `mkdir`, `cat`, …
+* `vi` editor (from an old busybox version)
+* `cc`, C compiler generating ARM M0+ and now M33 code
+* cf. https://github.com/lurk101/pshell
+* Uses internal flash by default with LittleFS, SD card support for VGA board
+* Could be reworked to implement the terminal as an embedded VGA console
+
+==== *pt52-lua* by *DarkElevenAngel*
+
+____________________________________________________________
+Lua embedded on PT52 (a re-imagining of the VT52 by Digital)
+____________________________________________________________
+
+* VT-52 compatible console with shell and editor
+* Uses VGA demo board and scanvideo library
+* framebuffer, sprites & overlay
+* cf. https://gitlab.com/DarkElvenAngel/pt52-lua
+
+==== *Neotron Pico* by *Jonathan Pallant (the JPster)*
+
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+*Neotron* - the Rust based home computer platform is a family of 1980’s style home computers, powered by ARM Cortex-M processors, with a ROM written in Rust, and a fully open-source design. > *Neotron Pico* - a microATX form-factor computer powered by the Raspberry Pi Pico (or rather its RP2040 Microcontroller)
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+* cf. https://github.com/Neotron-Compute & https://github.com/Neotron-Compute/Neotron-Pico
+* VGA is a 12 bits (RGB444) implementation of scanvideo to limit the amount of GPIO pins used
+* Code is written in Rust (and intended as a showcase of embedded Rust)
+* There is an I/O controller and it is not a Pico, but there is an interesting notion of BIOS and an API to communicate via SPI (or serial ?)
+* Motherboard is in micro ATX form factor and embeds several expansion connectors usable with SPI (or I²C?)
+* Jonathan was one of the selected persons that got involved by RPi (under NDA) in the RP2350’s development (cf. https://thejpster.org.uk/blog/blog-2024-08-08/)
+
+==== *CLUATRON* by *Jalecko*
+
+______________________________________________________
+Standalone computer with shell (F1), Lua & editor (F2)
+______________________________________________________
+
+* cf. https://github.com/jaleck0/CLUATRON
+* scanvideo based
+* fixed 320x240, 16 colors palette, 4x6 ASCII (32-126) font
+* USB keyboard & mouse
+* no SD card nor sound yet
+* references Gigatron for the name & Pico 8 for other inspirations
+
+==== *PicoVGA* by *Miroslav Nemecek aka Panda381*
+
+________________________________
+VGA/TV display on Raspberry Pico
+________________________________
+
+* cf. https://github.com/Panda381/PicoVGA
+* RGB332, not scanvideo based, uses its own DAC and PIO routines
+* With sprites & layers
+* See also https://github.com/Panda381/PicoLibSDK
+
+==== *MCUME* by *Jean-Marc Harvengt*
+
+__________________________________________
+M.CU.M.E = Multi CompUter Machine Emulator
+__________________________________________
+
+* cf. https://github.com/Jean-MarcHarvengt/MCUME
+* MCUME includes several emulators of 8 bits computers for several MCUs
+* VGA for the Pico is based on Panda381’s PicoVGA
+
+==== *PicoBB* by *Memotech-Bill & others*
+
+* cf. https://github.com/Memotech-Bill/PicoBB
+* BBC Basic implementation for the VGA board
+* IIRC, every function from the SDK is accessible and automatically included!
+
+==== *Picocomputer 6502* by *Rumbledethumps*
+
+* cf. https://github.com/picocomputer
+* 8 Mhz 65C02 as CPU + 2 supporting Picos for VGA and I/O
+* Interesting concept of the 4-bits PIX to handle communication between the 2 Picos via PIO
+* Scanvideo features on ``GPU'' side: 3 selectable layers
+** bitmap
+** tilemap with scrolling
+** sprites and ``affine'' sprites
+** text
+* 8 channels PSG with waveforms and ADSR parameters (january 2024)
+
+==== *PicoSystem* from *Pimoroni*
+
+______________________________________________________________________________
+Game console on a tiny 1.54" 240x240 pixels LCD, with a C++ SDK or Micropython
+______________________________________________________________________________
+
+* cf. https://shop.pimoroni.com/products/picosystem
+* cf. https://github.com/pimoroni/picosystem
+* Can run yocto-8 and some Pico-8 games
+
+==== *PicoDVI* by *Luke Wren*
+
+___________________________________________________________________________
+Bitbanged DVI on the RP2040 Microcontroller Now less bitbanged with RP2350.
+___________________________________________________________________________
+
+* cf. https://github.com/Wren6991/PicoDVI
+* License: BSD 3-Clause
+* Blatantly not VGA, but used as the reference for every DVI/HDMI & RP2040 stuff
+* Luke is now also famous as the creator of the Hazard3 RISC core embedded in RP2350!
+
+==== *RP2040-PICO-PC* by *Olimex*
+
+_____________________________________________________________________________________________________________________________________________________________________________
+RP2040-PICO-PC allows RP2040-PICO to become a computer with SD card, HDMI display, Audio, USB keyboard, Li-Po charger and battery support, UEXT connector, and I2C connector.
+_____________________________________________________________________________________________________________________________________________________________________________
+
+* cf. https://www.olimex.com/Products/MicroPython/RP2040-PICO-PC/open-source-hardware
+* ``Motherboard'' is only 12€ (without Pico or Pico W)!
+* ``RP2040-PICO-PC allows RP2040-PICO to become a computer with SD card, HDMI display, Audio, USB keyboard, Li-Po charger and battery support, UEXT connector, and I2C connector.''
+* DVI/HDMI instead of VGA
+* GPL v3 license
+
+==== *PicoMiteVGA* & *WebMite* by *Geoff & others*
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+The *PicoMiteVGA* is a Raspberry Pi Pico with VGA output, PS2 keyboard input, SD card storage and running the free *MMBasic* interpreter. The *WebMite* is a Raspberry Pi Pico W running the free MMBasic interpreter. This is similar to the PicoMite running on the standard Raspberry Pi Pico but this version includes full support for the WiFi capability of the Pico W.
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+* cf. https://geoffg.net/picomitevga.html / https://geoffg.net/webmite.html
+* cf. https://github.com/UKTailwind/PicoMite / https://github.com/UKTailwind/PicoMiteWeb
+* *MMBasic* seems to be great but its license is restrictive, being open source only, not free as GPL nor permissive like MIT or BSD, see https://geoffg.net/OpenSource.html for an explanation
+* Handles GPIO, I²C, SPI from MMBasic
+* WebMite has interesting ideas about networking functions (NTP, …)
+
+==== *Picoputer* by *amen*
+
+_____________________________
+Emulation of Transputer nodes
+_____________________________
+
+* cf. https://github.com/blackjetrock/picoputer
+* cf. https://trochilidae.blogspot.com/2021/07/stack-based-with-os-in-hardware.html
+* Interesting for high speed communication between nodes using PIO
+* I can’t say I understand all the concepts around this ;-)
+
+==== *Pico-56* by *Troy Schrapel*
+
+__________________________________________________________________________________________
+The HBC-56 (65C02/TMS9918A/AY-3-8910 retro computer) fully emulated on a Raspberry Pi Pico
+__________________________________________________________________________________________
+
+* 12 bits VGA with homemade PIO (not scanvideo based)
+* 65C02 CPU, 65C22 VIA, TMS9918A VDP, Dual AY-3-8910 PSGs, Dual NES controller inputs, PS/2 keyboard input, 96KB Banked RAM/ROM
+* cf. https://github.com/visrealm/pico-56/, MIT license
+* can be repurposed to be whatever computer, see ``episodes'' for examples
+
+==== *Neo6502* by *OLIMEX*
+
+___________________________________________________________________
+65C02 with RP2040 managing RAM and clock, HDMI output, USB keyboard
+___________________________________________________________________
+
+* cf. https://github.com/OLIMEX/Neo6502
+* Olimex sells it as Open Source Hardware, cf. https://www.olimex.com/Products/Retro-Computers/Neo6502/open-source-hardware
+* Prototype as of August 2023
+* Apple //e, ][+ & Oric Atmos emulator: https://github.com/vsladkov/reload-emulator
+
+==== *PicoVision* by *Pimoroni*
+
+___________________________________________________________________
+Dual RP2040 (Pico W + RP2040 on board), DVI (HDMI), 2x8MB PSRAM (!)
+___________________________________________________________________
+
+* Shop: https://shop.pimoroni.com/products/picovision?variant=41048911904851
+* Code: https://github.com/pimoroni/picovision, MIT license
+* Pico-W soldered, no way to replace it
+* Based on Luke Wren’s PicoDVI
+
+==== *pico-vdp* by Patrick Alastair
+
+__________________________________________________________________________________________________________________
+Raspberry Pi Pico based Video Display Processor RC2014 Board with video and audio output, keyboard and mouse input
+__________________________________________________________________________________________________________________
+
+* cf. https://github.com/alastairpatrick/pico-vdp
+* Seems to be stalled in the ``sprite'' branch since 2022
+* C, GPL 3.0
+
+==== *DECstation 2040* by *Scott*
+
+_________________________________________________________________________________
+RP2040 based DECstation 3000 emulator that can run DECWindows (Ultrix + X Window)
+_________________________________________________________________________________
+
+* MIPS CPU emulation and 32 MB of PSRAM! (thanks to http://dmitry.gr/?r=05.Projects&proj=33.%20LinuxCard[Dmitry’s LinuxCard])
+* Monochrome VGA at 1024 x 864, PIO driven (not scanvideo based), with seperate 16x16 cursor plane overlay
+* cf. https://github.com/rscott2049/DECstation2040
+
+==== *Pico Mac* by *Matt Evans*
+
+__________________________________________________________________________________________________
+Runs the https://github.com/evansm7/umac[umac Mac 128K emulator] on a RP2040 Pico (up to Mac 208K)
+__________________________________________________________________________________________________
+
+* Outputs VGA 640x480@60Hz, 512x342 monochrome, using three resistors and PIO (not scanvideo based)
+* USB HID keyboard and mouse, SD card option, …
+* cf. https://github.com/evansm7/pico-mac
+
+==== *Hopper* by *sillycowvalley/biggertiger*
+
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________
+Hopper is a modern ``;'' and ``\{ .. }'' language (like C but with a managed heap like C# and Java) designed to target small devices like the Raspberry Pi Pico (and other RP2040 devices or 8 bit CPUs like the 6502).
+_______________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+* As of october, 2024, RP2350 version in on the way
+* Github: https://github.com/sillycowvalley/Hopper
+* Youtube: https://www.youtube.com/channel/UCWk35s3FhXCf1_VZgOVtFsg
+* License: MIT
+* Even if build uses CMake, seems very oriented towards Windows as a development environment
+
+==== *Pretty Poly* by *lowfatcode*
+
+_____________________________________________________________________________________
+Pretty Poly - A super-sampling complex polygon renderer for low resource platforms. 🦜
+_____________________________________________________________________________________
+
+* cf. https://github.com/lowfatcode/pretty-poly
+* Language: C17 (header only library)
+* License: MIT
+* NB: MichaelBell & Gadgetoid made pull request, so it should be good stuff!
+
+==== *Raspberry Pi Pico: loading code into RAM and running it* by *Kevin Boone*
+
+Not a library, but an interesting article in 2 parts:
+
+* https://kevinboone.me/pico_run_ram.html
+* https://kevinboone.me/pico_run_ram2.html
+
+=== Non Pico stuff
+
+==== *FabGL* by *Fabrizio Di Vittorio*
+
+* C++ graphics library for ESP32 with 64 colors VGA output supporting PS/2 keyboard and mouse
+* http://www.fabglib.org/
+
+==== *LVGL* by *the LVGL team*
+
+* Light and Versatile Graphic Library
+* cf. https://lvgl.io/
+* License: MIT
+* Language: C99 (C++ compatible)
+* Very complete / complex
+* Ported to Pico / RP2040 with LCD SPI/I²C screens in mind
+
+==== *raylib* by *Ramon Santamaria*
+
+* ``raylib is a simple and easy-to-use library to enjoy videogames programming.''
+* cf. https://www.raylib.com/
+* License: unmodified zlib/libpng
+* Language: C99 (using PascalCase/camelCase notation)
+* Not aware of Pico officially and at first sight
+
+==== *Adafruit GFX Library* by *Adafruit*
+
+* ``This is the core graphics library for all our displays, providing a common set of graphics primitives (points, lines, circles, etc.).''
+* cf. https://github.com/adafruit/Adafruit-GFX-Library
+* License: BSD (2 clauses?)
+* Language: C / C++
+* Arduino IDE oriented?
+
+==== *Pico-8* and *TIC-80* fantasy consoles
+
+* cf. https://www.lexaloffle.com/pico-8.php
+* Not open source, but great, see games like Celeste https://www.lexaloffle.com/bbs/?tid=2145 for example!
+* cf. https://github.com/nesbox/TIC-80
+* Open source (MIT license)
+* Both use Lua as default language
+* Both include sprite / map / sound / code editors
+* The virtual resources are limited (low resolution, 16 colors, 4 channel sound, …), but demand much more resources on the host, see https://github.com/yocto-8/yocto-8 for an example of a Pico-8 player for RP2040 and the difficulties encountered
+
+==== *Agon light 2* from *the Byte Attic*
+
+* Modern Z80 implementation with a micro-controller for video and I/O
+* cf. https://github.com/TheByteAttic/AgonLight
+* cf. https://www.thebyteattic.com/
+* No Pico inside, but it’s representative of some of the goals of this project
+* Olimex sells it as Open Source Hardware, cf. https://www.olimex.com/Products/Retro-Computers/AgonLight2/open-source-hardware
+* Runs BBC Basic
+
+==== *RC2014* ecosystem
+
+* Z80 based modular system
+* cf. https://rc2014.co.uk/
+* Runs either homebrew, Microsoft BASIC, CP/M or MSX software
+* Can use a Pico VGA terminal, cf. https://rc2014.co.uk/modules/pi-pico-vga-terminal/
