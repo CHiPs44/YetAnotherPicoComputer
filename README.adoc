@@ -28,6 +28,8 @@ All files unless stated otherwise are under a CC-BY-SA-4.0 license, see LICENSE,
 
 [source,text]
 ----
-<!-- SPDX-Copyright-Text: © 2023 CHiPs44 <chips44@gmail.com> -->
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+// SPDX-Copyright-Text: © 20xx CHiPs44 <chips44@gmail.com>
+// SPDX-License-Identifier: CC-BY-SA-4.0
 ----
+
+`xx` should be the creation year of each document.

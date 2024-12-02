@@ -95,22 +95,22 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
 * Most of GPIO pins are used for VGA (17 of 25/26 for Pico 1 or 2), leaving just enough for *sound* (PWM *or* DAC) and *SD card* (4-bits or 1-bit with cutted PCB traces for *serial*):
 
 [cols=">,",options="header",]
-|=======================
-|GPIO# |Function
-|0-4 |VGA: RED 0-4
-|6-10 |VGA: GREEN 0-4
-|11-15 |VGA: BLUE 0-4
-|16 |VGA: VSYNC
-|17 |VGA: HSYNC
-|18-22 |SD CARD & SERIAL
-|25 |ONBOARD LED
-|26 |ONLY 1 FREE?
-|27-28 |PWM *OR* DAC
-|=======================
+|========================
+|GPIO#  |Function
+|0-4    |VGA: RED 0-4
+|6-10   |VGA: GREEN 0-4
+|11-15  |VGA: BLUE 0-4
+|16     |VGA: VSYNC
+|17     |VGA: HSYNC
+|18-22  |SD CARD & SERIAL
+|25     |ONBOARD LED
+|26     |ONLY 1 FREE?
+|27-28  |PWM *OR* DAC
+|========================
 
 ==== *HAGL* by *tuupola*
 
-Generic library for bitmap graphics, originally written with I²C or SPI LCD panels in mind.
+*HAGL* is a generic library for bitmap graphics, originally written with I²C or SPI LCD panels in mind.
 
 * cf. https://github.com/tuupola/hagl/
 * Uses *Unicode* fonts (in fact, UTF-16 ones) in FONTX format, cf. http://elm-chan.org/docs/dosv/fontx_e.html
@@ -124,27 +124,24 @@ Generic library for bitmap graphics, originally written with I²C or SPI LCD pan
 * Still buggy in terms of stability when using some modes and/or framebuffer manipulation techniques
 * Has a rather complete demo, see https://github.com/CHiPs44/hagl_pico_vgaboard_example
 * Supports compiling with SDL and executing on host with https://github.com/raspberrypi/pico-host-sdl
+* Multiplane & VT100/ANSI terminal are on the way…
 
 === Pico stuff
 
 ==== *pshell* by *lurk101*
 
-________________________________________________
-Serial accessible shell with C compiler & editor
-________________________________________________
+*pshell* is a serial accessible shell with C compiler & editor.
 
 * base commands: `ls`, `cd`, `mkdir`, `cat`, …
 * `vi` editor (from an old busybox version)
-* `cc`, C compiler generating ARM M0+ and now M33 code
+* `cc`, C compiler generating ARM M0+ for RP2040 and now M33 code for RP2350
 * cf. https://github.com/lurk101/pshell
 * Uses internal flash by default with LittleFS, SD card support for VGA board
 * Could be reworked to implement the terminal as an embedded VGA console
 
 ==== *pt52-lua* by *DarkElevenAngel*
 
-____________________________________________________________
-Lua embedded on PT52 (a re-imagining of the VT52 by Digital)
-____________________________________________________________
+*pt52-lua* is Lua embedded on PT52 (a re-imagining of the VT52 terminal by Digital).
 
 * VT-52 compatible console with shell and editor
 * Uses VGA demo board and scanvideo library
@@ -153,9 +150,7 @@ ____________________________________________________________
 
 ==== *Neotron Pico* by *Jonathan Pallant (the JPster)*
 
-________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-*Neotron* - the Rust based home computer platform is a family of 1980’s style home computers, powered by ARM Cortex-M processors, with a ROM written in Rust, and a fully open-source design. > *Neotron Pico* - a microATX form-factor computer powered by the Raspberry Pi Pico (or rather its RP2040 Microcontroller)
-________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+*Neotron* - the Rust based home computer platform is a family of 1980’s style home computers, powered by ARM Cortex-M processors, with a ROM written in Rust, and a fully open-source design. > *Neotron Pico* - a microATX form-factor computer powered by the Raspberry Pi Pico (or rather its RP2040 Microcontroller).
 
 * cf. https://github.com/Neotron-Compute & https://github.com/Neotron-Compute/Neotron-Pico
 * VGA is a 12 bits (RGB444) implementation of scanvideo to limit the amount of GPIO pins used
