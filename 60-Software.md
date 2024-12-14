@@ -26,7 +26,7 @@ These were originally text based:
 
 These were originally text based, too, but had many graphical implementations:
 
-| Game             | Year | Author/Editor   | URL                                                             |
+| Game             | Year | Author / Editor | URL                                                             |
 | ---------------- | ---- | --------------- | --------------------------------------------------------------- |
 | **Snake**        | 1976 | (Blockade)      | <https://en.wikipedia.org/wiki/Snake_(video_game_genre)>        |
 | **Lunar Lander** | 1979 | (Genre)         | <https://en.wikipedia.org/wiki/Lunar_Lander_(video_game_genre)> |
@@ -40,35 +40,37 @@ See <https://en.wikipedia.org/wiki/Golden_age_of_arcade_video_games> since most 
 
 #### Fixed screen
 
-| Game                | Year | Author/Editor     | URL                                                       | Display |
+| Game                | Year | Author / Editor   | URL                                                       | Display |
 | ------------------- | ---- | ----------------- | --------------------------------------------------------- | ------- |
 | **Pong**            | 1972 | Atari             | <https://en.wikipedia.org/wiki/Pong>                      | N/A?    |
 | **Breakout**        | 1976 | Atari             | <https://en.wikipedia.org/wiki/Breakout_(video_game)>     | N/A?    |
 | **Space invaders**  | 1978 | Taito             | <https://en.wikipedia.org/wiki/Space_Invaders>            | 224×256 |
 | **Galaxian**        | 1979 | Namco             | <https://en.wikipedia.org/wiki/Galaxian>                  | 224×256 |
+| **Berzerk**         | 1980 | Stern Electronics | <https://en.wikipedia.org/wiki/Berzerk_(video_game)>      | 256x224 |
 | **Missile Command** | 1980 | Atari             | <https://en.wikipedia.org/wiki/Missile_Command>           | 256x231 |
 | **Pac Man**         | 1980 | Namco             | <https://en.wikipedia.org/wiki/Pac-Man>                   | 288x224 |
-| **Berzerk**         | 1980 | Stern Electronics | <https://en.wikipedia.org/wiki/Berzerk_(video_game)>      | 256x224 |
 | **Donkey Kong**     | 1981 | Nintendo          | <https://en.wikipedia.org/wiki/Donkey_Kong_(arcade_game)> | 256x224 |
 | **Centipede**       | 1981 | Atari             | <https://en.wikipedia.org/wiki/Centipede_(video_game)>    | 256x240 |
 | **Frogger**         | 1981 | Konami            | <https://en.wikipedia.org/wiki/Frogger>                   | 224x256 |
-| **Qix**             | 1981 | Taito America     | <https://en.wikipedia.org/wiki/Qix>                       | 256x256 |
 | **Galaga**          | 1981 | Namco             | <https://en.wikipedia.org/wiki/Galaga>                    | 288x224 |
+| **Qix**             | 1981 | Taito America     | <https://en.wikipedia.org/wiki/Qix>                       | 256x256 |
 | **Dig Dug**         | 1982 | Namco             | <https://en.wikipedia.org/wiki/Dig_Dug>                   | 224x288 |
 | **Q\*bert**         | 1982 | Gottlieb          | <https://en.wikipedia.org/wiki/Q*bert>                    | 256x240 |
 
 #### Vector graphics
 
-| Game           | Year | Author/Editor | URL                                                          |
-| -------------- | ---- | ------------- | ------------------------------------------------------------ |
-| **Asteroids**  | 1979 | Atari         | <https://en.wikipedia.org/wiki/Asteroids_(video_game)>       |
-| **Battlezone** | 1980 | Atari         | <https://en.wikipedia.org/wiki/Battlezone_(1980_video_game)> |
-| **Tempest**    | 1981 | Atari         | <https://en.wikipedia.org/wiki/Tempest_(video_game)>         |
-| **Star Wars**  | 1983 | Atari         | <https://en.wikipedia.org/wiki/Star_Wars_(1983_video_game)>  |
+| Game           | Year | Author / Editor | URL                                                          |
+| -------------- | ---- | --------------- | ------------------------------------------------------------ |
+| **Asteroids**  | 1979 | Atari           | <https://en.wikipedia.org/wiki/Asteroids_(video_game)>       |
+| **Battlezone** | 1980 | Atari           | <https://en.wikipedia.org/wiki/Battlezone_(1980_video_game)> |
+| **Tempest**    | 1981 | Atari           | <https://en.wikipedia.org/wiki/Tempest_(video_game)>         |
+| **Star Wars**  | 1983 | Atari           | <https://en.wikipedia.org/wiki/Star_Wars_(1983_video_game)>  |
+
+NB: for home users, Vectrex console (1982/1983) from Milton Bradley seems to be the main and only source for vector games, cf. <https://en.wikipedia.org/wiki/Vectrex>.
 
 #### Scrolling
 
-| Game            | Year | Author/Editor        | URL                                                        | Display      |
+| Game            | Year | Author / Editor      | URL                                                        | Display      |
 | --------------- | ---- | -------------------- | ---------------------------------------------------------- | ------------ |
 | **Defender**    | 1981 | Williams Electronics | <https://en.wikipedia.org/wiki/Defender_(1981_video_game)> | 292x240 (16) |
 | **Scramble**    | 1981 | Konami               | <https://en.wikipedia.org/wiki/Scramble_(video_game)>      | 224x256      |
@@ -79,21 +81,28 @@ See <https://en.wikipedia.org/wiki/Golden_age_of_arcade_video_games> since most 
 
 ### To be sorted
 
-| Game                  | Notes                                                                                                   |
-| --------------------- | ------------------------------------------------------------------------------------------------------- |
-| **RTS**               | Genre: <https://en.wikipedia.org/wiki/Real-time_strategy>                                               |
-| **Dune**              | First modern RTS?: <https://en.wikipedia.org/wiki/Dune_(video_game)>                                    |
-| **Dune II**           | Real first modern RTS?: <https://en.wikipedia.org/wiki/Dune_II>                                         |
-| **Warcraft**          | Blizzard Entertainment, 1994, <https://en.wikipedia.org/wiki/Warcraft:_Orcs_%26_Humans>                 |
-| **Bomberman**         | Hudson Soft, 1983, <https://en.wikipedia.org/wiki/Bomberman>                                            |
-| **Solitaire**         | Microsoft, 1990, <https://en.wikipedia.org/wiki/Microsoft_Solitaire>                                    |
-| **Sokoban**           | <https://en.wikipedia.org/wiki/Sokoban>                                                                 |
-| **Ghosts 'n Goblins** | Capcom, 1985, <https://en.wikipedia.org/wiki/Ghosts_%27n_Goblins>                                       |
-| **Sorcery**           | Virgin Games, 1984, (no english WP page) <https://fr.wikipedia.org/wiki/Sorcery_(jeu_vid%C3%A9o,_1984)> |
-| **Another World**     | Éric Chahi / Delphine Software, 1991, <https://en.wikipedia.org/wiki/Another_World_(video_game)>        |
-| **Bubble Bobble**     | Taito, 1986, <https://en.wikipedia.org/wiki/Bubble_Bobble>                                              |
+| Game                  | Year | Author / Editor                | Notes                                                                                  |
+| --------------------- | ---- | ------------------------------ | -------------------------------------------------------------------------------------- |
+| **Bomberman**         | 1983 | Hudson Soft                    | <https://en.wikipedia.org/wiki/Bomberman>                                              |
+| **H.E.R.O.**          | 1984 | Activision                     | Atari 2600, First platform game? <https://en.wikipedia.org/wiki/H.E.R.O._(video_game)> |
+| **Sorcery**           | 1984 | Virgin Games                   | (no english page) <https://fr.wikipedia.org/wiki/Sorcery_(jeu_vid%C3%A9o,_1984)>       |
+| **Ghosts 'n Goblins** | 1985 | Capcom                         | <https://en.wikipedia.org/wiki/Ghosts_%27n_Goblins>                                    |
+| **Bubble Bobble**     | 1986 | Taito                          | <https://en.wikipedia.org/wiki/Bubble_Bobble>                                          |
+| **Solitaire**         | 1990 | Microsoft                      | <https://en.wikipedia.org/wiki/Microsoft_Solitaire>                                    |
+| **Sokoban**           | -    | -                              | <https://en.wikipedia.org/wiki/Sokoban>                                                |
+| **Another World**     | 1991 | Éric Chahi / Delphine Software | <https://en.wikipedia.org/wiki/Another_World_(video_game)>                             |
 
-### RPGs
+### RTS
+
+Genre: <https://en.wikipedia.org/wiki/Real-time_strategy>
+
+| Game         | Year | Author / Editor        | Notes                                                               |
+| ------------ | ---- | ---------------------- | ------------------------------------------------------------------- |
+| **Dune**     | -    | -                      | First modern RTS: <https://en.wikipedia.org/wiki/Dune_(video_game)> |
+| **Dune II**  | -    | -                      | Real first modern RTS? <https://en.wikipedia.org/wiki/Dune_II>      |
+| **Warcraft** | 1994 | Blizzard Entertainment | <https://en.wikipedia.org/wiki/Warcraft:_Orcs_%26_Humans>           |
+
+### RPG
 
 All these series debuted on the Apple II and were ported to most platforms over the years.
 
@@ -129,7 +138,7 @@ December 2023: **Planet X16** was released, see <https://www.the8bitguy.com/3566
 
 These ones were my most played ones on my CPC 664 (<https://en.wikipedia.org/wiki/Amstrad_CPC#CPC_664>):
 
-| Game             | Year  | Author/Editor   | URL                                                             |
+| Game             | Year  | Author / Editor | URL                                                             |
 | ---------------- | ----- | --------------- | --------------------------------------------------------------- |
 | **Fruity Frank** | 1984  | Kuma Software   | <https://en.wikipedia.org/wiki/Fruity_Frank>                    |
 | **Knight Lore**  | 1984¹ | Ultimate        | <https://en.wikipedia.org/wiki/Knight_Lore>                     |
@@ -139,7 +148,7 @@ These ones were my most played ones on my CPC 664 (<https://en.wikipedia.org/wik
 
 Others games I recall playing on the CPC:
 
-| Game                               | Year | Author/Editor     | URL                                                           |
+| Game                               | Year | Author / Editor   | URL                                                           |
 | ---------------------------------- | ---- | ----------------- | ------------------------------------------------------------- |
 | **Alien 8**                        | 1985 | Ultimate          | <https://en.wikipedia.org/wiki/Alien_8>                       |
 | **Bruce Lee**                      | 1985 | U.S. Gold         | <https://en.wikipedia.org/wiki/Bruce_Lee_(video_game)>        |
@@ -152,7 +161,7 @@ Others games I recall playing on the CPC:
 
 ### 16 bits machines classics
 
-| Game         | Year | Author/Editor     | URL                                                   |
+| Game         | Year | Author / Editor   | URL                                                   |
 | ------------ | ---- | ----------------- | ----------------------------------------------------- |
 | **Lemmings** | 1991 | DMA Design, Amiga | <https://en.wikipedia.org/wiki/Lemmings_(video_game)> |
 
@@ -160,7 +169,7 @@ Others games I recall playing on the CPC:
 
 I played numerous hours with these ones on my 1040STF, my STE and my MegaSTE:
 
-| Game               | Year | Author/Editor        | URL                                                         |
+| Game               | Year | Author / Editor      | URL                                                         |
 | ------------------ | ---- | -------------------- | ----------------------------------------------------------- |
 | **Dungeon Master** | 1987 | FTL Games            | <https://en.wikipedia.org/wiki/Dungeon_Master_(video_game)> |
 | **Populous**       | 1989 | Bullfrog productions | <https://en.wikipedia.org/wiki/Populous_(video_game)>       |
@@ -168,18 +177,18 @@ I played numerous hours with these ones on my 1040STF, my STE and my MegaSTE:
 | **Hero Quest**     | 1991 | Gremlin Interactive  | <https://en.wikipedia.org/wiki/HeroQuest_(video_game)>      |
 | **Space Crusade**  | 1992 | Gremlin Interactive  | <https://en.wikipedia.org/wiki/Space_Crusade_(video_game)>  |
 
-- ¹ First version on the Amiga?
+- ¹ First version on the Amiga? unlicensed reverse engineered C version at <https://github.com/zpqrtbnk/xrick> (available as core in libretro/retroarch)
 
 ### PC/DOS classics
 
-| Game                | Year | Author/Editor  | URL                                                               |
-| ------------------- | ---- | -------------- | ----------------------------------------------------------------- |
-| **Jazz Jackrabbit** | 1994 | Epic Megagames | <https://en.wikipedia.org/wiki/Jazz_Jackrabbit_(1994_video_game)> |
-| **Duke Nukem**      | ?    | ?              | ?                                                                 |
+| Game                | Year | Author / Editor | URL                                                               |
+| ------------------- | ---- | --------------- | ----------------------------------------------------------------- |
+| **Jazz Jackrabbit** | 1994 | Epic Megagames  | <https://en.wikipedia.org/wiki/Jazz_Jackrabbit_(1994_video_game)> |
+| **Duke Nukem**      | ?    | ?               | ?                                                                 |
 
 ### Modern classics
 
-| Game            | Year | Author/Editor    | URL                                         | Notes                       |
+| Game            | Year | Author / Editor  | URL                                         | Notes                       |
 | --------------- | ---- | ---------------- | ------------------------------------------- | --------------------------- |
 | **Flappy bird** | 2013 | Dong Nguyen      | <https://en.wikipedia.org/wiki/Flappy_Bird> | Horizontal scrolling needed |
 | **2048**        | 2014 | Gabriele Cirulli | <https://github.com/gabrielecirulli/2048>   | Static background           |
