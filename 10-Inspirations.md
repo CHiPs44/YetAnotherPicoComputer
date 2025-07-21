@@ -115,7 +115,7 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
 > Generic library for bitmap graphics, originally written with I²C or SPI LCD panels in mind.
 
 - cf. <https://github.com/tuupola/hagl/>
-- Uses **Unicode** fonts (in fact, UTF-16 ones) in FONTX format, cf. <http://elm-chan.org/docs/dosv/fontx_e.html>
+- Uses **Unicode** fonts (in fact, **UTF-16** ones) in **FONTX2** format, cf. <http://elm-chan.org/docs/dosv/fontx_e.html>
 - Can be extended to new types of screens via an **Hardware Abstraction Layer (HAL)**, cf. below
 
 ### **HAGL HAL for Pico VGA board** by **CHiPs44** (it’s me ;-))
@@ -139,6 +139,7 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
 - cf. <https://github.com/lurk101/pshell>
 - Uses internal flash by default with LittleFS, SD card support for VGA board
 - Could be reworked to implement the terminal as an embedded VGA console
+- Project archived on 2025-02-18 after work on RP2350 support
 
 ### **pt52-lua** by **DarkElevenAngel**
 
@@ -269,7 +270,6 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
 
 - cf. <https://github.com/OLIMEX/Neo6502>
 - Olimex sells it as Open Source Hardware, cf. <https://www.olimex.com/Products/Retro-Computers/Neo6502/open-source-hardware>
-- Prototype as of August 2023
 - Apple //e, ][+ & Oric Atmos emulator: <https://github.com/vsladkov/reload-emulator>
 
 ### **PicoVision** by **Pimoroni**
