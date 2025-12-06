@@ -326,7 +326,7 @@ In 2021, shortly after I learned the existence of the RP2040 and the Pico, I stu
 
 ### **Raspberry Pi Pico: loading code into RAM and running it** by **Kevin Boone**
 
-Not a library, but an interesting article in 2 parts:
+> Not a library, but an interesting article in 2 parts:
 
 - <https://kevinboone.me/pico_run_ram.html>
 - <https://kevinboone.me/pico_run_ram2.html>
@@ -335,12 +335,14 @@ Not a library, but an interesting article in 2 parts:
 
 ### **FabGL** by **Fabrizio Di Vittorio**
 
-- C++ graphics library for ESP32 with 64 colors VGA output supporting PS/2 keyboard and mouse
+> C++ graphics library for ESP32 with 64 colors VGA output supporting PS/2 keyboard and mouse
+
 - <http://www.fabglib.org/>
 
 ### **LVGL** by **the LVGL team**
 
-- Light and Versatile Graphic Library
+> Light and Versatile Graphic Library
+
 - cf. <https://lvgl.io/>
 - License: MIT
 - Language: C99 (C++ compatible)
@@ -349,7 +351,8 @@ Not a library, but an interesting article in 2 parts:
 
 ### **raylib** by **Ramon Santamaria**
 
-- "raylib is a simple and easy-to-use library to enjoy videogames programming."
+> "raylib is a simple and easy-to-use library to enjoy videogames programming."
+
 - cf. <https://www.raylib.com/>
 - License: unmodified zlib/libpng
 - Language: C99 (using PascalCase/camelCase notation)
@@ -357,21 +360,30 @@ Not a library, but an interesting article in 2 parts:
 
 ### **Adafruit GFX Library** by **Adafruit**
 
-- "This is the core graphics library for all our displays, providing a common set of graphics primitives (points, lines, circles, etc.)."
+> "This is the core graphics library for all our displays, providing a common set of graphics primitives (points, lines, circles, etc.)."
+
 - cf. <https://github.com/adafruit/Adafruit-GFX-Library>
 - License: BSD (2 clauses?)
 - Language: C / C++
 - Arduino IDE oriented?
 
-### **Pico-8** and **TIC-80** fantasy consoles
+### Fantasy consoles
+
+Both:
+
+- Use Lua as default language
+- Includes sprite / map / sound / code editors
+- The virtual resources are limited (low resolution, 16 colors, 4 channel sound, ...), but demand much more resources on the host, see <https://github.com/yocto-8/yocto-8> for an example of a Pico-8 player for RP2040 and the difficulties encountered
+
+#### **Pico-8**
 
 - cf. <https://www.lexaloffle.com/pico-8.php>
 - Not open source, but great, see games like Celeste <https://www.lexaloffle.com/bbs/?tid=2145> for example!
+
+#### ****TIC-80**
+
 - cf. <https://github.com/nesbox/TIC-80>
 - Open source (MIT license)
-- Both use Lua as default language
-- Both include sprite / map / sound / code editors
-- The virtual resources are limited (low resolution, 16 colors, 4 channel sound, ...), but demand much more resources on the host, see <https://github.com/yocto-8/yocto-8> for an example of a Pico-8 player for RP2040 and the difficulties encountered
 
 ### **Agon light 2** from **the Byte Attic**
 
