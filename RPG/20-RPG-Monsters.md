@@ -11,6 +11,7 @@
 - Boar
 - Hound (dog)
 - Eagle
+- Wasp swarm
 - Wolf
 
 ### "Hot" Outdoors / Jungle
@@ -25,6 +26,7 @@
 
 ### Giants
 
+- Giant Ant
 - Giant Bat
 - Giant Crab
 - Giant Centipede
@@ -36,7 +38,7 @@
 
 ## Humanoids
 
-- Assassin
+- Assassin (human)
 - Bandit
 - Dark elf (drow)
 - Giant
@@ -57,6 +59,7 @@
 - Gargoyle
 - Ghoul
 - Harpy
+- Lich
 - Mummy
 - Skeleton
 - Vampire
@@ -74,7 +77,6 @@
 - Ghoul
 - Golem
 - Griffin
-- Lich
 - Lycanthrope
 - Manticore
 - Medusa

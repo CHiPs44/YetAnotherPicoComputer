@@ -46,14 +46,14 @@ Target for this system is a top or topview 2D [Rogue](<https://en.wikipedia.org/
 
 <center>
 
-| Characteristic | Notes                                                |
-| -------------- | ---------------------------------------------------- |
-| Strength       | Physical power, for melee attacks                    |
-| Intelligence   | Reasoning and learning                               |
-| Wisdom         | Common sense, perception, self-discipline, empathy   |
-| Dexterity      | Agility, reflexes and balance                        |
-| Constitution   | Health, stamina and vital force                      |
-| Charisma       | Force of personality, persuasiveness, and leadership |
+| Symbol | Characteristic | Notes                                                |
+| :----: | -------------- | ---------------------------------------------------- |
+|  STR   | Strength       | Physical power, for melee attacks                    |
+|  INT   | Intelligence   | Reasoning and learning                               |
+|  WIS   | Wisdom         | Common sense, perception, self-discipline, empathy   |
+|  DEX   | Dexterity      | Agility, reflexes and balance                        |
+|  CON   | Constitution   | Health, stamina and vital force                      |
+|  CHA   | Charisma       | Force of personality, persuasiveness, and leadership |
 
 </center>
 
@@ -80,10 +80,10 @@ NB:
 | Symbol | Explanation                | Example                                                            |
 | :----: | -------------------------- | ------------------------------------------------------------------ |
 |   HP   | Hit points                 | A wizard with 6 HP is wounded by the sword of a kobold and loses 4 |
-|   LV   | Level                      | At level 5, fighters and thieves can use 2 one handed weapons      |
+|  LVL   | Level                      | At level 5, fighters and thieves can use 2 one handed weapons      |
 |   XP   | Experience points          | Killing an orc gives you 30 points                                 |
 |   AC   | Armour / Armor Class       |                                                                    |
-|   DG   | Damage with current weapon | 2d8 with a double handed axe                                       |
+|  DMG   | Damage with current weapon | 2d8 with a double handed axe                                       |
 
 </center>
 
@@ -105,25 +105,27 @@ These modifiers can be changed:
 
 ### Races
 
+#### Canonical
+
 <center>
 
-| Race      | Bonus #1        | Bonus #2        | Malus           | Other rules           |
-| --------- | --------------- | --------------- | --------------- | --------------------- |
-| Human     | -               | -               | -               | -                     |
-| Dwarf     | +2 CON | -               | -               | -                     |
-| Elf       | +2 DEX | -               | -               | -                     |
-| Half-Elf? | +1 DEX | +1 Charisma     | -               | -                     |
-| Half-Orc  | +1 STR | +1 CON | -2 INT          | -                     |
-| Halfling  | +1 DEX | +1 CON | -               | No two handed weapons |
+| Race     |  STR |  INT |  WIS |  DEX |  CON |  CHA | Other rules           |
+| -------- | ---: | ---: | ---: | ---: | ---: | ---: | --------------------- |
+| Dwarf    |   +1 |    - |    - |    - |   +2 |    - |                       |
+| Elf      |    - |    - |    - |   +2 |    - |   +1 |                       |
+| Halfling |   -1 |    - |    - |   +1 |   +1 |    - | No two handed weapons |
+| Human    | +2\* | +2\* | +2\* | +2\* | +2\* | +2\* | \* user choice        |
 
-| Race      | STR | INT | WIS | DEX | CON | CHA | Other rules           |
-| --------- | --- | --- | --- | --- | --- | --- | --------------------- | 
-| Human     | +2* | +2* | +2* | +2* | +2* | +2* | * user choice |
-| Dwarf     | +2 CON | -    | -     | -                     |
-| Elf       | +2 DEX | -               | -               | -                     |
-| Half-Elf? | +1 DEX | +1 Charisma     | -               | -                     |
-| Half-Orc  | +1 STR | +1 CON | -2 INT          | -                     |
-| Halfling  | +1 DEX | +1 CON | -               | No two handed weapons |
+</center>
+
+#### Supplemental
+
+<center>
+
+| Race     | STR | INT | WIS | DEX | CON | CHA | Other rules |
+| -------- | --: | --: | --: | --: | --: | --: | ----------- |
+| Half-Elf |   - |   - |   - |  +1 |     |  +1 |             |
+| Half-Orc |  +1 |  -2 |   - |   - |  +1 |     |             |
 
 </center>
 
@@ -135,18 +137,29 @@ Bonuses and maluses are added or substracted to charateristic values, hence chan
 
 | Class   | Main characteristic (>=13) | Hit die |
 | ------- | -------------------------- | ------: |
-| Fighter | Strength                   |     d10 |
 | Cleric  | Wisdom                     |      d8 |
+| Fighter | Strength                   |     d10 |
 | Thief   | Dexterity                  |      d8 |
 | Wizard  | Intelligence               |      d6 |
 
 </center>
 
+### Matrix
+
+| Race     | Cleric | Fighter | Thief | Wizard |
+| -------- | :----: | :-----: | :---: | :----: |
+| Dwarf    |   x    |    x    |   -   |   -    |
+| Elf      |   x    |    x    |   x   |   x    |
+| Human    |   x    |    x    |   x   |   x    |
+| Half-Elf |   x    |    x    |   x   |   x    |
+| Half-Orc |   x    |    x    |   -   |   -    |
+| Halfling |   x    |    -    |   x   |   x    |
+
 ### HP: Hit Points
 
 Level 1 maximum hit points (HP) are 1 hit die added with constitution modifier.
 
-At each level, another hit die and the constitution modifier are added to max HP.
+At each level upgrade, another hit die and the constitution modifier are added to max HP.
 
 ### One melee weapon in each hand
 
@@ -161,12 +174,14 @@ Having 2 weapons forbids use of a shield.
 
 <center>
 
-| Domain         | Usable?                                  |
-| -------------- | ---------------------------------------- |
-| Magic          | None                                     |
-| Melee Weapons  | Sword, Hammer, Axe, ... 2 handed allowed |
-| Ranged Weapons | Bow, Crossbow, Spear, ...                |
-| Armour         | Leather, chain mail, plates, shield      |
+| Domain   | Usable?                     |
+| -------- | --------------------------- |
+| Magic    | None                        |
+| Melee    | Sword, Hammer, Axe, ...     |
+| 2 handed | Yes                         |
+| Ranged   | Bow, Crossbow, Spear, ...   |
+| Armour   | Leather, chain mail, plates |
+| Shield   | Yes                         |
 
 </center>
 
@@ -174,12 +189,14 @@ Having 2 weapons forbids use of a shield.
 
 <center>
 
-| Domain | Usable?                           |
-| ------ | --------------------------------- |
-| Magic  | Healing and spells                |
-| Melee  | Staff, Club or Hammer (no blades) |
-| Ranged | ?                                 |
-| Armour | Up to chain mail                  |
+| Domain   | Usable?                           |
+| -------- | --------------------------------- |
+| Magic    | Healing & defense spells          |
+| Melee    | Staff, Club or Hammer (no blades) |
+| 2 handed | Yes                               |
+| Ranged   | ?                                 |
+| Armour   | Up to chain mail                  |
+| Shield   | Yes                               |
 
 </center>
 
@@ -187,12 +204,14 @@ Having 2 weapons forbids use of a shield.
 
 <center>
 
-| Domain | Usable?                   |
-| ------ | ------------------------- |
-| Magic  | None                      |
-| Melee  | Dagger, Short sword       |
-| Ranged | Bow, Crossbow, Spear, ... |
-| Armour | Up to leather, shield     |
+| Domain   | Usable?                   |
+| -------- | ------------------------- |
+| Magic    | None                      |
+| Melee    | Dagger, Short sword       |
+| 2 handed | No                        |
+| Ranged   | Bow, Crossbow, Spear, ... |
+| Armour   | Up to leather, shield     |
+| Shield   | Yes                       |
 
 </center>
 
@@ -200,12 +219,14 @@ Having 2 weapons forbids use of a shield.
 
 <center>
 
-| Domain | Usable?                  |
-| ------ | ------------------------ |
-| Magic  | Spells: attack & defense |
-| Melee  | Dagger, staff            |
-| Ranged | None                     |
-| Armour | Clothes only             |
+| Domain   | Usable?                 |
+| -------- | ----------------------- |
+| Magic    | Attack & defense spells |
+| Melee    | Dagger, staff           |
+| 2 handed | No                      |
+| Ranged   | None                    |
+| Armour   | Clothes only            |
+| Shield   | No                      |
 
 </center>
 
@@ -218,9 +239,9 @@ Having 2 weapons forbids use of a shield.
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 ┌───────[Mirhuhkas]┐┌──────[Alvaerelle]┐┌────────[Thazmeac]┐┌─────────[Garrick]┐01
 │Human Fighter    M││Elf Wizard       F││Dwarf Fighter    M││Halfling Thief   M│02
-│LV: 1_  XP: 0_____││LV: 1_  XP: 0_____││LV: 1_   XP: 0____││LV:1_    XP: 0____│03
-│HP: 12_ AC: 3_    ││HP: 12_ AC: 1_    ││HP: 10_  AC: 3_   ││HP: 10_  AC: 3_   │04
-│DM: 1d8+1__       ││DM: 1d4+0__       ││DM: 1d4+0__       ││DM: 1d8+2__       │05
+│LVL 01  XP 0000000││LVL _1  XP 0000000││LVL _1  XP 0000000││LVL _1  XP 0000000│03
+│HP  012 AC 3_     ││HP  12_ AC 1_     ││HP  10_ AC 3_     ││HP  10_ AC 3_     │04
+│DMG 1d8+1__ ______││DMG 1d4+0__ ______││DMG 1d4+0__ ______││DMG 1d8+2__ ______│05
 └──────────────────┘└──────────────────┘└──────────────────┘└──────────────────┘06
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 ```
@@ -231,13 +252,14 @@ Having 2 weapons forbids use of a shield.
          1         2         3         4         5         6         7         8
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
 ┌──────────────────────────────────────────────────────────────────────────────┐
-│ Name: Mirhuhkas_ │ Race: Human__ (M) │ Class: Fighter_  │ LV: _1 │ XP: __136 │
+│ Name Mirhuhkas__ │ Race Human___ (M) │ Class Fighter__  │ LVL _1 │ XP ___136 │
 ────────────────────────────────────────────────────────────────────────────────
-│ STR: 17 +3 │ ____________________________________ │ HD: 1d8_ │ HP: _12 / _12 │ 
-│ INT: 12 __ │──────────────────────────────────────────────────────────────────
-│ WIS: 11 __ │ Armor: Leather____________________________ 10 + 3_ + 1 │ AC: 14 │
-│ DEX: 14 +1 │──────────────────────────────────────────────────────────────────
-│ CON: 15 +1 │ Melee: Sword_____________________________________ │ DG: 1d8_ +1 │ 
-│ CHA: _8 -1 │ Range: __________________________________________ │     _______ │
+│ STR 17 +3 │ _____________________________________ │ HD: 1d8_ │ HP: _12 / _12 │
+│ INT 12 __ │──────────────────────────────────────────────────────────────────
+│ WIS 11 __ │ Armor: Leather_____________________________ 10 + 3_ + 1 │ AC: 14 │
+│ DEX 14 +1 │──────────────────────────────────────────────────────────────────
+│ CON 15 +1 │ Melee: Sword______________________________________ │ DMG 1d8_ +1 │
+│ CHA _8 -1 │ Range: ___________________________________________ │ ___________ │
 ────────────────────────────────────────────────────────────────────────────────
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
 ```
