@@ -17,17 +17,23 @@ With the scanvideo library and some overclocking, possibilities are infinite, an
 
 **Pico 2** has the same pinout, so the lack of available pins is the same, but offers twice the RAM (512 + 4 + 4 instead of 256 + 4 + 4), which is "somewhat interesting" if using a (double) framebuffer for screen rendering.
 
-A typical computer of the 80s like the Amstrad CPC 464 allocated 16K of its 64K RAM.
+A typical computer of the 80s like the Amstrad CPC 464 allocated 16K of its 64K RAM in a single buffer.
 
-With 512K, one quarter is 128K, enough for:
+With 512K of RAM, one quarter is 128K (131,072 bytes), so we have enough for:
 
-- 2 x 320x200 in 256 colors (2 x 64,000)
-- 1 x 320x240 in 256 colors (1 x 76,800)
-- 1 x 512x384 in 16 colors (1 x 98,304)
-- 1 x 640x400 in 16 colors (1 x 128,000)
-- 1 x 640x480 in 4 colors (1 x 76,800)
-- 1 x 1024x768 in 2 colors (1 x 98,304)
-- ...
+|    W |   H | Depth | Colors | Single |  Double |
+| ---: | --: | ----: | -----: | -----: | ------: |
+|  320 | 200 |     8 |    256 | 64,000 | 128,000 |
+|  640 | 200 |     4 |     16 | 64,000 | 128,000 |
+|  640 | 400 |     2 |      4 | 64,000 | 128,000 |
+|  640 | 400 |     1 |      2 | 64,000 | 128,000 |
+|  320 | 240 |     8 |    256 | 76,800 |       - |
+|  320 | 240 |     4 |     16 | 76,800 |       - |
+|  640 | 480 |     2 |      4 | 76,800 |       - |
+|  256 | 192 |     8 |    256 | 49,152 |  98,304 |
+|  512 | 384 |     4 |     16 | 98,304 |       - |
+| 1024 | 384 |     2 |      4 | 98,304 |       - |
+| 1024 | 768 |     1 |      2 | 98,304 |       - |
 
 NB:
 
@@ -45,7 +51,7 @@ Pimoroni Pico Plus 2 has some advantages:
 - adds an 8 pins SP/CE connector: VSYS, 3V3, 5 GPIO (32-36 SPI/I²C/UART/PWM), GND
 - adds an 4 pins QW/ST connector: GPIO 4-5 (I²C #0), 3V3, GND, which are used by VGA, so not too interesting...
 
-At first sight, these 8 MB of PSRAM may not be fast enough to store the "live" framebuffer(s) for scanvideo, but can be used to store programs, resources and transient data.
+At first sight, these 8 MB of PSRAM may not be fast enough to store the "live" framebuffer(s) for scanvideo, but can be used to store programs, resources, and transient data.
 
 The 5 supplemental GPIOs could be used for some options:
 
@@ -54,16 +60,17 @@ The 5 supplemental GPIOs could be used for some options:
   - connect to an Ethernet or WiFi "modem" using "AT" commands
 - **battery backed-up RTC module** like DS3231 (I²C SDA/SCL)
   - other I²C modules like LCD 2x16 (or more) can be chained
+- **RM2 Wi-Fi module**
 
 NB: finding an SP/CE 8-pins 1.0mm JST connector breakout cable to DuPont seems not easy out of Pimoroni itself.
 
-PSRAM makes room to an even bigger VRAM in 512K SRAM space, going up to 192K or even more (384K) would make possible such modes as:
+PSRAM makes room to an even bigger VRAM in 512K SRAM space, going up to 192K or even more (384K?) would make possible such modes as:
 
 - 2 x 320x240 in 256 colors (2 x 153,600)
 - 1 x 640x480 in 16 colors (1 x 153,600)
 - ...
 
-We should keep some space for fonts, sprites or tiles assets and system variables.
+We should keep some space for fonts, sprites or tiles assets, sound buffers and system variables.
 
 ## HSTX and DVI/HDMI to the rescue?
 
@@ -78,5 +85,13 @@ RP2350 has this HSTX with TMDS hardware encoder interface, using only 8 dedicate
 TODO!
 
 ## Pimoroni Pico Plus 2
+
+TODO!
+
+## Olimex RP2350pc
+
+TODO!
+
+## Adafruit Fruit Jam
 
 TODO!
